@@ -82,6 +82,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Form", "System.Windows.Form
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaintEvent", "System.Windows.Forms\PaintEvent\PaintEvent.csproj", "{73508125-A5FF-4158-8583-450FAE052684}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "DesignPatterns\AbstractFactory\AbstractFactory.csproj", "{9A636AA5-5B63-4B02-AE44-25CEC42F7494}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -232,6 +234,10 @@ Global
 		{73508125-A5FF-4158-8583-450FAE052684}.Debug|x86.Build.0 = Debug|x86
 		{73508125-A5FF-4158-8583-450FAE052684}.Release|x86.ActiveCfg = Release|x86
 		{73508125-A5FF-4158-8583-450FAE052684}.Release|x86.Build.0 = Release|x86
+		{9A636AA5-5B63-4B02-AE44-25CEC42F7494}.Debug|x86.ActiveCfg = Debug|x86
+		{9A636AA5-5B63-4B02-AE44-25CEC42F7494}.Debug|x86.Build.0 = Debug|x86
+		{9A636AA5-5B63-4B02-AE44-25CEC42F7494}.Release|x86.ActiveCfg = Release|x86
+		{9A636AA5-5B63-4B02-AE44-25CEC42F7494}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -273,6 +279,7 @@ Global
 		{4B3E9829-7E30-4912-8835-567B4556F1E6} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
 		{022B3644-311E-4ADF-9CAC-5ED750FF0B55} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
 		{73508125-A5FF-4158-8583-450FAE052684} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
+		{9A636AA5-5B63-4B02-AE44-25CEC42F7494} = {17BF232B-7ACA-42DC-AAEE-FD40E1D2ECE5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0222CD68-0450-4733-8A72-82553BC0473F}
