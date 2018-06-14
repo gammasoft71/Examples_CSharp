@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{698893B1-BE61-45BD-BB4C-6193722B4592}</ProjectGuid>
+    <ProjectGuid>{4B3E9829-7E30-4912-8835-567B4556F1E6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>ColoredTabPagesExample</RootNamespace>
     <AssemblyName>Form</AssemblyName>

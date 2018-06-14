@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{0819A499-E608-4F7E-A5D2-F1C3DDC0EF98}</ProjectGuid>
+    <ProjectGuid>{73508125-A5FF-4158-8583-450FAE052684}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>PaintEvent</RootNamespace>
     <AssemblyName>Application</AssemblyName>
