@@ -28,11 +28,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackBar", "System.Windows.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimerForm", "System.Windows.Forms\TimerForm\TimerForm.csproj", "{59570EE3-FCC9-45CD-85DE-BD9FF81E8F0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaintEvent", "System.Windows.Forms\PaintEvent\PaintEvent.csproj", "{0819A499-E608-4F7E-A5D2-F1C3DDC0EF98}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "System.Windows.Forms\Application\Application.csproj", "{0819A499-E608-4F7E-A5D2-F1C3DDC0EF98}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckBox", "System.Windows.Forms\CheckBox\CheckBox.csproj", "{E4AAD556-C337-4DBF-A7FD-987D3636C82A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColoredTabPages", "System.Windows.Forms\ColoredTabPages\ColoredTabPages.csproj", "{698893B1-BE61-45BD-BB4C-6193722B4592}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabControl", "System.Windows.Forms\TabControl\TabControl.csproj", "{698893B1-BE61-45BD-BB4C-6193722B4592}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupBox", "System.Windows.Forms\GroupBox\GroupBox.csproj", "{D112A008-7B3A-4DB5-BA85-4A872F2B8782}"
 EndProject
