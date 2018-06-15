@@ -6,7 +6,7 @@
     <ProjectGuid>{81C35BD2-C21F-4B52-B2AF-F97F36A4AA86}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>AggregateEception</AssemblyName>
+    <AssemblyName>AggregateException</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -35,7 +35,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AggregateEception.cs" />
+    <Compile Include="AggregateException.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
