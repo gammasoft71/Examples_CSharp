@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{A5CB8973-3364-4F45-9D4C-ADAEDA2997F3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>FormExample</RootNamespace>
+    <RootNamespace>Examples</RootNamespace>
     <AssemblyName>FormWithAssemblyInfo</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>

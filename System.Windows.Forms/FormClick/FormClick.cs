@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace FormClickExample {
+namespace Examples {
   class FormClick {
     // The main entry point for the application.
     public static void Main() {

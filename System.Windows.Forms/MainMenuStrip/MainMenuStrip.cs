@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace MouseEvent {
+namespace Examples {
   public class Form1 : Form {
     // The main entry point for the application.
     public static void Main() {

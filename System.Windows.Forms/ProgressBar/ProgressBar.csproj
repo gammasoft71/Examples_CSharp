@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{A5A4AEC1-83B0-4478-9F8A-713F1B7B6814}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ProgressBarExample</RootNamespace>
+    <RootNamespace>Examples</RootNamespace>
     <AssemblyName>ProgressBar</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>

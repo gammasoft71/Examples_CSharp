@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{E4AAD556-C337-4DBF-A7FD-987D3636C82A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>CheckBox</RootNamespace>
+    <RootNamespace>Examples</RootNamespace>
     <AssemblyName>CheckBox</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>

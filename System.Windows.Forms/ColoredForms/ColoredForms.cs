@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace ColoredForms {
+namespace Examples {
   class MainClass {
     public static void Main(string[] args) {
       Application.EnableVisualStyles();

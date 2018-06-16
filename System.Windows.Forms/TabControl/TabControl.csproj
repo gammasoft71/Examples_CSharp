@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{698893B1-BE61-45BD-BB4C-6193722B4592}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>TabControlExample</RootNamespace>
+    <RootNamespace>Examples</RootNamespace>
     <AssemblyName>Form</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>

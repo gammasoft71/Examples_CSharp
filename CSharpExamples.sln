@@ -38,7 +38,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupBoxAndCheckBox", "Syst
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupBoxAndRadioButton", "System.Windows.Forms\GroupBoxAndRadioButton\GroupBoxAndRadioButton.csproj", "{386B61FC-C225-4556-B423-FFD5099F947F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldMessage", "System.Windows.Forms\HelloWorldMessage\HelloWorldMessage.csproj", "{D703929F-8C96-4B51-AF35-566A8007F28D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationChangedEvent", "System.Windows.Forms\LocationChangedEvent\LocationChangedEvent.csproj", "{D703929F-8C96-4B51-AF35-566A8007F28D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBox", "System.Windows.Forms\MessageBox\MessageBox.csproj", "{9DAFF695-90D1-40C0-B41C-CC79B87D239E}"
 EndProject

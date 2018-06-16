@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace SomeControls {
+namespace Examples {
   class MainForm : Form {
     // The main entry point for the application.
     public static void Main() {

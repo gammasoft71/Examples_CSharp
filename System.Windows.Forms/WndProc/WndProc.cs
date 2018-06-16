@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace WindowsApplication1 {
+namespace Examples {
   class Form1 : System.Windows.Forms.Form {
     // Constant value was found in the "windows.h" header file.
     private const int WM_ACTIVATEAPP = 0x001C;

@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Drawing;
 using System.Windows.Forms;
 
-namespace MouseEvent {
+namespace Examples {
   public class Form1 : Form {
     // The main entry point for the application.
     public static void Main() {
@@ -13,21 +12,17 @@ namespace MouseEvent {
     public Form1() {
       this.mainMenu.MenuItems.Add("File");
       this.mainMenu.MenuItems.Add("Edit");
-      this.mainMenu.MenuItems[0].MenuItems.Add("New");
-      this.mainMenu.MenuItems[0].MenuItems.Add("Open");
-      this.mainMenu.MenuItems[0].MenuItems.Add("Close");
-      this.mainMenu.MenuItems[0].MenuItems.Add("-");
-      this.mainMenu.MenuItems[0].MenuItems.Add("Quit");
-      this.mainMenu.MenuItems[1].MenuItems.Add("Cut");
-      this.mainMenu.MenuItems[1].MenuItems.Add("Copy");
-      this.mainMenu.MenuItems[1].MenuItems.Add("Paste");
+      this.mainMenu.MenuItems[0].MenuItems.Add(new MenuItem("New", delegate { System.Diagnostics.Debug.WriteLine("MainMenu/File/New"); }, Shortcut.CtrlN));
+      this.mainMenu.MenuItems[0].MenuItems.Add(new MenuItem("Open", delegate { System.Diagnostics.Debug.WriteLine("MainMenu/File/Open"); }, Shortcut.CtrlO));
+      this.mainMenu.MenuItems[0].MenuItems.Add(new MenuItem("Close", delegate { System.Diagnostics.Debug.WriteLine("MainMenu/File/Close"); }, Shortcut.CtrlW));
+      this.mainMenu.MenuItems[0].MenuItems.Add(new MenuItem("-"));
+      this.mainMenu.MenuItems[0].MenuItems.Add(new MenuItem("Quit", delegate { System.Diagnostics.Debug.WriteLine("MainMenu/File/Close"); }, Environment.OSVersion.Platform >= PlatformID.Unix ? Shortcut.CtrlQ : Shortcut.AltF4));
+      this.mainMenu.MenuItems[1].MenuItems.Add(new MenuItem("Cut", delegate { System.Diagnostics.Debug.WriteLine("MainMenu/Edit/Cut"); }, Shortcut.CtrlX));
+      this.mainMenu.MenuItems[1].MenuItems.Add(new MenuItem("Copy", delegate { System.Diagnostics.Debug.WriteLine("MainMenu/Edit/Copy"); }, Shortcut.CtrlC));
+      this.mainMenu.MenuItems[1].MenuItems.Add(new MenuItem("Paste", delegate { System.Diagnostics.Debug.WriteLine("MainMenu/Edit/Paste"); }, Shortcut.CtrlV));
       this.mainMenu.MenuItems[1].MenuItems.Add("-");
-      this.mainMenu.MenuItems[1].MenuItems.Add("Select all");
+      this.mainMenu.MenuItems[1].MenuItems.Add(new MenuItem("Select All", delegate { System.Diagnostics.Debug.WriteLine("MainMenu/Edit/SelectAll"); }, Shortcut.CtrlA));
       this.Menu = this.mainMenu;
-
-      this.mainMenu.MenuItems[0].MenuItems[4].Click += delegate {
-        this.Close();
-      };
     }
 
     MainMenu mainMenu = new MainMenu();

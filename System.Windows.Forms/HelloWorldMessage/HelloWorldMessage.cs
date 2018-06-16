@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace HelloWorldForm {
+namespace Examples {
   class MainClass {
     public static void Main() {
       Application.EnableVisualStyles();

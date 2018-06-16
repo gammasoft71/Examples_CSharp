@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{237F0F0B-5AD2-42CF-B0CC-55850064F3A2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SystemSoundExample</RootNamespace>
+    <RootNamespace>Examples</RootNamespace>
     <AssemblyName>SystemSound</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>

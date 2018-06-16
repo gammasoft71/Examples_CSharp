@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{5263D1B7-F9AB-4B49-8D17-BD231A5F2F9F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>PanelExample</RootNamespace>
+    <RootNamespace>Examples</RootNamespace>
     <AssemblyName>Panel</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>

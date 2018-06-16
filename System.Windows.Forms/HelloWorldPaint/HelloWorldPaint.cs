@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace HelloWorldForm {
+namespace Examples {
   class Form1 : Form {
     public static void Main() {
       Application.Run(new Form1());
