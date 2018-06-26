@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{81C35BD2-C21F-4B52-B2AF-F97F36A4AA86}</ProjectGuid>
+    <ProjectGuid>{AADC2F9B-A398-47AE-BAE6-E880447622BE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Examples</RootNamespace>
     <AssemblyName>ArgumentException</AssemblyName>

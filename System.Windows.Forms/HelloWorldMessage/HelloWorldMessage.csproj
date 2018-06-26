@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{D703929F-8C96-4B51-AF35-566A8007F28D}</ProjectGuid>
+    <ProjectGuid>{778359E0-3609-4D07-AC94-768C1C354B19}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Examples</RootNamespace>
     <AssemblyName>HelloWorldForm</AssemblyName>
