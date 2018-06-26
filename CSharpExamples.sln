@@ -112,6 +112,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayArrayOperator2", "Syst
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayConstructor", "System\ArrayConstructor\ArrayConstructor.csproj", "{E9A1AB2A-2BF1-4463-9645-60A42C053886}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBar2", "System.Windows.Forms\ProgressBar2\ProgressBar2.csproj", "{43A00855-E6DE-4811-B886-45FD18F6CA1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -322,6 +324,10 @@ Global
 		{E9A1AB2A-2BF1-4463-9645-60A42C053886}.Debug|x86.Build.0 = Debug|x86
 		{E9A1AB2A-2BF1-4463-9645-60A42C053886}.Release|x86.ActiveCfg = Release|x86
 		{E9A1AB2A-2BF1-4463-9645-60A42C053886}.Release|x86.Build.0 = Release|x86
+		{43A00855-E6DE-4811-B886-45FD18F6CA1C}.Debug|x86.ActiveCfg = Debug|x86
+		{43A00855-E6DE-4811-B886-45FD18F6CA1C}.Debug|x86.Build.0 = Debug|x86
+		{43A00855-E6DE-4811-B886-45FD18F6CA1C}.Release|x86.ActiveCfg = Release|x86
+		{43A00855-E6DE-4811-B886-45FD18F6CA1C}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -378,6 +384,7 @@ Global
 		{5D065DFF-9728-4E91-A96F-CA1CBFE7693D} = {9F6C45F5-C8D7-43E3-A321-B7A0CBC4E8D2}
 		{73C788AB-A512-4C4F-BEE2-A13CCEB6C4EF} = {9F6C45F5-C8D7-43E3-A321-B7A0CBC4E8D2}
 		{E9A1AB2A-2BF1-4463-9645-60A42C053886} = {9F6C45F5-C8D7-43E3-A321-B7A0CBC4E8D2}
+		{43A00855-E6DE-4811-B886-45FD18F6CA1C} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0222CD68-0450-4733-8A72-82553BC0473F}

@@ -14,21 +14,25 @@ namespace Examples {
 
       this.progressBar1.Parent = this;
       this.progressBar1.Location = new System.Drawing.Point(50, 50);
+      this.progressBar1.Style = ProgressBarStyle.Continuous;
       this.progressBar1.Width = 200;
 
       this.progressBar2.Parent = this;
       this.progressBar2.Location = new System.Drawing.Point(50, 80);
+      this.progressBar2.Style = ProgressBarStyle.Continuous;
       this.progressBar2.Width = 200;
       this.progressBar2.Value = 50;
 
       this.progressBar3.Parent = this;
       this.progressBar3.Location = new System.Drawing.Point(50, 110);
+      this.progressBar3.Style = ProgressBarStyle.Continuous;
       this.progressBar3.Width = 200;
       this.progressBar3.Maximum = 300;
       this.progressBar3.Value = 300;
 
       this.progressBar4.Parent = this;
       this.progressBar4.Location = new System.Drawing.Point(50, 140);
+      this.progressBar4.Style = ProgressBarStyle.Continuous;
       this.progressBar4.Width = 200;
       this.progressBar4.Maximum = 140;
 
