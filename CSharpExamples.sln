@@ -120,6 +120,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assert", "Microsoft.VisualS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClass", "Microsoft.VisualStudio.TestTools.UnitTesting\TestClass\TestClass.csproj", "{06ED1EF9-ECF2-45CD-846C-20C76623BEF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Button2", "System.Windows.Forms\Button2\Button2.csproj", "{09D00C5C-10B9-4581-8800-348BD226F5A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -456,6 +458,12 @@ Global
 		{06ED1EF9-ECF2-45CD-846C-20C76623BEF7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{06ED1EF9-ECF2-45CD-846C-20C76623BEF7}.Release|x86.ActiveCfg = Release|Any CPU
 		{06ED1EF9-ECF2-45CD-846C-20C76623BEF7}.Release|x86.Build.0 = Release|Any CPU
+		{09D00C5C-10B9-4581-8800-348BD226F5A5}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{09D00C5C-10B9-4581-8800-348BD226F5A5}.Debug|x86.ActiveCfg = Debug|x86
+		{09D00C5C-10B9-4581-8800-348BD226F5A5}.Debug|x86.Build.0 = Debug|x86
+		{09D00C5C-10B9-4581-8800-348BD226F5A5}.Release|Any CPU.ActiveCfg = Release|x86
+		{09D00C5C-10B9-4581-8800-348BD226F5A5}.Release|x86.ActiveCfg = Release|x86
+		{09D00C5C-10B9-4581-8800-348BD226F5A5}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -515,6 +523,7 @@ Global
 		{43A00855-E6DE-4811-B886-45FD18F6CA1C} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
 		{96FE3767-3AD7-4829-B208-D48B37DEBCC1} = {E585E221-57B4-4EC6-8EA9-57BF483B6E3B}
 		{06ED1EF9-ECF2-45CD-846C-20C76623BEF7} = {E585E221-57B4-4EC6-8EA9-57BF483B6E3B}
+		{09D00C5C-10B9-4581-8800-348BD226F5A5} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0222CD68-0450-4733-8A72-82553BC0473F}

@@ -26,6 +26,7 @@ namespace Examples {
       this.progressBar.Parent = this;
       this.progressBar.Location = new System.Drawing.Point(20, 100);
       this.progressBar.Maximum = 200;
+      this.progressBar.Style = ProgressBarStyle.Continuous;
       this.progressBar.Width = 200;
 
       this.label.Parent = this;
