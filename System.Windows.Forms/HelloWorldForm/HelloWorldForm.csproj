@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{D703929F-8C96-4B51-AF35-566A8007F28D}</ProjectGuid>
+    <ProjectGuid>{96F239DA-EEE6-4B8E-92A1-C859DAF1E685}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>HelloWorldForm</RootNamespace>
     <AssemblyName>HelloWorldForm</AssemblyName>
@@ -35,7 +35,9 @@
     <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HelloWorldForm.cs" />
+    <Compile Include="HelloWorldForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

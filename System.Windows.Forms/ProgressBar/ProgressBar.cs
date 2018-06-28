@@ -32,6 +32,7 @@ namespace Examples {
 
       this.progressBar4.Parent = this;
       this.progressBar4.Location = new System.Drawing.Point(50, 140);
+      this.progressBar4.Style = ProgressBarStyle.Continuous;
       this.progressBar4.Maximum = 140;
 			this.progressBar4.Style = ProgressBarStyle.Continuous;
 			this.progressBar4.Width = 200;

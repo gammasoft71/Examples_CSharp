@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{022B3644-311E-4ADF-9CAC-5ED750FF0B55}</ProjectGuid>
+    <ProjectGuid>{110C7104-C66D-461B-ADD6-C4E10A5EB844}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>FolderBrowserDialogExample</RootNamespace>
     <AssemblyName>FolderBrowserDialog</AssemblyName>
