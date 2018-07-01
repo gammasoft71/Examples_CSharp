@@ -19,6 +19,12 @@ namespace UnitTests {
       savedCurrentDirecory = Environment.CurrentDirectory;
     }
 
+    // This is the method that is called before any tests in a class test are run.
+    [TestInitialize]
+    public void TestInitialize2() {
+      savedCurrentDirecory = Environment.CurrentDirectory;
+    }
+
     // This is the method that is called after any tests in a class test are run.
     [TestCleanup]
     public void TestCleanup() {
