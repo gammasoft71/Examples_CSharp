@@ -38,7 +38,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupBoxAndCheckBox", "Syst
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupBoxAndRadioButton", "System.Windows.Forms\GroupBoxAndRadioButton\GroupBoxAndRadioButton.csproj", "{386B61FC-C225-4556-B423-FFD5099F947F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationChangedEvent", "System.Windows.Forms\LocationChangedEvent\LocationChangedEvent.csproj", "{D703929F-8C96-4B51-AF35-566A8007F28D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Line", "System.Windows.Forms\Line\Line.csproj", "{D703929F-8C96-4B51-AF35-566A8007F28D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBox", "System.Windows.Forms\MessageBox\MessageBox.csproj", "{9DAFF695-90D1-40C0-B41C-CC79B87D239E}"
 EndProject
@@ -76,7 +76,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColoredForms", "System.Wind
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColoredTabPages", "System.Windows.Forms\ColoredTabPages\ColoredTabPages.csproj", "{4B3E9829-7E30-4912-8835-567B4556F1E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Form", "System.Windows.Forms\Form\Form.csproj", "{022B3644-311E-4ADF-9CAC-5ED750FF0B55}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FontDialog", "System.Windows.Forms\FontDialog\FontDialog.csproj", "{022B3644-311E-4ADF-9CAC-5ED750FF0B55}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaintEvent", "System.Windows.Forms\PaintEvent\PaintEvent.csproj", "{73508125-A5FF-4158-8583-450FAE052684}"
 EndProject
