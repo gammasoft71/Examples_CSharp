@@ -4,12 +4,12 @@ using System.Runtime.CompilerServices;
 // Information about this assembly is defined by the following attributes. 
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle("Application")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Application example")]
+[assembly: AssemblyDescription("This example shows how to use .Net Framework Application class")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("")]
-[assembly: AssemblyCopyright("${AuthorCopyright}")]
+[assembly: AssemblyCompany("Gammasoft")]
+[assembly: AssemblyProduct("Application")]
+[assembly: AssemblyCopyright("© 2018 by Gammasoft.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
