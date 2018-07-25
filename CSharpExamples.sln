@@ -128,11 +128,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBox", "System.Windows.F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorDialog", "System.Windows.Forms\ColorDialog\ColorDialog.csproj", "{88B72345-5421-4980-9EDB-A820CB738000}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demos", "Demos", "{318E4BEE-B124-4DB4-9351-4F15FB848CD5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WinformsDemos", "WinformsDemos", "{318E4BEE-B124-4DB4-9351-4F15FB848CD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Button", "Demos\Button\Button.csproj", "{FE3525F1-0873-4B5F-BC3B-1B53FF6E2677}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonAppearance", "WinformsDemos\ButtonAppearance\ButtonAppearance.csproj", "{FE3525F1-0873-4B5F-BC3B-1B53FF6E2677}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckBox", "Demos\CheckBox\CheckBox.csproj", "{68475721-B892-4353-BDFD-9A0813FA3BD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckBoxAppearance", "WinformsDemos\CheckBoxAppearance\CheckBoxAppearance.csproj", "{68475721-B892-4353-BDFD-9A0813FA3BD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabelAppearance", "WinformsDemos\LabelAppearance\LabelAppearance.csproj", "{255E3243-295C-403D-9ABC-42EBBFC281B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -506,6 +508,12 @@ Global
 		{68475721-B892-4353-BDFD-9A0813FA3BD7}.Release|Any CPU.ActiveCfg = Release|x86
 		{68475721-B892-4353-BDFD-9A0813FA3BD7}.Release|x86.ActiveCfg = Release|x86
 		{68475721-B892-4353-BDFD-9A0813FA3BD7}.Release|x86.Build.0 = Release|x86
+		{255E3243-295C-403D-9ABC-42EBBFC281B0}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{255E3243-295C-403D-9ABC-42EBBFC281B0}.Debug|x86.ActiveCfg = Debug|x86
+		{255E3243-295C-403D-9ABC-42EBBFC281B0}.Debug|x86.Build.0 = Debug|x86
+		{255E3243-295C-403D-9ABC-42EBBFC281B0}.Release|Any CPU.ActiveCfg = Release|x86
+		{255E3243-295C-403D-9ABC-42EBBFC281B0}.Release|x86.ActiveCfg = Release|x86
+		{255E3243-295C-403D-9ABC-42EBBFC281B0}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -571,6 +579,7 @@ Global
 		{88B72345-5421-4980-9EDB-A820CB738000} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
 		{FE3525F1-0873-4B5F-BC3B-1B53FF6E2677} = {318E4BEE-B124-4DB4-9351-4F15FB848CD5}
 		{68475721-B892-4353-BDFD-9A0813FA3BD7} = {318E4BEE-B124-4DB4-9351-4F15FB848CD5}
+		{255E3243-295C-403D-9ABC-42EBBFC281B0} = {318E4BEE-B124-4DB4-9351-4F15FB848CD5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0222CD68-0450-4733-8A72-82553BC0473F}
