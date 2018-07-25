@@ -13,6 +13,7 @@ namespace Examples {
       this.button1.Parent = this;
       this.button1.Text = "button1";
       this.button1.Location = new System.Drawing.Point(50, 50);
+      this.button1.FlatStyle = FlatStyle.System;
       this.button1.Click += delegate (object dender, EventArgs e) {
         this.label1.Text = string.Format("button1 clicked {0} times", ++this.button1Clicked);
       };
@@ -21,6 +22,7 @@ namespace Examples {
       this.button2.Text = "button2";
       this.button2.Location = new System.Drawing.Point(50, 100);
       this.button2.Size = new System.Drawing.Size(200, 75);
+      this.button2.FlatStyle = FlatStyle.System;
       this.button2.Click += delegate (object sender, EventArgs e) {
         this.label2.Text = string.Format("button2 clicked {0} times", ++this.button2Clicked);
       };
