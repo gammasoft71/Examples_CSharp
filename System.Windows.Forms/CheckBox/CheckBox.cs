@@ -1,10 +1,7 @@
-﻿using System;
-using System.Drawing;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace Examples {
   class Form1 : Form {
-    // The main entry point for the application.
     public static void Main() {
       Application.EnableVisualStyles();
       Application.Run(new Form1());

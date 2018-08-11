@@ -36,9 +36,9 @@ namespace Examples {
       this.labelBackColor.Location = new System.Drawing.Point(10, 105);
 
       this.panelBackColor.Location = new System.Drawing.Point(10, 130);
-      this.panelBackColor.Size = new System.Drawing.Size(100, 23);
+      this.panelBackColor.Size = new System.Drawing.Size(100, 50);
       this.panelBackColor.BorderStyle = BorderStyle.FixedSingle;
-      this.panelForeColor.BackColor = this.button1.BackColor;
+      this.panelBackColor.BackColor = this.button1.BackColor;
       this.panelBackColor.Click += delegate {
         ColorDialog colorDialog = new ColorDialog();
         colorDialog.Color = this.panelBackColor.BackColor;
@@ -51,7 +51,7 @@ namespace Examples {
       this.labelForeColor.Location = new System.Drawing.Point(160, 105);
 
       this.panelForeColor.Location = new System.Drawing.Point(160, 130);
-      this.panelForeColor.Size = new System.Drawing.Size(100, 23);
+      this.panelForeColor.Size = new System.Drawing.Size(100, 50);
       this.panelForeColor.BorderStyle = BorderStyle.FixedSingle;
       this.panelForeColor.BackColor = this.button1.ForeColor;
       this.panelForeColor.Click += delegate {
@@ -64,7 +64,7 @@ namespace Examples {
 
       this.Text = "Button appearance";
       this.Controls.AddRange(new Control[] { this.button1, this.button2, this.label1, this.comboBoxFlatStyle, this.labelBackColor, this.panelBackColor, this.labelForeColor, this.panelForeColor });
-      this.ClientSize = new Size(300, 170);
+      this.ClientSize = new Size(300, 190);
     }
 
     private Button button1 = new Button();

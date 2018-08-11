@@ -66,7 +66,7 @@ namespace Examples {
       this.labelBackColor.Location = new System.Drawing.Point(10, 165);
 
       this.panelBackColor.Location = new System.Drawing.Point(10, 190);
-      this.panelBackColor.Size = new System.Drawing.Size(100, 23);
+      this.panelBackColor.Size = new System.Drawing.Size(100, 50);
       this.panelBackColor.BorderStyle = BorderStyle.FixedSingle;
       this.panelBackColor.BackColor = this.checkBox1.BackColor;
       this.panelBackColor.Click += delegate {
@@ -81,7 +81,7 @@ namespace Examples {
       this.labelForeColor.Location = new System.Drawing.Point(160, 165);
 
       this.panelForeColor.Location = new System.Drawing.Point(160, 190);
-      this.panelForeColor.Size = new System.Drawing.Size(100, 23);
+      this.panelForeColor.Size = new System.Drawing.Size(100, 50);
       this.panelForeColor.BorderStyle = BorderStyle.FixedSingle;
       this.panelForeColor.BackColor = this.checkBox1.ForeColor;
       this.panelForeColor.Click += delegate {
@@ -94,7 +94,7 @@ namespace Examples {
 
       this.Text = "CheckBox appearance";
       this.Controls.AddRange(new Control[] { this.checkBox1, this.checkBox2, this.checkBox3, this.checkBox4, this.checkBox5, this.checkBox6, this.labelFlatStyle, this.comboBoxFlatStyle, this.labelAppearance, this.comboBoxAppearance, this.labelBackColor, this.panelBackColor, this.labelForeColor, this.panelForeColor });
-      this.ClientSize = new Size(300, 230);
+      this.ClientSize = new Size(300, 250);
     }
 
     private CheckBox checkBox1 = new CheckBox();
