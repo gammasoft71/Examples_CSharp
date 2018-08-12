@@ -148,6 +148,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld2", "mscorelib\He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictureBox", "System.Windows.Forms\PictureBox\PictureBox.csproj", "{14E41F3D-F049-4F3E-B816-A4C107A9B027}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "mscorelib\Console\Console.csproj", "{75FD51BE-377B-4731-9D95-BECB5397F49E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -556,6 +558,12 @@ Global
 		{14E41F3D-F049-4F3E-B816-A4C107A9B027}.Release|Any CPU.ActiveCfg = Release|x86
 		{14E41F3D-F049-4F3E-B816-A4C107A9B027}.Release|x86.ActiveCfg = Release|x86
 		{14E41F3D-F049-4F3E-B816-A4C107A9B027}.Release|x86.Build.0 = Release|x86
+		{75FD51BE-377B-4731-9D95-BECB5397F49E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{75FD51BE-377B-4731-9D95-BECB5397F49E}.Debug|x86.ActiveCfg = Debug|x86
+		{75FD51BE-377B-4731-9D95-BECB5397F49E}.Debug|x86.Build.0 = Debug|x86
+		{75FD51BE-377B-4731-9D95-BECB5397F49E}.Release|Any CPU.ActiveCfg = Release|x86
+		{75FD51BE-377B-4731-9D95-BECB5397F49E}.Release|x86.ActiveCfg = Release|x86
+		{75FD51BE-377B-4731-9D95-BECB5397F49E}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -627,6 +635,7 @@ Global
 		{3AD99DCF-8EB6-4083-B0D3-AC440106885F} = {9F6C45F5-C8D7-43E3-A321-B7A0CBC4E8D2}
 		{9609AFFC-EEB0-435D-8821-4EAE7C5C9BA8} = {9F6C45F5-C8D7-43E3-A321-B7A0CBC4E8D2}
 		{14E41F3D-F049-4F3E-B816-A4C107A9B027} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
+		{75FD51BE-377B-4731-9D95-BECB5397F49E} = {9F6C45F5-C8D7-43E3-A321-B7A0CBC4E8D2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0222CD68-0450-4733-8A72-82553BC0473F}
