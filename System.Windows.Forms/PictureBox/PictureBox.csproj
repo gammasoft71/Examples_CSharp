@@ -43,6 +43,6 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>mkdir $(ProjectDir)$(OutDir)Resources
-copy $(ProjectDir)Resources/Logo.png $(ProjectDir)$(OutDir)Resources/Logo.png</PreBuildEvent>
+cp $(ProjectDir)Resources/Logo.png $(ProjectDir)$(OutDir)Resources/Logo.png</PreBuildEvent>
   </PropertyGroup>
 </Project>
