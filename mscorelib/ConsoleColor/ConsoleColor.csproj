@@ -6,7 +6,7 @@
     <ProjectGuid>{528D9E7D-1ED7-4B32-B384-8995E48AA2A0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>Action</AssemblyName>
+    <AssemblyName>ConsoleColor</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
