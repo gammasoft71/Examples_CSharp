@@ -6,7 +6,7 @@
     <ProjectGuid>{14E41F3D-F049-4F3E-B816-A4C107A9B027}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>HelloWorldForm</AssemblyName>
+    <AssemblyName>PictureBox</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -43,6 +43,6 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>mkdir $(ProjectDir)$(OutDir)Resources
-cp $(ProjectDir)Resources/Logo.png $(ProjectDir)$(OutDir)Resources/Logo.png</PreBuildEvent>
+copy $(ProjectDir)Resources/Logo.png $(ProjectDir)$(OutDir)Resources/Logo.png</PreBuildEvent>
   </PropertyGroup>
 </Project>
