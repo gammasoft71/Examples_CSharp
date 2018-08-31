@@ -20,8 +20,7 @@ namespace Examples {
       this.label1.Text = this.domainUpDown1.Text;
       this.label1.Location = new System.Drawing.Point(10, 40);
 
-
-      this.domainUpDown1.TextChanged += delegate {
+      this.domainUpDown1.TextChanged += delegate (object sender, EventArgs e) {
         this.label1.Text = this.domainUpDown1.Text;
       };
     }
