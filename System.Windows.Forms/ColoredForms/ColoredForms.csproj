@@ -6,7 +6,7 @@
     <ProjectGuid>{01C3A4C7-E247-47C8-87D5-AA80495AEFB4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>Form</AssemblyName>
+    <AssemblyName>ColoredForm</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">

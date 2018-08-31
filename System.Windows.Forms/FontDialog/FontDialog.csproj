@@ -6,7 +6,7 @@
     <ProjectGuid>{D518CCE0-F7A0-47BE-807D-DAA4B490EC7E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>FontDialogExample</RootNamespace>
-    <AssemblyName>FolderBrowserDialog</AssemblyName>
+    <AssemblyName>FontDialog</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">

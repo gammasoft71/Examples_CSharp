@@ -6,7 +6,7 @@
     <ProjectGuid>{34AA92AB-CF6F-4141-B447-EBEFBCD8BF3E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>Action</AssemblyName>
+    <AssemblyName>ConsoleBeep2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">

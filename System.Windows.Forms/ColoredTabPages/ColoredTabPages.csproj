@@ -6,7 +6,7 @@
     <ProjectGuid>{4B3E9829-7E30-4912-8835-567B4556F1E6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>Form</AssemblyName>
+    <AssemblyName>ColoredTabPages</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">

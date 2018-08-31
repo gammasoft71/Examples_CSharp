@@ -6,7 +6,7 @@
     <ProjectGuid>{698893B1-BE61-45BD-BB4C-6193722B4592}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>Form</AssemblyName>
+    <AssemblyName>TabControl</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">

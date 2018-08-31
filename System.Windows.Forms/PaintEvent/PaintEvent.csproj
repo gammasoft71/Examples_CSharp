@@ -6,7 +6,7 @@
     <ProjectGuid>{73508125-A5FF-4158-8583-450FAE052684}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>Application</AssemblyName>
+    <AssemblyName>PaintEvent</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">

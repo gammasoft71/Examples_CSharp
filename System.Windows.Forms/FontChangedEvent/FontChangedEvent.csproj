@@ -6,7 +6,7 @@
     <ProjectGuid>{FAAF20EA-E302-44C2-AE77-13D062BB60EB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>FontChangedEventExample</RootNamespace>
-    <AssemblyName>FolderBrowserDialog</AssemblyName>
+    <AssemblyName>FontChangedEvent</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">

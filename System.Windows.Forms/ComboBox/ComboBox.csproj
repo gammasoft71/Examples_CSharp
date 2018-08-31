@@ -6,7 +6,7 @@
     <ProjectGuid>{2EBEB65C-0833-4E4E-A411-717FF7E0F43B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>CheckBox</AssemblyName>
+    <AssemblyName>ComboBox</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">

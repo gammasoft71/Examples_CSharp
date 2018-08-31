@@ -6,7 +6,7 @@
     <ProjectGuid>{778359E0-3609-4D07-AC94-768C1C354B19}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>HelloWorldForm</AssemblyName>
+    <AssemblyName>HelloWorldMessage</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">

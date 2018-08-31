@@ -6,7 +6,7 @@
     <ProjectGuid>{43A00855-E6DE-4811-B886-45FD18F6CA1C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>ProgressBar</AssemblyName>
+    <AssemblyName>ProgressBar2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">

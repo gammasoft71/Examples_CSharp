@@ -6,7 +6,7 @@
     <ProjectGuid>{09D00C5C-10B9-4581-8800-348BD226F5A5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>Button</AssemblyName>
+    <AssemblyName>Button2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
