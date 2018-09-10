@@ -2,21 +2,9 @@
 
 namespace HelloWorld {
   class MainClass {
-    class Foo {
-      public void Print(string s) {
-        Console.WriteLine(s);
-      }
-    };
-    delegate void Print(string s);
     public static void Main(string[] args) {
       //Console.WriteLine("Hello World!");
-      Foo foo = new Foo();
-      Print print = foo.Print;
-
-      print += foo.Print;
-      print += foo.Print;
-
-      print("Hello, World!");
+      Console.WriteLine($"time : {DateTime.Now:HH:mm:ss}");
     }
   }
 }

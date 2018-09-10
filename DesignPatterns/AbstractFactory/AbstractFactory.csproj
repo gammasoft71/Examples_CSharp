@@ -5,8 +5,8 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{9A636AA5-5B63-4B02-AE44-25CEC42F7494}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>Action</AssemblyName>
+    <RootNamespace>DesignPatterns</RootNamespace>
+    <AssemblyName>AbstractFactory</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
