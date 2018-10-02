@@ -9,7 +9,7 @@ namespace HelloWorldForm {
 
     public MainForm() {
       this.label.Text = "Hello, World!";
-      this.label.Font = new System.Drawing.Font("Arial", 34, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic);
+      this.label.Font = new System.Drawing.Font("Arial", 32, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic);
       this.label.ForeColor = System.Drawing.Color.Green;
       this.label.Location = new System.Drawing.Point(5, 100);
       this.label.Size = new System.Drawing.Size(290, 100);

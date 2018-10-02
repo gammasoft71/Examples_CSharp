@@ -4,12 +4,12 @@ using System.Runtime.CompilerServices;
 // Information about this assembly is defined by the following attributes. 
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle("Hello, World!")]
-[assembly: AssemblyDescription("The clissci first \"Hello World\" application.")]
+[assembly: AssemblyTitle("Settings example")]
+[assembly: AssemblyDescription("This example shows how to use Prperties.Settings class")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Gammasoft")]
-[assembly: AssemblyProduct("HelloWorldForm")]
-[assembly: AssemblyCopyright("${AuthorCopyright}")]
+[assembly: AssemblyProduct("Settings")]
+[assembly: AssemblyCopyright("© 2018 by Gammasoft.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -5,7 +5,6 @@ namespace Examples {
   class FormClick {
     public static void Main() {
       Application.EnableVisualStyles();
-
       Form form = new Form();
       form.Text = "Click anywhere on the form";
       form.MouseClick += delegate(object sender, MouseEventArgs e) {
