@@ -23,6 +23,42 @@ namespace Examples.Properties {
             }
         }
         
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("DimGray")]
+        public global::System.Drawing.Color BackColor {
+            get {
+                return ((global::System.Drawing.Color)(this["BackColor"]));
+            }
+            set {
+                this["BackColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("80")]
+        public int Height {
+            get {
+                return ((int)(this["Height"]));
+            }
+            set {
+                this["Height"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public int Left {
+            get {
+                return ((int)(this["Left"]));
+            }
+            set {
+                this["Left"] = value;
+            }
+        }
+        
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Settings example")]
@@ -32,33 +68,27 @@ namespace Examples.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("640")]
-        public int Width {
+        [global::System.Configuration.DefaultSettingValueAttribute("50")]
+        public int Top {
             get {
-                return ((int)(this["Width"]));
+                return ((int)(this["Top"]));
             }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("480")]
-        public int Height {
-            get {
-                return ((int)(this["Height"]));
+            set {
+                this["Top"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("SpringGreen")]
-        public global::System.Drawing.Color BackColor {
+        [global::System.Configuration.DefaultSettingValueAttribute("360")]
+        public int Width {
             get {
-                return ((global::System.Drawing.Color)(this["BackColor"]));
+                return ((int)(this["Width"]));
             }
             set {
-                this["BackColor"] = value;
+                this["Width"] = value;
             }
         }
     }
