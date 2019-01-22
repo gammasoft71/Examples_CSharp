@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{32B7C5E7-E485-4655-82F5-0DEED09AA3A2}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <ProjectGuid>{3FC60FB5-C727-4835-9248-0906CCA3FE09}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>Resources</AssemblyName>
+    <AssemblyName>Process</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -14,7 +14,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG</DefineConstants>
+    <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ExternalConsole>true</ExternalConsole>
@@ -31,46 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Resources.cs" />
+    <Compile Include="Process.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="Resources\Gammasoft.png" />
-    <None Include="Resources\ReadMe.md" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Information.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Sound.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Switch.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Winforms.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Winforms.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Owner.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

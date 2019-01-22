@@ -61,6 +61,15 @@ namespace Examples.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Resources example.
+        /// </summary>
+        internal static string Caption {
+            get {
+                return ResourceManager.GetString("Caption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Gammasoft {
@@ -80,6 +89,16 @@ namespace Examples.Properties {
         internal static string Information {
             get {
                 return ResourceManager.GetString("Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Owner {
+            get {
+                object obj = ResourceManager.GetObject("Owner", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

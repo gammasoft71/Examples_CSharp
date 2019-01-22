@@ -14,7 +14,11 @@ namespace Examples {
       form.Width = Examples.Properties.Settings.Default.Width;
 
       Button buttonColor = new Button();
+#if TEST2
+      buttonColor.Text = "Test...";
+#else
       buttonColor.Text = "Color...";
+#endif
       buttonColor.Location = new System.Drawing.Point(10, 10);
       buttonColor.Parent = form;
       buttonColor.Click += delegate (object sender, EventArgs e) {
