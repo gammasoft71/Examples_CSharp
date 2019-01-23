@@ -25,13 +25,13 @@ namespace Examples {
 
       this.ClientSize = new Size(330, 130);
       this.Controls.AddRange(new Control[] {this.panel, this.textBox});
-      //this.FormBorderStyle = FormBorderStyle.FixedSingle;
-      //this.MaximizeBox = false;
+      this.FormBorderStyle = FormBorderStyle.FixedSingle;
+      this.MaximizeBox = false;
       this.Text = "Wiggly";
     }
 
     protected void OnPanelPaint(object sender, PaintEventArgs e) {
-      Point pos = new Point((e.ClipRectangle.Size.Width - (int)e.Graphics.MeasureString(this.textBox.Text, this.panel.Font).Width) / 2, (e.ClipRectangle.Size.Height - (int)e.Graphics.MeasureString(this.textBox.Text, this.panel.Font).Height) / 2);
+      Point pos = new Point((e.ClipRectangle.Size.Width - (int)e.Graphics.MeasureString(this.textBox.Text, this.panel.Font).Width) / 2 - 40, (e.ClipRectangle.Size.Height - (int)e.Graphics.MeasureString(this.textBox.Text, this.panel.Font).Height) / 2);
       for (int i = 0; i < this.textBox.Text.Length; i++) {
         int index = (this.step + i) % sin.Length;
         e.Graphics.DrawString(this.textBox.Text[i].ToString(), this.panel.Font, new SolidBrush(HsbToRgb((float)(15 - index) * 16 / 255 * 360, 1.0f, 0.75f)), new Point(pos.X, pos.Y + sin[index] * (e.ClipRectangle.Height - this.panel.Font.Height) / 400));
