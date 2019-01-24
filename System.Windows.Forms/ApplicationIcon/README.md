@@ -14,5 +14,5 @@ Open [ApplicationIcon.csproj](ApplicationIcon.csproj)
 
 # Output
 
-![GitHub Logo](../../docs/Pictures/Forms/ApplicationIcon.png)
+![Screenshot](../../docs/Pictures/Forms/ApplicationIcon.png)
 

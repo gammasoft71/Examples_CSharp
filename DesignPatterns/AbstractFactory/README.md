@@ -8,7 +8,7 @@ Usage     ![Usage](../../docs/Pictures/DesignPatterns/Usage5.png)     
 
 ## UML class diagram
 
-![GitHub Logo](../../docs/Pictures/DesignPatterns/abstract.gif)
+![Screenshot](../../docs/Pictures/DesignPatterns/abstract.gif)
 
 ## Structural code
 
