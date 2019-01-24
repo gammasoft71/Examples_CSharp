@@ -5,7 +5,7 @@
 ## Hello World
 
 * ["Hello World"](./HelloWorldForm/README.md) The classic first application HelloWorld with Label control.
-* ["Hello World (MessageBox)"](./HelloWorldMessage/README.md) The classic first application HelloWorld with MessageBox control.
+* ["Hello World (MessageBox)"](./HelloWorldMessageBox/README.md) The classic first application HelloWorld with MessageBox control.
 * ["Hello World (Paint)"](./HelloWorldPaint/README.md) The classic first application HelloWorld with GDI+ drawing objects.
 
 ## Application
