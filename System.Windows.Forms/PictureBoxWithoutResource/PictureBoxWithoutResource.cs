@@ -13,7 +13,7 @@ namespace Examples {
       this.pictureBox1.Size = new System.Drawing.Size(280, 280);
       this.pictureBox1.Location = new System.Drawing.Point(10, 10);
       this.pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-      this.pictureBox1.Image = Examples.Properties.Resources.Logo;
+      this.pictureBox1.Load(Path.Combine("Resources", "Logo.png"));
       this.pictureBox1.BorderStyle = BorderStyle.FixedSingle;
 
       this.Text = "PictureBox example";

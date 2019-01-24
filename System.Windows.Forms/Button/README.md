@@ -1,17 +1,15 @@
-# Application
+# Button
 
-[This example](.) demonstrates the use of System.Windows.Forms.Application class.
+[This example](.) demonstrates the use of System.Windows.Forms.Button control.
 
 # Sources
 
-[Application.cs](Application.cs)
+[Btton.cs](Button.cs)
 
 # Build and run
 
-Open [Application.csproj](Application.csproj)
+Open [Button.csproj](Button.csproj)
 
 # Output
 
-Windows :
-
-![GitHub Logo](../../docs/Pictures/Forms/Application.png)
+![Screenshot](../../docs/Pictures/Forms/Button.png)

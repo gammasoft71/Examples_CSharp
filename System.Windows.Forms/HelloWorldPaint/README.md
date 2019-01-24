@@ -4,7 +4,7 @@
 
 # Sources
 
-[HelloWorldMessageBox.cs](HelloWorldPaint.cs)
+[HelloWorldPaint.cs](HelloWorldPaint.cs)
 
 # Build and run
 
@@ -12,6 +12,5 @@ Open [HelloWorldPaint.csproj](HelloWorldPaint.csproj)
 
 # Output
 
-Windows :
+![Screenshot](../../docs/Pictures/Forms/HelloWorldPaint.png)
 
-![GitHub Logo](../../docs/Pictures/Forms/HelloWorldPaint.png)

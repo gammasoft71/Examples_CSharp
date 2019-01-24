@@ -12,6 +12,5 @@ Open [HelloWorldMessageBox.csproj](HelloWorldMessageBox.csproj)
 
 # Output
 
-Windows :
+![Screenshot](../../docs/Pictures/Forms/HelloWorldMessageBox.png)
 
-![GitHub Logo](../../docs/Pictures/Forms/HelloWorldMessageBox.png)

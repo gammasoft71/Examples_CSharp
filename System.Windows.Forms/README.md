@@ -11,17 +11,15 @@
 ## Application
 
 * [Application](./Application/README.md) shows how to create an Application with Application class.
-* [ApplicationAndMain](./ApplicationAndMain/README.md) shows how to create an Application with Application class.
-* [ApplicationEnableVisualStyle](./ApplicationEnableVisualStyle/README.md) demonstrates the use of System::Windows::Forms::Application::EnableVisualStyle method.
-* [ApplicationIcon](./ApplicationAndMain/README.md) shows how to set application icon with CMake extension.
-* [ApplicationWithoutCMakeExtension](./ApplicationWithoutCMakeExtension/README.md) demonstrates the use of CMake without Switch exetension.
+* [ApplicationEnableVisualStyle](ApplicationEnableVisualStyle/README.md) demonstrates the use of System.Windows.Forms.Application.EnableVisualStyle method.
+* [ApplicationIcon](ApplicationIcon/README.md) shows how to set application icon in project properties.
 
 ## Common Controls
 
 * [Button](./Button/README.md) represents a Windows button control.
 * [CheckBox](./CheckBox/README.md) represents a Windows CheckBox control.
-* **CheckedListBox** represents a Windows control to display a list of items.
-* **ComboBox** represents a Windows combo box control.
+* [CheckedListBox](CheckedListBox/README.md) represents a Windows control to display a list of items.
+* [ComboBox](ComboBox/README.md) represents a Windows combo box control.
 * [Control](./Control/README.md) refines the base class for controls, which are components with visual representation.
 * **DateTimePicker** represents a Windows control that allows the user to select a date and a time and to display the date and time with a specified format.
 * **DomainUpDown** represents a Windows spin box (also known as an up-down control) that displays string values.
@@ -110,22 +108,22 @@
 
 * [ApplicationIdle](./ApplicationIdle/README.md) shows how to create an Application with Application class and Idle event.
 * [MouseEvent](./MouseEvent/README.md) demonstrates the use of some mouse events.
-* [EnableChangedEvent](./EnableChangedEvent/README.md) demonstrates the use of System::Windows::Forms::Control::EnableChaned event.
-* [FontChangedEvent](./FontChangedEvent/README.md) demonstrates the use of System::Windows::Forms::Control::FontChaned event.
-* [FormClick](./FormClick/README.md) demonstrates the use of System::Windows::Forms::Form control and Click event.
-* [WndProc](./WndProc/README.md) demonstrates the use of System::Windows::Forms::Control::WndProc method.
+* [EnableChangedEvent](./EnableChangedEvent/README.md) demonstrates the use of System.Windows.Forms.Control.EnableChaned event.
+* [FontChangedEvent](./FontChangedEvent/README.md) demonstrates the use of System.Windows.Forms.Control.FontChaned event.
+* [FormClick](./FormClick/README.md) demonstrates the use of System.Windows.Forms.Form control and Click event.
+* [WndProc](./WndProc/README.md) demonstrates the use of System.Windows.Forms.Control.WndProc method.
 
 ## Other
 
-* [Button2](./Button2/README.md) demonstrates the use of System::Windows::Forms::Button control.
-* [ColoredForms](./ColoredForms/README.md) demonstrates the use of System::Windows::Forms::Form control and System::Drawing::Color class.
-* [ColoredTabPages](./ColoredTabPages/README.md) demonstrates the use of System::Windows::Forms::TabControl and colored System::Windows::Forms::TabPage controls.
-* [DataFormatsGetFormat](./DataFormatsGetFormat/README.md) demonstrates the use of System::Windows::Forms::DataFormats::GetFormat method.
-* [GroupBoxAndCheckBox](./GroupBoxAndCheckBox/README.md) demonstrates the use of System::Windows::Forms::GroupBox and System::Windows::Forms::CheckBox controls.
-* [GroupBoxAndRadioButton](./GroupBoxAndRadioButton/README.md) demonstrates the use of System::Windows::Forms::GroupBox and System::Windows::Forms::RadioButton controls.
-* [LabelsAndUnicodeText](./LabelsAndUnicodeText/README.md) demonstrates the use of System::Windows::Forms::Label control and Unicode text.
-* [Lines](./Lines/README.md) demonstrates the use of System::Windows::Forms::Label control to draw simple lines.
+* [Button2](./Button2/README.md) demonstrates the use of System.Windows.Forms.Button control.
+* [ColoredForms](./ColoredForms/README.md) demonstrates the use of System.Windows.Forms.Form control and System.Drawing.Color class.
+* [ColoredTabPages](./ColoredTabPages/README.md) demonstrates the use of System.Windows.Forms.TabControl and colored System.Windows.Forms.TabPage controls.
+* [DataFormatsGetFormat](./DataFormatsGetFormat/README.md) demonstrates the use of System.Windows.Forms.DataFormats.GetFormat method.
+* [GroupBoxAndCheckBox](./GroupBoxAndCheckBox/README.md) demonstrates the use of System.Windows.Forms.GroupBox and System.Windows.Forms.CheckBox controls.
+* [GroupBoxAndRadioButton](./GroupBoxAndRadioButton/README.md) demonstrates the use of System.Windows.Forms.GroupBox and System.Windows.Forms.RadioButton controls.
+* [LabelsAndUnicodeText](./LabelsAndUnicodeText/README.md) demonstrates the use of System.Windows.Forms.Label control and Unicode text.
+* [Lines](./Lines/README.md) demonstrates the use of System.Windows.Forms.Label control to draw simple lines.
 * [SomeControls](./SomeControls/README.md) demonstrates the use of some controls.
 * [StopwatchForm](./StopwatchForm/README.md) demonstrates the use of Stopwatch class, Label and Button controls.
-* [SystemSound](./SystemSound/README.md) demonstrates the use of System::Media::SystemSound component.
+* [SystemSound](./SystemSound/README.md) demonstrates the use of System.Media.SystemSound component.
 * [All](.) You can see all examples here. 

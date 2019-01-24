@@ -12,6 +12,5 @@ Open [HelloWorldForm.csproj](HelloWorldForm.csproj)
 
 # Output
 
-Windows :
+![Screenshot](../../docs/Pictures/Forms/HelloWorldForm.png)
 
-![GitHub Logo](../../docs/Pictures/Forms/HelloWorldForm.png)
