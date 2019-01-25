@@ -23,7 +23,7 @@
 * [Control](./Control/README.md) refines the base class for controls, which are components with visual representation.
 * [DateTimePicker](DateTimePicker/README.md) represents a Windows control that allows the user to select a date and a time and to display the date and time with a specified format.
 * [DomainUpDown](DomainUpDown/README.md) represents a Windows spin box (also known as an up-down control) that displays string values.
-* [HScroolBar](HScroolBar) represents a standard Windows horizontal scroll bar.
+* [HScrollBar](HScrollBar/README.md) represents a standard Windows horizontal scroll bar.
 * [Label](./Label/README.md) represents a standard Windows label.
 * [LinkLabel](LinkLabel/README.md) represents a Windows label control that can display hyperlinks.
 * [ListBox](ListBox/README.md) represents a Windows control to display a list of items.
