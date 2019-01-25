@@ -24,10 +24,10 @@
 * [DateTimePicker](DateTimePicker/README.md) represents a Windows control that allows the user to select a date and a time and to display the date and time with a specified format.
 * [DomainUpDown](DomainUpDown/README.md) represents a Windows spin box (also known as an up-down control) that displays string values.
 * [HScrollBar](HScrollBar/README.md) represents a standard Windows horizontal scroll bar.
-* [Label](./Label/README.md) represents a standard Windows label.
+* [Label](Label/README.md) represents a standard Windows label.
 * [LinkLabel](LinkLabel/README.md) represents a Windows label control that can display hyperlinks.
 * [ListBox](ListBox/README.md) represents a Windows control to display a list of items.
-* **ListView** represents a Windows list view control, which displays a collection of items that can be displayed using one of four different views.
+* [ListView](ListView/README.md) represents a Windows list view control, which displays a collection of items that can be displayed using one of four different views.
 * **MaskedTextBox** uses a mask to distinguish between proper and improper user input.
 * **MonthCalendar** specifies values for navigating among accessible objects.
 * **NotifyIcon** specifies a component that creates an icon in the notification area. This class cannot be inherited.
