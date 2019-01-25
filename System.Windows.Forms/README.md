@@ -41,7 +41,7 @@
 * **ToolTip** Represents a small rectangular pop-up window that displays a brief description of a control's purpose when the user rests the pointer on the control.
 * [TrackBar](./TrackBar/README.md) represents a standard Windows track bar.
 * **TreeView** displays a hierarchical collection of labeled items, each represented by a TreeNode.
-* **VScroolBar** represents a standard Windows vertical scroll bar.
+* [VScrollBar](VScrollBar/README.md) represents a standard Windows vertical scroll bar.
 * **WebBrowser** enables the user to navigate Web pages inside your form.
 
 ## Containers

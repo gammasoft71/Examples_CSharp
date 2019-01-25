@@ -13,18 +13,15 @@ namespace Examples {
 
       this.numericUpDown1.Parent = this;
       this.numericUpDown1.DecimalPlaces = 0;
-      this.numericUpDown1.Location = new System.Drawing.Point(50, 50);
-      this.numericUpDown1.Maximum = 100;
-      this.numericUpDown1.Minimum = 0;
+      this.numericUpDown1.Location = new System.Drawing.Point(80, 50);
       this.numericUpDown1.Value = 50;
 
       this.numericUpDown2.Parent = this;
-      this.numericUpDown2.DecimalPlaces = 1;
-      this.numericUpDown2.Increment = 0.1M;
-      this.numericUpDown2.Location = new System.Drawing.Point(50, 100);
-      this.numericUpDown2.Maximum = 10.0M;
-      this.numericUpDown2.Minimum = 0;
-      this.numericUpDown2.Value = 5.0M;
+      this.numericUpDown2.DecimalPlaces = 2;
+      this.numericUpDown2.Increment = 0.01M;
+      this.numericUpDown2.Location = new System.Drawing.Point(80, 100);
+      this.numericUpDown2.Maximum = 11.0M;
+      this.numericUpDown2.Minimum = 10.0M;
     }
 
     private NumericUpDown numericUpDown1 = new NumericUpDown();
