@@ -6,6 +6,8 @@
 
 [PictureBox.cs](PictureBox.cs)
 
+[Resources/Logo.png](Resources/Logo.png)
+
 # Build and run
 
 Open [PictureBox.csproj](PictureBox.csproj)
