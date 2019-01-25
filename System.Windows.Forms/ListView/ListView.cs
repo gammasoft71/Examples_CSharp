@@ -31,8 +31,8 @@ namespace Examples {
       this.listView1.Columns.Add("Comment", 140);
 
       this.listView1.Items.Add("First", 1).SubItems.AddRange(new string[] {"Movie", "5389", "This is the first item"});
-      this.listView1.Items.Add("Second", 0).SubItems.AddRange(new string[] { "Picture", "1256", "This is the second item" });
-      this.listView1.Items.Add("Third", 2).SubItems.AddRange(new string[] { "picture", "4284", "This is the third item" });
+      this.listView1.Items.Add("Second", 0).SubItems.AddRange(new string[] {"Picture", "1256", "This is the second item"});
+      this.listView1.Items.Add("Third", 2).SubItems.AddRange(new string[] {"Picture", "4284", "This is the third item"});
 
       this.comboBox1.Location = new System.Drawing.Point(10, 220);
       this.comboBox1.Parent = this;

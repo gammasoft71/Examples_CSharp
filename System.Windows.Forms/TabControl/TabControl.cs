@@ -19,7 +19,7 @@ namespace Examples {
       this.tabControl1.TabPages.Add(this.tabPage3);
 
       this.ClientSize = new System.Drawing.Size(390, 270);
-      this.Text = "Colored TabPages example";
+      this.Text = "TabControl example";
       this.Controls.Add(this.tabControl1);
     }
 

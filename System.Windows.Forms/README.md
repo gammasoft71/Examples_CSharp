@@ -47,7 +47,7 @@
 ## Containers
 
 * **FlowLayoutPanel** represents a panel that dynamically lays out its contents horizontally or vertically.
-* [Form](./Form/README.md) represents a window or dialog box that makes up an application's user interfa
+* [Form](./Form/README.md) represents a window or dialog box that makes up an application's user interface.
 * [GroupBox](./GroupBox/README.md) represents a Windows control that displays a frame around a group of controls with an optional caption.
 * [Panel](./Panel/README.md) used to group collections of controls.
 * **SplitContainer** represents a control consisting of a movable bar that divides a container's display area into two resizable panels.
@@ -57,7 +57,8 @@
 ## Menus and Toolbars
 
 * **ContextMenuStrip** represents a shortcut menu.
-* **MenuStrip** provides a menu system for a form.
+* [MainMenu](MainMenu/README.md) provides a main menu system for a form.
+* [MenuStrip](MenuStrip/README.md) provides a menu system for a form.
 * **StatusStrip** represents a Windows status bar control.
 * **ToolStrip** provides a container for Windows toolbar objects.
 * **ToolStripContainer** provides panels on each side of the form and a central panel that can hold one or more controls.
