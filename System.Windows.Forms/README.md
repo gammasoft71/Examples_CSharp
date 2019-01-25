@@ -31,7 +31,7 @@
 * **MaskedTextBox** uses a mask to distinguish between proper and improper user input.
 * **MonthCalendar** specifies values for navigating among accessible objects.
 * **NotifyIcon** specifies a component that creates an icon in the notification area. This class cannot be inherited.
-* **NumericUpDown** represents a Windows spin box (also known as an up-down control) that displays numeric values.
+* [NumericUpDown](NumericUpDown/README.md) represents a Windows spin box (also known as an up-down control) that displays numeric values.
 * [PictureBox](PictureBox/README.md) represents a Windows picture box control for displaying an image.
 * [ProgressBar](./ProgressBar/README.md) represents a Windows progress bar control.
 * [RadioButton](./RadioButton/README.md) enables the user to select a single option from a group of choices when paired with other RadioButton controls.
