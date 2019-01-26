@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 
-namespace HelloWorld {
+namespace TestConsole {
   class MainClass {
     public static void Main(string[] args) {
       //Console.WriteLine("Hello World!");

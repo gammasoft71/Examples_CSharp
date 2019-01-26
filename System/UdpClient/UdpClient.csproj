@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{6AB45ED3-0085-452D-8285-85F1934A0D6B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>UdpClient</RootNamespace>
+    <RootNamespace>Examples</RootNamespace>
     <AssemblyName>UdpClient</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
@@ -34,7 +34,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="UdpClient.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

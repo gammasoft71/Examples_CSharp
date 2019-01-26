@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 
-namespace Program {
+namespace Examples {
   class MainClass {
     public static void Main(string[] args) {
       Console.WriteLine("Color.Black = {0}", Color.Black);

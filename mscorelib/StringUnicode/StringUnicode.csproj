@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{7B360602-E2BA-4A96-AD21-9CEB4530B7C8}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>StringUnicode</RootNamespace>
+    <RootNamespace>Examples</RootNamespace>
     <AssemblyName>StringUnicode</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
@@ -34,7 +34,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="StringUnicode.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

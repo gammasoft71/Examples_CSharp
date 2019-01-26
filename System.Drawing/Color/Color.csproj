@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{E160A30B-E1AF-4DF3-A263-A8B7FA65E83E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Color</RootNamespace>
+    <RootNamespace>Exmples</RootNamespace>
     <AssemblyName>Color</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
@@ -35,7 +35,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Color.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
