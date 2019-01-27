@@ -6,7 +6,7 @@
     <ProjectGuid>{ACB2A2DE-48A7-4759-8BF3-56E47C538E37}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>Application</AssemblyName>
+    <AssemblyName>ApplicationEnableVisualStyle</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">

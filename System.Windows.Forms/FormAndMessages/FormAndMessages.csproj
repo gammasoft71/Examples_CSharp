@@ -6,7 +6,7 @@
     <ProjectGuid>{B7C22961-2580-4A0E-8921-C4FDCD762D79}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>Form</AssemblyName>
+    <AssemblyName>FormAndMessages</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">

@@ -6,7 +6,7 @@
     <ProjectGuid>{C66DC9C0-4A34-4681-882C-8D2836039977}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>Label</AssemblyName>
+    <AssemblyName>Control</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">

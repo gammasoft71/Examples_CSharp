@@ -10,6 +10,7 @@ namespace Examples {
       Button button = new Button();
       button.Text = "Click me";
       button.Location = new Point(10, 10);
+      button.Width = 90;
       button.Click += delegate(object sender, EventArgs e) {
         MessageBox.Show("Hello, World!");
       };
