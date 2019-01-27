@@ -1,16 +1,16 @@
-# TextBox
+# MaskedTextBox
 
-[This example](.) demonstrates the use of System.Windows.Forms.TextBox  control.
+[This example](.) demonstrates the use of System.Windows.Forms.MaskedTextBox  control.
 
 # Sources
 
-[TextBox.cs](TextBox.cs)
+[MaskedTextBox.cs](MaskedTextBox.cs)
 
 # Build and run
 
-Open [TextBox.csproj](TextBox.csproj)
+Open [MaskedTextBox.csproj](MaskedTextBox.csproj)
 
 # Output
 
-![Screenshot](../../docs/Pictures/Forms/TextBox.png)
+![Screenshot](../../docs/Pictures/Forms/MaskedTextBox.png)
 

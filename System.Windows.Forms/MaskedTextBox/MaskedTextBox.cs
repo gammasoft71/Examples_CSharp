@@ -9,18 +9,21 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.Text = "TextBox example";
+      this.Text = "MaskedTextBox example";
 
-      this.textBox1.Parent = this;
-      this.textBox1.Text = "textBox1";
-      this.textBox1.Location = new System.Drawing.Point(10, 10);
+      this.labelAge.Location = new System.Drawing.Point(10, 12);
+      this.labelAge.Text = "Phone";
+      this.labelAge.AutoSize = true;
 
-      this.textBox2.Parent = this;
-      this.textBox2.Text = "textBox2";
-      this.textBox2.Location = new System.Drawing.Point(10, 50);
+      this.maskedTextBoxAge.Location = new System.Drawing.Point(50, 10);
+      this.maskedTextBoxAge.Mask = "+999(999)99999999";
+      this.maskedTextBoxAge.Text = "";
+
+      this.Controls.AddRange(new Control[] { this.labelAge, this.maskedTextBoxAge });
     }
 
-    private TextBox textBox1 = new TextBox();
-    private TextBox textBox2 = new TextBox();
+
+    private Label labelAge = new Label();
+    private MaskedTextBox maskedTextBoxAge = new MaskedTextBox();
   }
 }

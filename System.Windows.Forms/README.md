@@ -28,7 +28,7 @@
 * [LinkLabel](LinkLabel/README.md) represents a Windows label control that can display hyperlinks.
 * [ListBox](ListBox/README.md) represents a Windows control to display a list of items.
 * [ListView](ListView/README.md) represents a Windows list view control, which displays a collection of items that can be displayed using one of four different views.
-* **MaskedTextBox** uses a mask to distinguish between proper and improper user input.
+* [MaskedTextBox](MaskedTextBox/README.md) uses a mask to distinguish between proper and improper user input.
 * **MonthCalendar** specifies values for navigating among accessible objects.
 * **NotifyIcon** specifies a component that creates an icon in the notification area. This class cannot be inherited.
 * [NumericUpDown](NumericUpDown/README.md) represents a Windows spin box (also known as an up-down control) that displays numeric values.
