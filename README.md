@@ -2,10 +2,6 @@
 
 [This folder](.) contains some .Net Framework examples.
 
-## Design patterns
-
-* [DesignPatterns](./DesignPatterns/README.md) contains the 23 Gang of Four (GoF) patterns examples.
-
 ## System
 
 * [mscorelib](./mscorelib/README.md) contains mscorelib library examples.
@@ -23,6 +19,10 @@
 ## UnitTesting
 
 * [Microsoft.VisualStudio.TestTools.UnitTesting](./Microsoft.VisualStudio.TestTools.UnitTesting/README.md) contains Microsoft.VisualStudio.TestTools.UnitTesting library examples.
+
+## Design patterns
+
+* [DesignPatterns](./DesignPatterns/README.md) contains the 23 Gang of Four (GoF) patterns examples.
 
 ## Demos
 
