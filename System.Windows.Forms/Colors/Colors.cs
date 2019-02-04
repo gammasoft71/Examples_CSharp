@@ -26,14 +26,16 @@ namespace Examples {
         panelKnownColor.Parent = this.panelKnownColors;
         panelKnownColor.Bounds = new System.Drawing.Rectangle(10, index * 30, 100, 30);
         panelKnownColor.BackColor = System.Drawing.Color.FromKnownColor(knownColor);
+        panelKnownColor.Tag = knownColor;
         panelKnownColor.Click += this.OnKnownColorClick;
-
-        Label labelKnownColorName =new Label();
+ 
+        Label labelKnownColorName = new Label();
         labelKnownColorName.Parent = this.panelKnownColors;
         labelKnownColorName.AutoSize = true;
         labelKnownColorName.Location = new System.Drawing.Point(120, index * 30 + 10);
         labelKnownColorName.Text = knownColor.ToString();
-        labelKnownColorName.Click += this.OnKnownColorNameClick;
+        labelKnownColorName.Tag = knownColor;
+        labelKnownColorName.Click += this.OnKnownColorClick;
         ++index;
       }
 
@@ -134,27 +136,11 @@ namespace Examples {
     }
 
     public void OnKnownColorClick(object sender, EventArgs e) {
-      System.Drawing.Color color = (sender as Panel).BackColor;
-      this.trackBarAlpha.Value = color.A;
-      this.numericUpDownAlpha.Value = color.A;
-      this.trackBarRed.Value = color.R;
-      this.numericUpDownRed.Value = color.R;
-      this.trackBarGreen.Value = color.G;
-      this.numericUpDownGreen.Value = color.G;
-      this.trackBarBlue.Value = color.B;
-      this.numericUpDownBlue.Value = color.B;
-    }
-
-    public void OnKnownColorNameClick(object sender, EventArgs e) {
-      System.Drawing.Color color = System.Drawing.Color.FromName((sender as Label).Text);
-      this.trackBarAlpha.Value = color.A;
-      this.numericUpDownAlpha.Value = color.A;
-      this.trackBarRed.Value = color.R;
-      this.numericUpDownRed.Value = color.R;
-      this.trackBarGreen.Value = color.G;
-      this.numericUpDownGreen.Value = color.G;
-      this.trackBarBlue.Value = color.B;
-      this.numericUpDownBlue.Value = color.B;
+      System.Drawing.Color color = System.Drawing.Color.FromKnownColor((System.Drawing.KnownColor)(sender as Control).Tag);
+      this.numericUpDownAlpha.Value = this.trackBarAlpha.Value = color.A;
+      this.numericUpDownRed.Value = this.trackBarRed.Value = color.R;
+      this.numericUpDownGreen.Value = this.trackBarGreen.Value = color.G;
+      this.numericUpDownBlue.Value = this.trackBarBlue.Value = color.B;
     }
 
     public void OnArgbChanged(object sender, EventArgs e) {
