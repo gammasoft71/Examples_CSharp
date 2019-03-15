@@ -220,6 +220,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Screen", "System.Windows.Fo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonthCalendar", "System.Windows.Forms\MonthCalendar\MonthCalendar.csproj", "{14668443-19BA-4D05-8A11-FDDF283F31D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotifyIcon", "System.Windows.Forms\NotifyIcon\NotifyIcon.csproj", "{AB76F471-6320-4D2A-B9F7-4B93F4CFCE15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -838,6 +840,12 @@ Global
 		{14668443-19BA-4D05-8A11-FDDF283F31D5}.Release|Any CPU.ActiveCfg = Release|x86
 		{14668443-19BA-4D05-8A11-FDDF283F31D5}.Release|x86.ActiveCfg = Release|x86
 		{14668443-19BA-4D05-8A11-FDDF283F31D5}.Release|x86.Build.0 = Release|x86
+		{AB76F471-6320-4D2A-B9F7-4B93F4CFCE15}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{AB76F471-6320-4D2A-B9F7-4B93F4CFCE15}.Debug|x86.ActiveCfg = Debug|x86
+		{AB76F471-6320-4D2A-B9F7-4B93F4CFCE15}.Debug|x86.Build.0 = Debug|x86
+		{AB76F471-6320-4D2A-B9F7-4B93F4CFCE15}.Release|Any CPU.ActiveCfg = Release|x86
+		{AB76F471-6320-4D2A-B9F7-4B93F4CFCE15}.Release|x86.ActiveCfg = Release|x86
+		{AB76F471-6320-4D2A-B9F7-4B93F4CFCE15}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -944,6 +952,7 @@ Global
 		{A356CC2F-8A6A-4955-9E3C-E881E6A9D478} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
 		{03AEDABD-0916-4C70-A928-52039ADD5041} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
 		{14668443-19BA-4D05-8A11-FDDF283F31D5} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
+		{AB76F471-6320-4D2A-B9F7-4B93F4CFCE15} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0222CD68-0450-4733-8A72-82553BC0473F}
