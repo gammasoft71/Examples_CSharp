@@ -6,7 +6,7 @@
     <ProjectGuid>{AB76F471-6320-4D2A-B9F7-4B93F4CFCE15}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>Label</AssemblyName>
+    <AssemblyName>NotifyIcon</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
