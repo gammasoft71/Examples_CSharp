@@ -36,7 +36,7 @@
 * [ProgressBar](./ProgressBar/README.md) represents a Windows progress bar control.
 * [RadioButton](./RadioButton/README.md) enables the user to select a single option from a group of choices when paired with other RadioButton controls.
 * [RichTextBox](./RichTextBox/README.md) represents a Windows rich text box control.
-* **Splitter** represents a splitter control that enables the user to resize docked controls. Splitter has been replaced by SplitContainer and is provided only for compatibility with previous versions.
+* [Splitter](Splitter/README.md) represents a splitter control that enables the user to resize docked controls. Splitter has been replaced by SplitContainer and is provided only for compatibility with previous versions.
 * [TextBox](./TextBox/README.md) represents a Windows text box control.
 * **ToolTip** Represents a small rectangular pop-up window that displays a brief description of a control's purpose when the user rests the pointer on the control.
 * [TrackBar](./TrackBar/README.md) represents a standard Windows track bar.
