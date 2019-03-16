@@ -1,4 +1,4 @@
-# ControlBox
+# Control
 
 [This example](.) demonstrates the use of System.Windows.Forms.Control control.
 
