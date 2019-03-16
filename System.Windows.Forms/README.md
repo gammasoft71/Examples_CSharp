@@ -50,7 +50,7 @@
 * [Form](./Form/README.md) represents a window or dialog box that makes up an application's user interface.
 * [GroupBox](./GroupBox/README.md) represents a Windows control that displays a frame around a group of controls with an optional caption.
 * [Panel](./Panel/README.md) used to group collections of controls.
-* **SplitContainer** represents a control consisting of a movable bar that divides a container's display area into two resizable panels.
+* [SplitContainer](./SplitContainer/README.md) represents a control consisting of a movable bar that divides a container's display area into two resizable panels.
 * [TabControl](./TabControl/README.md) manages a related set of tab pages.
 * **TableLayoutPanel** represents a panel that dynamically lays out its contents in a grid composed of rows and columns.
 
