@@ -16,7 +16,7 @@ namespace Examples {
       this.label1.AutoSize = true;
       this.label1.Location = new System.Drawing.Point(10, 10);
       this.label1.Click += delegate(object sender, EventArgs e) {
-        System.Diagnostics.Process.Start("https://github.com/Gammasoft71");
+        System.Diagnostics.Process.Start("https://gammasoft71.wixsite.com/gammasoft");
       };
     }
 
