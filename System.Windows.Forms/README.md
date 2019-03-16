@@ -38,7 +38,7 @@
 * [RichTextBox](./RichTextBox/README.md) represents a Windows rich text box control.
 * [Splitter](Splitter/README.md) represents a splitter control that enables the user to resize docked controls. Splitter has been replaced by SplitContainer and is provided only for compatibility with previous versions.
 * [TextBox](./TextBox/README.md) represents a Windows text box control.
-* **ToolTip** Represents a small rectangular pop-up window that displays a brief description of a control's purpose when the user rests the pointer on the control.
+* [ToolTip](./ToolTip/README.md) Represents a small rectangular pop-up window that displays a brief description of a control's purpose when the user rests the pointer on the control.
 * [TrackBar](./TrackBar/README.md) represents a standard Windows track bar.
 * **TreeView** displays a hierarchical collection of labeled items, each represented by a TreeNode.
 * [VScrollBar](VScrollBar/README.md) represents a standard Windows vertical scroll bar.

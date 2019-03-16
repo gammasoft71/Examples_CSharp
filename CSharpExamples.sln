@@ -3,6 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "System.Windows.Forms", "System.Windows.Forms", "{5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}"
+	ProjectSection(SolutionItems) = preProject
+		System.Windows.Forms\ToolTip\ToolTip.csproj = System.Windows.Forms\ToolTip\ToolTip.csproj
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignPatterns", "DesignPatterns", "{17BF232B-7ACA-42DC-AAEE-FD40E1D2ECE5}"
 EndProject
@@ -227,6 +230,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitContainer", "System.Windows.Forms\SplitContainer\SplitContainer.csproj", "{7A6DFBFB-7936-4B11-9041-AC684E78EE23}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowLayoutPanel", "System.Windows.Forms\FlowLayoutPanel\FlowLayoutPanel.csproj", "{B7DEF028-71F6-477F-BFE1-8105E4E396F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolTip", "System.Windows.Forms\ToolTip\ToolTip.csproj", "{F598A930-C980-4E63-804F-A7EB9DAAAFFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -870,6 +875,12 @@ Global
 		{B7DEF028-71F6-477F-BFE1-8105E4E396F2}.Release|Any CPU.ActiveCfg = Release|x86
 		{B7DEF028-71F6-477F-BFE1-8105E4E396F2}.Release|x86.ActiveCfg = Release|x86
 		{B7DEF028-71F6-477F-BFE1-8105E4E396F2}.Release|x86.Build.0 = Release|x86
+		{F598A930-C980-4E63-804F-A7EB9DAAAFFD}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F598A930-C980-4E63-804F-A7EB9DAAAFFD}.Debug|x86.ActiveCfg = Debug|x86
+		{F598A930-C980-4E63-804F-A7EB9DAAAFFD}.Debug|x86.Build.0 = Debug|x86
+		{F598A930-C980-4E63-804F-A7EB9DAAAFFD}.Release|Any CPU.ActiveCfg = Release|x86
+		{F598A930-C980-4E63-804F-A7EB9DAAAFFD}.Release|x86.ActiveCfg = Release|x86
+		{F598A930-C980-4E63-804F-A7EB9DAAAFFD}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -980,6 +991,7 @@ Global
 		{A6425362-D0C3-4AFD-9210-DF27BC3CD031} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
 		{7A6DFBFB-7936-4B11-9041-AC684E78EE23} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
 		{B7DEF028-71F6-477F-BFE1-8105E4E396F2} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
+		{F598A930-C980-4E63-804F-A7EB9DAAAFFD} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0222CD68-0450-4733-8A72-82553BC0473F}
