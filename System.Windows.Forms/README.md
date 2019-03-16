@@ -46,7 +46,7 @@
 
 ## Containers
 
-* **FlowLayoutPanel** represents a panel that dynamically lays out its contents horizontally or vertically.
+* [FlowLayoutPanel](./FlowLayoutPanel/README.md) represents a panel that dynamically lays out its contents horizontally or vertically.
 * [Form](./Form/README.md) represents a window or dialog box that makes up an application's user interface.
 * [GroupBox](./GroupBox/README.md) represents a Windows control that displays a frame around a group of controls with an optional caption.
 * [Panel](./Panel/README.md) used to group collections of controls.
