@@ -258,6 +258,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Others", "Others", "{43D72D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RichTextBox", "System.Windows.Forms\RichTextBox\RichTextBox.csproj", "{BD97AD27-67CA-4E9F-AFEA-19286D6B36FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFileDialog", "System.Windows.Forms\OpenFileDialog\OpenFileDialog.csproj", "{1CFBE89E-BC93-4278-811A-DE12106DD426}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -924,6 +926,12 @@ Global
 		{BD97AD27-67CA-4E9F-AFEA-19286D6B36FF}.Release|Any CPU.ActiveCfg = Release|x86
 		{BD97AD27-67CA-4E9F-AFEA-19286D6B36FF}.Release|x86.ActiveCfg = Release|x86
 		{BD97AD27-67CA-4E9F-AFEA-19286D6B36FF}.Release|x86.Build.0 = Release|x86
+		{1CFBE89E-BC93-4278-811A-DE12106DD426}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1CFBE89E-BC93-4278-811A-DE12106DD426}.Debug|x86.ActiveCfg = Debug|x86
+		{1CFBE89E-BC93-4278-811A-DE12106DD426}.Debug|x86.Build.0 = Debug|x86
+		{1CFBE89E-BC93-4278-811A-DE12106DD426}.Release|Any CPU.ActiveCfg = Release|x86
+		{1CFBE89E-BC93-4278-811A-DE12106DD426}.Release|x86.ActiveCfg = Release|x86
+		{1CFBE89E-BC93-4278-811A-DE12106DD426}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1049,6 +1057,7 @@ Global
 		{56592CD2-1780-41AF-9018-FE2B2076F4CD} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
 		{43D72D84-2175-40DB-A993-D51BA9B1ABDA} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
 		{BD97AD27-67CA-4E9F-AFEA-19286D6B36FF} = {61547CAC-CC9D-40B7-9695-9EC27F7DF834}
+		{1CFBE89E-BC93-4278-811A-DE12106DD426} = {3C12F1A9-6039-40B1-A047-782900739410}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0222CD68-0450-4733-8A72-82553BC0473F}
