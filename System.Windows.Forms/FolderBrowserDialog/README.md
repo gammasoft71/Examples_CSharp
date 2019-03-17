@@ -8,7 +8,7 @@
 
 # Build and run
 
-Open [ColorDialog.csproj](FolderBrowserDialog.csproj)
+Open [FolderBrowserDialog.csproj](FolderBrowserDialog.csproj)
 
 # Output
 
