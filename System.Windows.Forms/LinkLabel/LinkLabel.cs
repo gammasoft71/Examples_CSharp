@@ -15,8 +15,10 @@ namespace Examples {
       this.label1.Text = "Gammasoft";
       this.label1.AutoSize = true;
       this.label1.Location = new System.Drawing.Point(10, 10);
-      this.label1.Click += delegate(object sender, EventArgs e) {
-        System.Diagnostics.Process.Start("https://gammasoft71.wixsite.com/gammasoft");
+      this.label1.Links.Add(new LinkLabel.Link(0, this.label1.Text.Length, "https://gammasoft71.wixsite.com/gammasoft"));
+      this.label1.LinkClicked += delegate(object sender, LinkLabelLinkClickedEventArgs e) {
+        e.Link.Visited = true;
+        System.Diagnostics.Process.Start(e.Link.LinkData as string);
       };
     }
 
