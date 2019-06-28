@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2024
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "System.Windows.Forms", "System.Windows.Forms", "{5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}"
 EndProject
@@ -261,6 +261,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFileDialog", "System.Windows.Forms\OpenFileDialog\OpenFileDialog.csproj", "{1CFBE89E-BC93-4278-811A-DE12106DD426}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveFileDialog", "System.Windows.Forms\SaveFileDialog\SaveFileDialog.csproj", "{7ACE6F9C-C782-4301-BE18-62D43711BAC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGui", "Tests\TestGui\TestGui.csproj", "{46C72E62-F3BB-4275-9B52-3D69F32FB547}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -940,6 +942,12 @@ Global
 		{7ACE6F9C-C782-4301-BE18-62D43711BAC1}.Release|Any CPU.ActiveCfg = Release|x86
 		{7ACE6F9C-C782-4301-BE18-62D43711BAC1}.Release|x86.ActiveCfg = Release|x86
 		{7ACE6F9C-C782-4301-BE18-62D43711BAC1}.Release|x86.Build.0 = Release|x86
+		{46C72E62-F3BB-4275-9B52-3D69F32FB547}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{46C72E62-F3BB-4275-9B52-3D69F32FB547}.Debug|x86.ActiveCfg = Debug|x86
+		{46C72E62-F3BB-4275-9B52-3D69F32FB547}.Debug|x86.Build.0 = Debug|x86
+		{46C72E62-F3BB-4275-9B52-3D69F32FB547}.Release|Any CPU.ActiveCfg = Release|x86
+		{46C72E62-F3BB-4275-9B52-3D69F32FB547}.Release|x86.ActiveCfg = Release|x86
+		{46C72E62-F3BB-4275-9B52-3D69F32FB547}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1067,6 +1075,7 @@ Global
 		{BD97AD27-67CA-4E9F-AFEA-19286D6B36FF} = {61547CAC-CC9D-40B7-9695-9EC27F7DF834}
 		{1CFBE89E-BC93-4278-811A-DE12106DD426} = {3C12F1A9-6039-40B1-A047-782900739410}
 		{7ACE6F9C-C782-4301-BE18-62D43711BAC1} = {3C12F1A9-6039-40B1-A047-782900739410}
+		{46C72E62-F3BB-4275-9B52-3D69F32FB547} = {96EA054A-BB15-43CB-B839-329607708764}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0222CD68-0450-4733-8A72-82553BC0473F}

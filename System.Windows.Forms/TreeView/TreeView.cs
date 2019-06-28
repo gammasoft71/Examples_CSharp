@@ -23,7 +23,7 @@ namespace Examples {
       this.treeView.Nodes[0].Nodes[0].Nodes.Add("Third");
       this.treeView.Nodes[0].Nodes.Add("Fourth");
       this.treeView.Nodes[0].Nodes[1].Nodes.Add("Fifth");
-      this.treeView.Nodes[0].Nodes[1].Nodes.Add("Sixfth");
+      this.treeView.Nodes[0].Nodes[1].Nodes.Add("Sixth");
       this.treeView.Nodes[0].Nodes[1].Nodes[1].Checked = true;
       this.treeView.Nodes[0].Nodes[1].Nodes.Add("Seventh");
       this.treeView.ExpandAll();

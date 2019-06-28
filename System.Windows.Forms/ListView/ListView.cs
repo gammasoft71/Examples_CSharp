@@ -10,7 +10,7 @@ namespace Examples {
 
     public MainForm() {
       this.Text = "ListView example";
-      this.ClientSize = new System.Drawing.Size(350, 250);
+      this.ClientSize = new System.Drawing.Size(350, 260);
 
       this.listView1.Parent = this;
       this.listView1.Location = new System.Drawing.Point(10, 10);
