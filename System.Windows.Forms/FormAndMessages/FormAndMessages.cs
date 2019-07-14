@@ -18,13 +18,13 @@ namespace Examples {
     private const int WM_EXITSIZEMOVE = 0x0232;
     private const int WM_MOVE = 0x0003;
     private const int WM_NULL = 0x0000;
-    private const int WM_QUIT = 0x0012;
     private const int WM_SETTEXT = 0x000C;
     private const int WM_SHOWWINDOW = 0x0018;
     private const int WM_SIZE = 0x0005;
 
     public Form1() {
       this.Text = "Form and Messages";
+      this.Enabled = false;
       this.StartPosition = FormStartPosition.CenterScreen;
       this.Controls.Add(this.button1);
 
@@ -58,6 +58,15 @@ namespace Examples {
       Application.Run(new Form1());
     }
 
+    protected override void OnCreateControl() {
+      //base.OnCreateControl();
+      System.Diagnostics.Debug.WriteLine("OnCreateControl()");
+    }
+
+    protected override void OnHandleCreated(EventArgs e) {
+      base.OnHandleCreated(e);
+    }
+
     protected override void WndProc(ref Message message) {
       base.WndProc(ref message);
 
@@ -73,7 +82,6 @@ namespace Examples {
         case WM_EXITSIZEMOVE: System.Diagnostics.Debug.WriteLine("WM_EXITSIZEMOVE"); break;
         case WM_MOVE: System.Diagnostics.Debug.WriteLine(string.Format("WM_MOVE x = {0}, y = {1}", LOWORD(message.LParam), HIWORD(message.LParam))); break;
         case WM_NULL: System.Diagnostics.Debug.WriteLine("WM_NULL"); break;
-        case WM_QUIT: System.Diagnostics.Debug.WriteLine(string.Format("WMQUIT exit code = {0}", message.WParam)); break;
         case WM_SETTEXT: System.Diagnostics.Debug.WriteLine(string.Format("WM_SETTEXT text = {0}", Marshal.PtrToStringAuto(message.LParam))); break;
         case WM_SHOWWINDOW: System.Diagnostics.Debug.WriteLine(string.Format("WM_SHOWWINDOW shown = {0}", message.WParam)); break;
         case WM_SIZE: System.Diagnostics.Debug.WriteLine(string.Format("WM_SIZE type = {0}, width = {1}, heignt = {2}", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;

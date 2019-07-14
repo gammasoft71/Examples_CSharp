@@ -49,7 +49,7 @@ namespace Examples {
       this.listBox1.SelectedIndex = this.listBox1.Items.Count - 1;
     }
 
-  MainMenu mainMenu = new MainMenu();
-    ListBox listBox1 = new ListBox();
+    private MainMenu mainMenu = new MainMenu();
+    private ListBox listBox1 = new ListBox();
   }
 }
