@@ -12,7 +12,7 @@ namespace Examples {
     public double Value {
       get {
         double result = 0;
-        double.TryParse(base.Text, out result);
+        double.TryParse(base.Text.Replace(".", System.Globalization.CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator), out result);
         return result;
       }
       set { base.Text = value.ToString(); }
