@@ -9,11 +9,11 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.Text = "Label example";
+      Text = "Label example";
 
-      this.label1.Parent = this;
-      this.label1.Text = "label1";
-      this.label1.Location = new System.Drawing.Point(10, 10);
+      label1.Parent = this;
+      label1.Text = "label1";
+      label1.Location = new System.Drawing.Point(10, 10);
     }
 
     private Label label1 = new Label();

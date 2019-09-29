@@ -9,17 +9,17 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.Text = "HScrollBar example";
+      Text = "HScrollBar example";
 
-      this.scrollBar1.Parent = this;
-      this.scrollBar1.Location = new System.Drawing.Point(30, 40);
+      scrollBar1.Parent = this;
+      scrollBar1.Location = new System.Drawing.Point(30, 40);
 
-      this.scrollBar2.Parent = this;
-      this.scrollBar2.Location = new System.Drawing.Point(30, 80);
-      this.scrollBar2.Minimum = 0;
-      this.scrollBar2.Value = 100;
-      this.scrollBar2.Maximum = 200;
-      this.scrollBar2.Width = 220;
+      scrollBar2.Parent = this;
+      scrollBar2.Location = new System.Drawing.Point(30, 80);
+      scrollBar2.Minimum = 0;
+      scrollBar2.Value = 100;
+      scrollBar2.Maximum = 200;
+      scrollBar2.Width = 220;
     }
 
     private HScrollBar scrollBar1 = new HScrollBar();

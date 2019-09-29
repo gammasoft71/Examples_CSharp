@@ -9,19 +9,19 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.Text = "NumericUpDown example";
+      Text = "NumericUpDown example";
 
-      this.numericUpDown1.Parent = this;
-      this.numericUpDown1.DecimalPlaces = 0;
-      this.numericUpDown1.Location = new System.Drawing.Point(80, 50);
-      this.numericUpDown1.Value = 50;
+      numericUpDown1.Parent = this;
+      numericUpDown1.DecimalPlaces = 0;
+      numericUpDown1.Location = new System.Drawing.Point(80, 50);
+      numericUpDown1.Value = 50;
 
-      this.numericUpDown2.Parent = this;
-      this.numericUpDown2.DecimalPlaces = 2;
-      this.numericUpDown2.Increment = 0.01M;
-      this.numericUpDown2.Location = new System.Drawing.Point(80, 100);
-      this.numericUpDown2.Maximum = 11.0M;
-      this.numericUpDown2.Minimum = 10.0M;
+      numericUpDown2.Parent = this;
+      numericUpDown2.DecimalPlaces = 2;
+      numericUpDown2.Increment = 0.01M;
+      numericUpDown2.Location = new System.Drawing.Point(80, 100);
+      numericUpDown2.Maximum = 11.0M;
+      numericUpDown2.Minimum = 10.0M;
     }
 
     private NumericUpDown numericUpDown1 = new NumericUpDown();

@@ -10,42 +10,42 @@ namespace Examples {
     }
 
     public Form1() {
-      this.Text = "ProgressBar Example";
+      Text = "ProgressBar Example";
 
-      this.progressBar1.Parent = this;
-      this.progressBar1.Location = new System.Drawing.Point(50, 50);
-      this.progressBar1.Style = ProgressBarStyle.Continuous;
-      this.progressBar1.Width = 200;
+      progressBar1.Parent = this;
+      progressBar1.Location = new System.Drawing.Point(50, 50);
+      progressBar1.Style = ProgressBarStyle.Continuous;
+      progressBar1.Width = 200;
 
-      this.progressBar2.Parent = this;
-      this.progressBar2.Location = new System.Drawing.Point(50, 80);
-      this.progressBar2.Style = ProgressBarStyle.Continuous;
-      this.progressBar2.Value = 50;
-      this.progressBar2.Width = 200;
+      progressBar2.Parent = this;
+      progressBar2.Location = new System.Drawing.Point(50, 80);
+      progressBar2.Style = ProgressBarStyle.Continuous;
+      progressBar2.Value = 50;
+      progressBar2.Width = 200;
 
-      this.progressBar3.Parent = this;
-      this.progressBar3.Location = new System.Drawing.Point(50, 110);
-      this.progressBar3.Maximum = 300;
-      this.progressBar3.Style = ProgressBarStyle.Continuous;
-      this.progressBar3.Value = 300;
-      this.progressBar3.Width = 200;
+      progressBar3.Parent = this;
+      progressBar3.Location = new System.Drawing.Point(50, 110);
+      progressBar3.Maximum = 300;
+      progressBar3.Style = ProgressBarStyle.Continuous;
+      progressBar3.Value = 300;
+      progressBar3.Width = 200;
 
-      this.progressBar4.Parent = this;
-      this.progressBar4.Location = new System.Drawing.Point(50, 140);
-      this.progressBar4.Style = ProgressBarStyle.Continuous;
-      this.progressBar4.Maximum = 140;
-      this.progressBar4.Style = ProgressBarStyle.Continuous;
-      this.progressBar4.Width = 200;
+      progressBar4.Parent = this;
+      progressBar4.Location = new System.Drawing.Point(50, 140);
+      progressBar4.Style = ProgressBarStyle.Continuous;
+      progressBar4.Maximum = 140;
+      progressBar4.Style = ProgressBarStyle.Continuous;
+      progressBar4.Width = 200;
 
-      this.progressBar5.Parent = this;
-      this.progressBar5.Location = new System.Drawing.Point(50, 170);
-      this.progressBar5.Style = ProgressBarStyle.Marquee;
-      this.progressBar5.Width = 200;
+      progressBar5.Parent = this;
+      progressBar5.Location = new System.Drawing.Point(50, 170);
+      progressBar5.Style = ProgressBarStyle.Marquee;
+      progressBar5.Width = 200;
 
-      this.timer.Interval = 50;
-      this.timer.Enabled = true;
-      this.timer.Tick += delegate (object sender, EventArgs e) {
-        this.progressBar4.Value = this.progressBar4.Value < this.progressBar4.Maximum ? this.progressBar4.Value + 1 : this.progressBar4.Minimum;
+      timer.Interval = 50;
+      timer.Enabled = true;
+      timer.Tick += delegate (object sender, EventArgs e) {
+        progressBar4.Value = progressBar4.Value < progressBar4.Maximum ? progressBar4.Value + 1 : progressBar4.Minimum;
       };
     }
 

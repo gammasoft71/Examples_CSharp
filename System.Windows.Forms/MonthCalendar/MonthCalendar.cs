@@ -9,16 +9,16 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.Text = "MonthCalendar example";
+      Text = "MonthCalendar example";
 
-      this.monthCalendar1.Parent = this;
-      this.monthCalendar1.MinDate = new DateTime(1971, 1, 5);
-      this.monthCalendar1.MaxDate = new DateTime(2071, 1, 5);
-      this.monthCalendar1.SelectionRange = new SelectionRange(DateTime.Now - TimeSpan.FromDays(1), DateTime.Now + TimeSpan.FromDays(1));
-      this.monthCalendar1.Location = new System.Drawing.Point(10, 10);
+      monthCalendar1.Parent = this;
+      monthCalendar1.MinDate = new DateTime(1971, 1, 5);
+      monthCalendar1.MaxDate = new DateTime(2071, 1, 5);
+      monthCalendar1.SelectionRange = new SelectionRange(DateTime.Now - TimeSpan.FromDays(1), DateTime.Now + TimeSpan.FromDays(1));
+      monthCalendar1.Location = new System.Drawing.Point(10, 10);
 
-      this.monthCalendar1.DateSelected += delegate {
-        MessageBox.Show(string.Format("range = [{0}; {1}]", this.monthCalendar1.SelectionRange.Start.ToShortDateString(), this.monthCalendar1.SelectionRange.End.ToShortDateString()), "Date selected :");
+      monthCalendar1.DateSelected += delegate {
+        MessageBox.Show(string.Format("range = [{0}; {1}]", monthCalendar1.SelectionRange.Start.ToShortDateString(), monthCalendar1.SelectionRange.End.ToShortDateString()), "Date selected :");
       };
     }
 

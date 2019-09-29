@@ -9,35 +9,35 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.Text = "ListBox example";
+      Text = "ListBox example";
 
-      this.StartPosition = FormStartPosition.Manual;
-      this.Location = new System.Drawing.Point(200, 200);
-      this.ClientSize = new System.Drawing.Size(360, 240);
+      StartPosition = FormStartPosition.Manual;
+      Location = new System.Drawing.Point(200, 200);
+      ClientSize = new System.Drawing.Size(360, 240);
 
-      this.listBoxActionsLeft.Parent = this;
-      this.listBoxActionsLeft.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom;
-      this.listBoxActionsLeft.Bounds = new System.Drawing.Rectangle(20, 20, 150, 200);
-      this.listBoxActionsLeft.DoubleClick += delegate(object sender, EventArgs e) {
-        if (this.listBoxActionsLeft.SelectedIndex != -1) {
-          this.listBoxActionsRight.Items.Add(this.listBoxActionsLeft.SelectedItem);
-          this.listBoxActionsRight.SelectedIndex = this.listBoxActionsRight.Items.Count - 1;
-          this.listBoxActionsLeft.Items.Remove(this.listBoxActionsLeft.SelectedItem);
+      listBoxActionsLeft.Parent = this;
+      listBoxActionsLeft.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom;
+      listBoxActionsLeft.Bounds = new System.Drawing.Rectangle(20, 20, 150, 200);
+      listBoxActionsLeft.DoubleClick += delegate(object sender, EventArgs e) {
+        if (listBoxActionsLeft.SelectedIndex != -1) {
+          listBoxActionsRight.Items.Add(listBoxActionsLeft.SelectedItem);
+          listBoxActionsRight.SelectedIndex = listBoxActionsRight.Items.Count - 1;
+          listBoxActionsLeft.Items.Remove(listBoxActionsLeft.SelectedItem);
         }
       };
 
-      this.listBoxActionsRight.Parent = this;
-      this.listBoxActionsRight.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right;
-      this.listBoxActionsRight.Bounds = new System.Drawing.Rectangle(190, 20, 150, 200);
-      this.listBoxActionsRight.DoubleClick += delegate(object sender, EventArgs e) {
-        if (this.listBoxActionsRight.SelectedIndex != -1) {
-          this.listBoxActionsLeft.Items.Add(this.listBoxActionsRight.SelectedItem);
-          this.listBoxActionsLeft.SelectedIndex = this.listBoxActionsLeft.Items.Count - 1;
-          this.listBoxActionsRight.Items.Remove(this.listBoxActionsRight.SelectedItem);
+      listBoxActionsRight.Parent = this;
+      listBoxActionsRight.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right;
+      listBoxActionsRight.Bounds = new System.Drawing.Rectangle(190, 20, 150, 200);
+      listBoxActionsRight.DoubleClick += delegate(object sender, EventArgs e) {
+        if (listBoxActionsRight.SelectedIndex != -1) {
+          listBoxActionsLeft.Items.Add(listBoxActionsRight.SelectedItem);
+          listBoxActionsLeft.SelectedIndex = listBoxActionsLeft.Items.Count - 1;
+          listBoxActionsRight.Items.Remove(listBoxActionsRight.SelectedItem);
         }
       };
 
-      this.listBoxActionsLeft.Items.AddRange(new string[] { "draw", "cut", "paste", "delete", "open", "close", "remove", "edit", "find", "increment", "decrement", "write", "read", "post", "build", "make", "release", "create", "choose", "erase"});
+      listBoxActionsLeft.Items.AddRange(new string[] { "draw", "cut", "paste", "delete", "open", "close", "remove", "edit", "find", "increment", "decrement", "write", "read", "post", "build", "make", "release", "create", "choose", "erase"});
     }
 
     private ListBox listBoxActionsLeft = new ListBox();

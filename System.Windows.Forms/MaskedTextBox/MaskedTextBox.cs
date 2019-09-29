@@ -9,17 +9,17 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.Text = "MaskedTextBox example";
+      Text = "MaskedTextBox example";
 
-      this.labelAge.Location = new System.Drawing.Point(10, 12);
-      this.labelAge.Text = "Phone";
-      this.labelAge.AutoSize = true;
+      labelAge.Location = new System.Drawing.Point(10, 12);
+      labelAge.Text = "Phone";
+      labelAge.AutoSize = true;
 
-      this.maskedTextBoxAge.Location = new System.Drawing.Point(50, 10);
-      this.maskedTextBoxAge.Mask = "+999(999)99999999";
-      this.maskedTextBoxAge.Text = "";
+      maskedTextBoxAge.Location = new System.Drawing.Point(50, 10);
+      maskedTextBoxAge.Mask = "+999(999)99999999";
+      maskedTextBoxAge.Text = "";
 
-      this.Controls.AddRange(new Control[] { this.labelAge, this.maskedTextBoxAge });
+      Controls.AddRange(new Control[] { labelAge, maskedTextBoxAge });
     }
 
 

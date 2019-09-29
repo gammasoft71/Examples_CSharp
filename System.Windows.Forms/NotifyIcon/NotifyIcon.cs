@@ -9,19 +9,19 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.Icon = Examples.Properties.Resources.Gammasoft;
-      this.Text = "NotifyIcon example";
+      Icon = Examples.Properties.Resources.Gammasoft;
+      Text = "NotifyIcon example";
 
-      this.label1.Parent = this;
-      this.label1.AutoSize = true;
-      this.label1.Location = new System.Drawing.Point(10, 10);
-      this.label1.Text = "Double click on Gammasoft tray icon\nto show or hide this form.";
+      label1.Parent = this;
+      label1.AutoSize = true;
+      label1.Location = new System.Drawing.Point(10, 10);
+      label1.Text = "Double click on Gammasoft tray icon\nto show or hide this form.";
 
-      this.notifyIcon1.Icon = Examples.Properties.Resources.Gammasoft;
-      this.notifyIcon1.Text = "NotifyIcon example";
-      this.notifyIcon1.Visible = true;
-      this.notifyIcon1.DoubleClick += delegate {
-        this.Visible = !this.Visible;
+      notifyIcon1.Icon = Examples.Properties.Resources.Gammasoft;
+      notifyIcon1.Text = "NotifyIcon example";
+      notifyIcon1.Visible = true;
+      notifyIcon1.DoubleClick += delegate {
+        Visible = !Visible;
       };
     }
 
