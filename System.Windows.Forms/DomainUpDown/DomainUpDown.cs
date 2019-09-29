@@ -9,19 +9,19 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.Text = "DomainUpDown example";
+      Text = "DomainUpDown example";
 
-      this.domainUpDown1.Parent = this;
-      this.domainUpDown1.Items.AddRange(new string[] { "item1", "item2", "item3", "item4" });
-      this.domainUpDown1.SelectedIndex = 1;
-      this.domainUpDown1.Location = new System.Drawing.Point(10, 10);
+      domainUpDown1.Parent = this;
+      domainUpDown1.Items.AddRange(new string[] { "item1", "item2", "item3", "item4" });
+      domainUpDown1.SelectedIndex = 1;
+      domainUpDown1.Location = new System.Drawing.Point(10, 10);
 
-      this.label1.Parent = this;
-      this.label1.Text = this.domainUpDown1.Text;
-      this.label1.Location = new System.Drawing.Point(10, 40);
+      label1.Parent = this;
+      label1.Text = domainUpDown1.Text;
+      label1.Location = new System.Drawing.Point(10, 40);
 
-      this.domainUpDown1.TextChanged += delegate (object sender, EventArgs e) {
-        this.label1.Text = this.domainUpDown1.Text;
+      domainUpDown1.TextChanged += delegate (object sender, EventArgs e) {
+        label1.Text = domainUpDown1.Text;
       };
     }
 

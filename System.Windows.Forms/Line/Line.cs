@@ -2,6 +2,13 @@
 using System.Windows.Forms;
 
 namespace Examples {
+  public class Line : UserControl {
+    public System.Drawing.Color Color {
+      get { return this.BackColor; }
+      set { this.BackColor = value; }
+    }
+  }
+
   class MainForm : Form {
     public static void Main() {
       Application.EnableVisualStyles();
@@ -9,19 +16,19 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.lineSeparator.BorderStyle = BorderStyle.Fixed3D;
+      this.lineSeparator.Color = System.Drawing.SystemColors.Window;
       this.lineSeparator.Bounds = new System.Drawing.Rectangle(10, 10, 280, 2);
 
-      this.lineRed.BackColor = System.Drawing.Color.Red;
+      this.lineRed.Color = System.Drawing.Color.Red;
       this.lineRed.Bounds = new System.Drawing.Rectangle(10, 20, 2, 250);
 
-      this.lineGreen.BackColor = System.Drawing.Color.Green;
+      this.lineGreen.Color = System.Drawing.Color.Green;
       this.lineGreen.Bounds = new System.Drawing.Rectangle(149, 20, 2, 250);
 
-      this.lineBlue.BackColor = System.Drawing.Color.Blue;
+      this.lineBlue.Color = System.Drawing.Color.Blue;
       this.lineBlue.Bounds = new System.Drawing.Rectangle(288, 20, 2, 250);
 
-      this.lineSeparator2.BorderStyle = BorderStyle.FixedSingle;
+      this.lineSeparator2.Color = System.Drawing.SystemColors.ControlText;
       this.lineSeparator2.Bounds = new System.Drawing.Rectangle(10, 278, 280, 2);
 
       this.ClientSize = new System.Drawing.Size(300, 300);
@@ -29,10 +36,10 @@ namespace Examples {
       this.Controls.AddRange(new Control [] { this.lineSeparator, this.lineRed, this.lineGreen, this.lineBlue, lineSeparator2});
     }
 
-    private Label lineSeparator = new Label();
-    private Label lineRed = new Label();
-    private Label lineGreen = new Label();
-    private Label lineBlue = new Label();
-    private Label lineSeparator2 = new Label();
+    private Line lineSeparator = new Line();
+    private Line lineRed = new Line();
+    private Line lineGreen = new Line();
+    private Line lineBlue = new Line();
+    private Line lineSeparator2 = new Line();
   }
 }

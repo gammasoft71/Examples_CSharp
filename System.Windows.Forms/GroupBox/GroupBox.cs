@@ -10,11 +10,11 @@ namespace Examples {
     }
 
     public Form1() {
-      //this.groupBox1.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
+      this.groupBox1.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
       this.groupBox1.Text = "GroupBox 1";
       this.groupBox1.Bounds = new System.Drawing.Rectangle(10, 10, 305, 460);
 
-      //this.groupBox2.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom;
+      this.groupBox2.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom;
       this.groupBox2.Bounds = new System.Drawing.Rectangle(325, 10, 305, 460);
 
       this.ClientSize = new System.Drawing.Size(640, 480);

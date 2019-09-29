@@ -10,14 +10,28 @@ namespace Examples {
     }
 
     public Form1() {
-      this.comboBox1.Location = new System.Drawing.Point(10, 10);
-      this.comboBox1.Items.AddRange(new string[] {"item1", "item2", "item3"});
-      this.comboBox1.SelectedIndex = 1;
-      this.comboBox1.Parent = this;
+      comboBox1.Location = new System.Drawing.Point(10, 10);
+      comboBox1.Items.AddRange(new string[] { "item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8", "item9", "item10" });
+      comboBox1.SelectedIndex = 0;
+      comboBox1.Parent = this;
 
-      this.Text = "ComboBox example";
+      comboBox2.Location = new System.Drawing.Point(10, 50);
+      comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
+      comboBox2.Items.AddRange(new string[] { "item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8", "item9", "item10" });
+      comboBox2.SelectedIndex = 1;
+      comboBox2.Parent = this;
+
+      comboBox3.Location = new System.Drawing.Point(10, 90);
+      comboBox3.DropDownStyle = ComboBoxStyle.Simple;
+      comboBox3.Items.AddRange(new string[] { "item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8", "item9", "item10" });
+      comboBox3.SelectedIndex = 2;
+      comboBox3.Parent = this;
+
+      Text = "ComboBox example";
     }
 
     private ComboBox comboBox1 = new ComboBox();
+    private ComboBox comboBox2 = new ComboBox();
+    private ComboBox comboBox3 = new ComboBox();
   };
 }

@@ -9,20 +9,20 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.Text = "DateTimePicker example";
+      Text = "DateTimePicker example";
 
-      this.dateTimePicker1.Parent = this;
-      this.dateTimePicker1.Value = new DateTime(1975, 4, 4);
-      this.dateTimePicker1.MinDate = new DateTime(1975, 4, 4);
-      this.dateTimePicker1.MaxDate = DateTime.Now;
-      this.dateTimePicker1.Location = new System.Drawing.Point(30, 30);
+      dateTimePicker1.Parent = this;
+      dateTimePicker1.Value = new DateTime(1975, 4, 4);
+      dateTimePicker1.MinDate = new DateTime(1975, 4, 4);
+      dateTimePicker1.MaxDate = DateTime.Now;
+      dateTimePicker1.Location = new System.Drawing.Point(30, 30);
 
-      this.label1.Parent = this;
-      this.label1.Location = new System.Drawing.Point(30, 60);
-      this.label1.Text = this.dateTimePicker1.Value.ToShortDateString();
+      label1.Parent = this;
+      label1.Location = new System.Drawing.Point(30, 60);
+      label1.Text = dateTimePicker1.Value.ToShortDateString();
 
-      this.dateTimePicker1.ValueChanged += delegate (object sender, EventArgs e) {
-        this.label1.Text = this.dateTimePicker1.Value.ToShortDateString();
+      dateTimePicker1.ValueChanged += delegate (object sender, EventArgs e) {
+        label1.Text = dateTimePicker1.Value.ToShortDateString();
       };
     }
 
