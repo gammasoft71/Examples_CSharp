@@ -20,20 +20,20 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.Text = "RichTextBox example";
+      Text = "RichTextBox example";
 
-      this.richTextBox.Parent = this;
-      this.richTextBox.Dock = DockStyle.Fill;
+      richTextBox.Parent = this;
+      richTextBox.Dock = DockStyle.Fill;
 
-      this.richTextBox.AppendText("Colored text :\n");
-      this.richTextBox.SelectionStart = this.richTextBox.TextLength;
-      this.richTextBox.SelectionColor = System.Drawing.Color.Red;
-      this.richTextBox.AppendText("  Red\n");
-      this.richTextBox.SelectionColor = System.Drawing.Color.Green;
-      this.richTextBox.AppendText("  Green\n");
-      this.richTextBox.SelectionColor = System.Drawing.Color.Blue;
-      this.richTextBox.AppendText("  Blue\n");
-      this.richTextBox.SelectionColor = this.richTextBox.ForeColor;
+      richTextBox.AppendText("Colored text :\n");
+      richTextBox.SelectionStart = richTextBox.TextLength;
+      richTextBox.SelectionColor = System.Drawing.Color.Red;
+      richTextBox.AppendText("  Red\n");
+      richTextBox.SelectionColor = System.Drawing.Color.Green;
+      richTextBox.AppendText("  Green\n");
+      richTextBox.SelectionColor = System.Drawing.Color.Blue;
+      richTextBox.AppendText("  Blue\n");
+      richTextBox.SelectionColor = richTextBox.ForeColor;
     }
 
     private RichTextBox richTextBox = new RichTextBox();

@@ -10,17 +10,17 @@ namespace Examples {
     }
 
     public Form1() {
-      this.tabPage3.Text = "tabPage3";
+      tabPage3.Text = "tabPage3";
 
-      this.tabControl1.Location = new System.Drawing.Point(10, 10);
-      this.tabControl1.Size = new System.Drawing.Size(370, 250);
-      this.tabControl1.TabPages.Add("tabPage1");
-      this.tabControl1.TabPages.Add("tabPageé", "tabPage2");
-      this.tabControl1.TabPages.Add(this.tabPage3);
+      tabControl1.Location = new System.Drawing.Point(10, 10);
+      tabControl1.Size = new System.Drawing.Size(370, 250);
+      tabControl1.TabPages.Add("tabPage1");
+      tabControl1.TabPages.Add("tabPageé", "tabPage2");
+      tabControl1.TabPages.Add(tabPage3);
 
-      this.ClientSize = new System.Drawing.Size(390, 270);
-      this.Text = "TabControl example";
-      this.Controls.Add(this.tabControl1);
+      ClientSize = new System.Drawing.Size(390, 270);
+      Text = "TabControl example";
+      Controls.Add(tabControl1);
     }
 
     private TabControl tabControl1 = new TabControl();

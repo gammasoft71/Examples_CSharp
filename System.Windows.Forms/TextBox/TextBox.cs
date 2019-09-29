@@ -9,15 +9,15 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.Text = "TextBox example";
+      Text = "TextBox example";
 
-      this.textBox1.Parent = this;
-      this.textBox1.Text = "textBox1";
-      this.textBox1.Location = new System.Drawing.Point(10, 10);
+      textBox1.Parent = this;
+      textBox1.Text = "textBox1";
+      textBox1.Location = new System.Drawing.Point(10, 10);
 
-      this.textBox2.Parent = this;
-      this.textBox2.Text = "textBox2";
-      this.textBox2.Location = new System.Drawing.Point(10, 50);
+      textBox2.Parent = this;
+      textBox2.Text = "textBox2";
+      textBox2.Location = new System.Drawing.Point(10, 50);
     }
 
     private TextBox textBox1 = new TextBox();

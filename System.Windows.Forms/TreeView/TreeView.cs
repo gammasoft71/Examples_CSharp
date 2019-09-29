@@ -9,24 +9,24 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.Text = "TreeView example";
-      this.ClientSize = new System.Drawing.Size(300, 300);
+      Text = "TreeView example";
+      ClientSize = new System.Drawing.Size(300, 300);
 
-      this.treeView.Parent = this;
-      this.treeView.Location = new System.Drawing.Point(10, 10);
-      this.treeView.Size = new System.Drawing.Size(150, 200);
-      this.treeView.CheckBoxes = true;
-      this.treeView.Nodes.Add("Root");
-      this.treeView.Nodes[0].Nodes.Add("First");
-      this.treeView.Nodes[0].Nodes[0].Nodes.Add("Second");
-      this.treeView.Nodes[0].Nodes[0].Nodes[0].Checked = true;
-      this.treeView.Nodes[0].Nodes[0].Nodes.Add("Third");
-      this.treeView.Nodes[0].Nodes.Add("Fourth");
-      this.treeView.Nodes[0].Nodes[1].Nodes.Add("Fifth");
-      this.treeView.Nodes[0].Nodes[1].Nodes.Add("Sixth");
-      this.treeView.Nodes[0].Nodes[1].Nodes[1].Checked = true;
-      this.treeView.Nodes[0].Nodes[1].Nodes.Add("Seventh");
-      this.treeView.ExpandAll();
+      treeView.Parent = this;
+      treeView.Location = new System.Drawing.Point(10, 10);
+      treeView.Size = new System.Drawing.Size(150, 200);
+      treeView.CheckBoxes = true;
+      treeView.Nodes.Add("Root");
+      treeView.Nodes[0].Nodes.Add("First");
+      treeView.Nodes[0].Nodes[0].Nodes.Add("Second");
+      treeView.Nodes[0].Nodes[0].Nodes[0].Checked = true;
+      treeView.Nodes[0].Nodes[0].Nodes.Add("Third");
+      treeView.Nodes[0].Nodes.Add("Fourth");
+      treeView.Nodes[0].Nodes[1].Nodes.Add("Fifth");
+      treeView.Nodes[0].Nodes[1].Nodes.Add("Sixth");
+      treeView.Nodes[0].Nodes[1].Nodes[1].Checked = true;
+      treeView.Nodes[0].Nodes[1].Nodes.Add("Seventh");
+      treeView.ExpandAll();
     }
 
     private TreeView treeView = new TreeView();

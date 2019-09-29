@@ -10,16 +10,16 @@ namespace Examples {
     }
 
     public Form1() {
-      this.groupBox1.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
-      this.groupBox1.Text = "GroupBox 1";
-      this.groupBox1.Bounds = new System.Drawing.Rectangle(10, 10, 305, 460);
+      groupBox1.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
+      groupBox1.Text = "GroupBox 1";
+      groupBox1.Bounds = new System.Drawing.Rectangle(10, 10, 305, 460);
 
-      this.groupBox2.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom;
-      this.groupBox2.Bounds = new System.Drawing.Rectangle(325, 10, 305, 460);
+      groupBox2.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom;
+      groupBox2.Bounds = new System.Drawing.Rectangle(325, 10, 305, 460);
 
-      this.ClientSize = new System.Drawing.Size(640, 480);
-      this.Text = "GroupBox example";
-      this.Controls.AddRange(new Control[] { groupBox1, groupBox2 });
+      ClientSize = new System.Drawing.Size(640, 480);
+      Text = "GroupBox example";
+      Controls.AddRange(new Control[] { groupBox1, groupBox2 });
     }
 
     private GroupBox groupBox1 = new GroupBox();

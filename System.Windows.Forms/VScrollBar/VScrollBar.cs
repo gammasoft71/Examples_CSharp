@@ -9,17 +9,17 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.Text = "VScrollBar example";
+      Text = "VScrollBar example";
 
-      this.scrollBar1.Parent = this;
-      this.scrollBar1.Location = new System.Drawing.Point(30, 10);
+      scrollBar1.Parent = this;
+      scrollBar1.Location = new System.Drawing.Point(30, 10);
 
-      this.scrollBar2.Parent = this;
-      this.scrollBar2.Location = new System.Drawing.Point(70, 10);
-      this.scrollBar2.Minimum = 0;
-      this.scrollBar2.Value = 100;
-      this.scrollBar2.Maximum = 200;
-      this.scrollBar2.Height = 220;
+      scrollBar2.Parent = this;
+      scrollBar2.Location = new System.Drawing.Point(70, 10);
+      scrollBar2.Minimum = 0;
+      scrollBar2.Value = 100;
+      scrollBar2.Maximum = 200;
+      scrollBar2.Height = 220;
     }
 
     private VScrollBar scrollBar1 = new VScrollBar();

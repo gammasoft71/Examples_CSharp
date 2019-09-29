@@ -10,12 +10,12 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.Text = "WebBrowser example";
-      this.ClientSize = new System.Drawing.Size(1024, 768);
+      Text = "WebBrowser example";
+      ClientSize = new System.Drawing.Size(1024, 768);
 
-      this.webBrowser.Parent = this;
-      this.webBrowser.Dock = DockStyle.Fill;
-      this.webBrowser.Url = new Uri("https://gammasoft71.wixsite.com/gammasoft");
+      webBrowser.Parent = this;
+      webBrowser.Dock = DockStyle.Fill;
+      webBrowser.Url = new Uri("https://gammasoft71.wixsite.com/gammasoft");
     }
 
     private WebBrowser webBrowser = new WebBrowser();

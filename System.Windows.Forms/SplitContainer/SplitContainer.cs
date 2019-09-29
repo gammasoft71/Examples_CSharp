@@ -9,25 +9,25 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.Text = "SplitContainer example";
-      this.ClientSize = new System.Drawing.Size(300, 300);
+      Text = "SplitContainer example";
+      ClientSize = new System.Drawing.Size(300, 300);
 
-      this.splitContainerLeft.Parent = this;
-      this.splitContainerLeft.Dock = DockStyle.Fill;
-      this.splitContainerLeft.SplitterDistance = 70;
-      this.splitContainerLeft.Panel1.BackColor = System.Drawing.Color.LightBlue;
+      splitContainerLeft.Parent = this;
+      splitContainerLeft.Dock = DockStyle.Fill;
+      splitContainerLeft.SplitterDistance = 70;
+      splitContainerLeft.Panel1.BackColor = System.Drawing.Color.LightBlue;
 
-      this.splitContainerRight.Parent = this.splitContainerLeft.Panel2;
-      this.splitContainerRight.Dock = DockStyle.Fill;
-      this.splitContainerRight.SplitterDistance = 160;
-      this.splitContainerRight.Panel2.BackColor = System.Drawing.Color.LightYellow;
+      splitContainerRight.Parent = splitContainerLeft.Panel2;
+      splitContainerRight.Dock = DockStyle.Fill;
+      splitContainerRight.SplitterDistance = 160;
+      splitContainerRight.Panel2.BackColor = System.Drawing.Color.LightYellow;
 
-      this.splitContainerCenter.Parent = this.splitContainerRight.Panel1;
-      this.splitContainerCenter.Dock = DockStyle.Fill;
-      this.splitContainerCenter.Orientation = Orientation.Horizontal;
-      this.splitContainerCenter.SplitterDistance = 147;
-      this.splitContainerCenter.Panel1.BackColor = System.Drawing.Color.LightPink;
-      this.splitContainerCenter.Panel2.BackColor = System.Drawing.Color.LightGreen;
+      splitContainerCenter.Parent = splitContainerRight.Panel1;
+      splitContainerCenter.Dock = DockStyle.Fill;
+      splitContainerCenter.Orientation = Orientation.Horizontal;
+      splitContainerCenter.SplitterDistance = 147;
+      splitContainerCenter.Panel1.BackColor = System.Drawing.Color.LightPink;
+      splitContainerCenter.Panel2.BackColor = System.Drawing.Color.LightGreen;
     }
 
     private SplitContainer splitContainerLeft = new SplitContainer();

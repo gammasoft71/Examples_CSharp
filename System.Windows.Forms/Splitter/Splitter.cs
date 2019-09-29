@@ -9,36 +9,36 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.Text = "Splitter example";
-      this.ClientSize = new System.Drawing.Size(300, 300);
+      Text = "Splitter example";
+      ClientSize = new System.Drawing.Size(300, 300);
 
-      this.splitterTop.Parent = this;
-      this.splitterTop.Dock = DockStyle.Top;
+      splitterTop.Parent = this;
+      splitterTop.Dock = DockStyle.Top;
 
-      this.panelTop.Parent = this;
-      this.panelTop.Dock = DockStyle.Top;
-      this.panelTop.Height = 150;
-      this.panelTop.BackColor = System.Drawing.Color.LightPink;
+      panelTop.Parent = this;
+      panelTop.Dock = DockStyle.Top;
+      panelTop.Height = 150;
+      panelTop.BackColor = System.Drawing.Color.LightPink;
 
-      this.splitterLeft.Parent = this;
-      this.splitterLeft.Dock = DockStyle.Left;
+      splitterLeft.Parent = this;
+      splitterLeft.Dock = DockStyle.Left;
 
-      this.panelLeft.Parent = this;
-      this.panelLeft.Dock = DockStyle.Left;
-      this.panelLeft.Width = 70;
-      this.panelLeft.BackColor = System.Drawing.Color.LightBlue;
+      panelLeft.Parent = this;
+      panelLeft.Dock = DockStyle.Left;
+      panelLeft.Width = 70;
+      panelLeft.BackColor = System.Drawing.Color.LightBlue;
 
-      this.splitterRight.Parent = this;
-      this.splitterRight.Dock = DockStyle.Right;
+      splitterRight.Parent = this;
+      splitterRight.Dock = DockStyle.Right;
 
-      this.panelRight.Parent = this;
-      this.panelRight.Dock = DockStyle.Right;
-      this.panelRight.Width = 70;
-      this.panelRight.BackColor = System.Drawing.Color.LightYellow;
+      panelRight.Parent = this;
+      panelRight.Dock = DockStyle.Right;
+      panelRight.Width = 70;
+      panelRight.BackColor = System.Drawing.Color.LightYellow;
 
-      this.panelFill.Parent = this;
-      this.panelFill.Dock = DockStyle.Fill;
-      this.panelFill.BackColor = System.Drawing.Color.LightGreen;
+      panelFill.Parent = this;
+      panelFill.Dock = DockStyle.Fill;
+      panelFill.BackColor = System.Drawing.Color.LightGreen;
     }
 
     private Splitter splitterTop = new Splitter();

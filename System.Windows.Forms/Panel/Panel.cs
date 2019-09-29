@@ -10,19 +10,19 @@ namespace Examples {
     }
 
     public Form1() {
-      this.panel1.BorderStyle = BorderStyle.FixedSingle;
-      this.panel1.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
-      this.panel1.Bounds = new System.Drawing.Rectangle(10, 10, 305, 460);
+      panel1.BorderStyle = BorderStyle.FixedSingle;
+      panel1.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
+      panel1.Bounds = new System.Drawing.Rectangle(10, 10, 305, 460);
 
-      this.panel2.BorderStyle = BorderStyle.Fixed3D;
-      this.panel2.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom;
-      this.panel2.Bounds = new System.Drawing.Rectangle(325, 10, 305, 460);
+      panel2.BorderStyle = BorderStyle.Fixed3D;
+      panel2.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom;
+      panel2.Bounds = new System.Drawing.Rectangle(325, 10, 305, 460);
 
-      this.StartPosition = FormStartPosition.Manual;
-      this.Location = new System.Drawing.Point(200, 200);
-      this.ClientSize = new System.Drawing.Size(640, 480);
-      this.Text = "Panel example";
-      this.Controls.AddRange(new Control[] { panel1, panel2});
+      StartPosition = FormStartPosition.Manual;
+      Location = new System.Drawing.Point(200, 200);
+      ClientSize = new System.Drawing.Size(640, 480);
+      Text = "Panel example";
+      Controls.AddRange(new Control[] { panel1, panel2});
     }
 
     private Panel panel1 = new Panel();

@@ -9,24 +9,24 @@ namespace Examples {
     }
 
     public MainForm() {
-      this.Text = "ToolTip example";
+      Text = "ToolTip example";
 
-      this.button.Parent = this;
-      this.button.Text = "button";
-      this.button.Location = new System.Drawing.Point(10, 10);
+      button.Parent = this;
+      button.Text = "button";
+      button.Location = new System.Drawing.Point(10, 10);
 
-      this.checkBox.Parent = this;
-      this.checkBox.Text = "check";
-      this.checkBox.Location = new System.Drawing.Point(10, 40);
+      checkBox.Parent = this;
+      checkBox.Text = "check";
+      checkBox.Location = new System.Drawing.Point(10, 40);
 
-      this.label.Parent = this;
-      this.label.Text = "label";
-      this.label.Location = new System.Drawing.Point(10, 70);
+      label.Parent = this;
+      label.Text = "label";
+      label.Location = new System.Drawing.Point(10, 70);
 
       toolTip.ToolTipTitle = "ToolTip title";
-      toolTip.SetToolTip(this.button, "button toolTip...");
-      toolTip.SetToolTip(this.checkBox, "checkBox toolTip...");
-      toolTip.SetToolTip(this.label, "label toolTip...");
+      toolTip.SetToolTip(button, "button toolTip...");
+      toolTip.SetToolTip(checkBox, "checkBox toolTip...");
+      toolTip.SetToolTip(label, "label toolTip...");
     }
 
     private Button button = new Button();
