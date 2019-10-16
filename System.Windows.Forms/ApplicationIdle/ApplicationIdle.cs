@@ -8,11 +8,11 @@ namespace Examples {
     }
 
     Form1() {
-      Application.Idle += this.OnApplicationIdle;
+      Application.Idle += OnApplicationIdle;
     }
 
     private void OnApplicationIdle(object sender, EventArgs e) {
-      this.Text = string.Format("{0}", ++this.counter);
+      Text = string.Format("{0}", ++counter);
     }
 
     private int counter = 0;
