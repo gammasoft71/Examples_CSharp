@@ -15,6 +15,8 @@ namespace Examples {
       dateTimePicker1.Value = new DateTime(1975, 4, 4);
       dateTimePicker1.MinDate = new DateTime(1975, 4, 4);
       dateTimePicker1.MaxDate = DateTime.Now;
+      //dateTimePicker1.Format = DateTimePickerFormat.Time;
+      //dateTimePicker1.ShowUpDown = true;
       dateTimePicker1.Location = new System.Drawing.Point(30, 30);
 
       label1.Parent = this;

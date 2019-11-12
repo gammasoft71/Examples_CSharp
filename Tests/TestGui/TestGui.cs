@@ -3,22 +3,25 @@ using System.Drawing;
 using System.Windows.Forms;
 
 namespace Examples {
-  class Program {
+  class MainForm : Form {
     public static void Main() {
       Application.EnableVisualStyles();
-
-      Form form1 = new Form();
-      form1.Text = "form1";
-      form1.ClientSize = new System.Drawing.Size(200, 240);
-
-      CheckBox checkBox1 = new CheckBox();
-      checkBox1.Parent = form1;
-      checkBox1.Location = new System.Drawing.Point(10, 10);
-      checkBox1.Text = "CheckBox 1";
-      checkBox1.CheckAlign = System.Drawing.ContentAlignment.TopRight;
-      checkBox1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-
-      Application.Run(form1);
+      Application.Run(new MainForm());
     }
+
+    public MainForm() {
+      Text = "TestGui";
+      AutoScroll = true;
+      AutoScrollMargin = new Size(10, 10);
+
+      panel.Location = new Point(350, 350);
+      panel.BackColor = Color.SpringGreen;
+      panel.Parent = this;
+
+      AutoScrollPosition = new Point(300, 300);
+      System.Diagnostics.Debug.WriteLine(string.Format("DispalyRectangle = {0}", DisplayRectangle));
+    }
+
+    private Panel panel = new Panel();
   }
 }

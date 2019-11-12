@@ -10,17 +10,17 @@ namespace FolderBrowserDialogExample {
     }
 
     public Form1() {
-      this.button.Text = "Color...";
-      this.button.Location = new System.Drawing.Point(10, 10);
-      this.button.Click += delegate (object sender, EventArgs e) {
+      button.Text = "Color...";
+      button.Location = new System.Drawing.Point(10, 10);
+      button.Click += delegate (object sender, EventArgs e) {
         ColorDialog colorDialog = new ColorDialog();
-        colorDialog.Color = this.BackColor;
+        colorDialog.Color = BackColor;
         if (colorDialog.ShowDialog() == DialogResult.OK)
-          this.BackColor = colorDialog.Color;
+          BackColor = colorDialog.Color;
       };
 
-      this.Text = "ColorDialog example";
-      this.Controls.Add(this.button);
+      Text = "ColorDialog example";
+      Controls.Add(button);
     }
 
     private Button button = new Button();

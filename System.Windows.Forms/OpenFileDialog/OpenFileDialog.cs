@@ -11,22 +11,23 @@ namespace FolderBrowserDialogExample {
     }
 
     public Form1() {
-      this.button.Text = "Open...";
-      this.button.Location = new System.Drawing.Point(10, 10);
-      this.button.Click += delegate(object sender, EventArgs e) {
+      button.Text = "Open...";
+      button.Location = new System.Drawing.Point(10, 10);
+      button.Click += delegate(object sender, EventArgs e) {
         OpenFileDialog openFileDialog = new OpenFileDialog();
         openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         openFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
+        System.Diagnostics.Debug.WriteLine(string.Format("dialog = {0}", openFileDialog));
         if (openFileDialog.ShowDialog() == DialogResult.OK)
-          this.label.Text = string.Format("File = {0}", openFileDialog.FileName);
+          label.Text = string.Format("File = {0}", openFileDialog.FileName);
       };
 
-      this.label.Text = "Path = ";
-      this.label.Location = new System.Drawing.Point(10, 40);
-      this.label.Width = 340;
+      label.Text = "Path = ";
+      label.Location = new System.Drawing.Point(10, 40);
+      label.Width = 340;
 
-      this.Text = "OpenFileDialog example";
-      this.Controls.AddRange(new Control[] { this.button, this.label});
+      Text = "OpenFileDialog example";
+      Controls.AddRange(new Control[] { button, label});
     }
 
     private Button button = new Button();

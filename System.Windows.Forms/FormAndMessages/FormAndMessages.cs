@@ -48,23 +48,16 @@ namespace Examples {
 
 
     public Form1() {
-      this.Text = "Form and Messages";
-      this.Enabled = false;
-      this.StartPosition = FormStartPosition.CenterScreen;
-      this.Controls.Add(this.button1);
-
-      this.LocationChanged += delegate {
-        System.Diagnostics.Debug.WriteLine(string.Format("LocationChange Location = {0}", this.Location));
+      Text = "Form and Messages";
+      Enabled = false;
+      StartPosition = FormStartPosition.CenterScreen;
+      
+      LocationChanged += delegate {
+        System.Diagnostics.Debug.WriteLine(string.Format("LocationChange Location = {0}", Location));
       };
 
-      this.SizeChanged += delegate {
-        System.Diagnostics.Debug.WriteLine(string.Format("SizeChanged Size = {0}", this.Size));
-      };
-
-      this.button1.Text = "Click";
-      this.button1.Click += delegate {
-        SendMessageW(this.Handle, WM_SETTEXT, IntPtr.Zero, Marshal.StringToBSTR("Hello, World!"));
-        //this.Text = "Hello, World!";
+      SizeChanged += delegate {
+        System.Diagnostics.Debug.WriteLine(string.Format("SizeChanged Size = {0}", Size));
       };
     }
 
@@ -96,49 +89,41 @@ namespace Examples {
       base.WndProc(ref message);
 
       switch(message.Msg) {
+        case WM_ACTIVATEAPP: System.Diagnostics.Debug.WriteLine(string.Format("WM_ACTIVATEAPP [activate={0}, threat={1}]", message.WParam, message.LParam)); break;
+        case WM_CANCELMODE: System.Diagnostics.Debug.WriteLine("WM_CANCELMODE"); break;
         case WM_CHAR: System.Diagnostics.Debug.WriteLine(string.Format("WM_CHAR [char='{0}', repeat={1}]", (char)message.WParam, message.LParam)); break;
+        case WM_CLOSE: System.Diagnostics.Debug.WriteLine("WM_CLOSE"); break;
+        case WM_COMMAND: System.Diagnostics.Debug.WriteLine(string.Format("WM_COMMAND [type=0x{0:X8}, Control={1}]", message.WParam, message.LParam)); break;
+        case WM_CREATE: System.Diagnostics.Debug.WriteLine(string.Format("WM_CREATE [CREATESTRUCT={0}]", message.LParam)); break;
+        case WM_DESTROY: System.Diagnostics.Debug.WriteLine("WM_DESTROY"); break;
+        case WM_ENTERSIZEMOVE: System.Diagnostics.Debug.WriteLine("WM_ENTERSIZEMOVE"); break;
+        case WM_EXITSIZEMOVE: System.Diagnostics.Debug.WriteLine("WM_EXITSIZEMOVE"); break;
+        case WM_GETTEXT: System.Diagnostics.Debug.WriteLine(string.Format("WM_GETTEXT [size={0}, buffer={1}]", message.WParam, message.LParam)); break;
+        case WM_GETTEXTLENGTH: System.Diagnostics.Debug.WriteLine("WM_GETTEXTLENGTH"); break;
         case WM_KEYDOWN: System.Diagnostics.Debug.WriteLine(string.Format("WM_KEYDOWN [Key={0}, repeat={1}]", (Keys)message.WParam, message.LParam)); break;
         case WM_KEYUP: System.Diagnostics.Debug.WriteLine(string.Format("WM_KEYUP [Key={0}, repeat={1}]", (Keys)message.WParam, message.LParam)); break;
-
-          /*
-          case WM_ACTIVATEAPP: System.Diagnostics.Debug.WriteLine(string.Format("WM_ACTIVATEAPP [activate={0}, threat={1}]", message.WParam, message.LParam)); break;
-          case WM_CANCELMODE: System.Diagnostics.Debug.WriteLine("WM_CANCELMODE"); break;
-          case WM_CHAR: System.Diagnostics.Debug.WriteLine(string.Format("WM_CHAR [char='{0}', repeat={1}]", (char)message.WParam, message.LParam)); break;
-          case WM_CLOSE: System.Diagnostics.Debug.WriteLine("WM_CLOSE"); break;
-          case WM_COMMAND: System.Diagnostics.Debug.WriteLine(string.Format("WM_COMMAND [type=0x{0:X8}, Control={1}]", message.WParam, message.LParam)); break;
-          case WM_CREATE: System.Diagnostics.Debug.WriteLine(string.Format("WM_CREATE [CREATESTRUCT={0}]", message.LParam)); break;
-          case WM_DESTROY: System.Diagnostics.Debug.WriteLine("WM_DESTROY"); break;
-          case WM_ENTERSIZEMOVE: System.Diagnostics.Debug.WriteLine("WM_ENTERSIZEMOVE"); break;
-          case WM_EXITSIZEMOVE: System.Diagnostics.Debug.WriteLine("WM_EXITSIZEMOVE"); break;
-          case WM_GETTEXT: System.Diagnostics.Debug.WriteLine(string.Format("WM_GETTEXT [size={0}, buffer={1}]", message.WParam, message.LParam)); break;
-          case WM_GETTEXTLENGTH: System.Diagnostics.Debug.WriteLine("WM_GETTEXTLENGTH"); break;
-          case WM_KEYDOWN: System.Diagnostics.Debug.WriteLine(string.Format("WM_KEYDOWN [Key={0}, repeat={1}]", (Keys)message.WParam, message.LParam)); break;
-          case WM_KEYUP: System.Diagnostics.Debug.WriteLine(string.Format("WM_KEYUP [Key={0}, repeat={1}]", (Keys)message.WParam, message.LParam)); break;
-          case WM_KILLFOCUS: System.Diagnostics.Debug.WriteLine("WM_KILLFOCUS"); break;
-          case WM_LBUTTONDBLCLK: System.Diagnostics.Debug.WriteLine(string.Format("WM_LBUTTONDBLCLK [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
-          case WM_LBUTTONDOWN: System.Diagnostics.Debug.WriteLine(string.Format("WM_LBUTTONDOWN [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
-          case WM_LBUTTONUP: System.Diagnostics.Debug.WriteLine(string.Format("WM_LBUTTONUP [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
-          case WM_MBUTTONDBLCLK: System.Diagnostics.Debug.WriteLine(string.Format("WM_MBUTTONDBLCLK [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
-          case WM_MBUTTONDOWN: System.Diagnostics.Debug.WriteLine(string.Format("WM_MBUTTONDOWN [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
-          case WM_MBUTTONUP: System.Diagnostics.Debug.WriteLine(string.Format("WM_MBUTTONUP [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
-          case WM_MOUSEENTER: System.Diagnostics.Debug.WriteLine("WM_MOUSEENTER"); break;
-          case WM_MOUSEHWHEEL: System.Diagnostics.Debug.WriteLine(string.Format("WM_MOUSEHWHEEL [Keys={0}, Delta={1} x={2}, y={3}", LOWORD(message.WParam), HIWORD(message.WParam), LOWORD(message.LParam), HIWORD(message.LParam))); break;
-          case WM_MOUSELEAVE: System.Diagnostics.Debug.WriteLine("WM_MOUSELEAVE"); break;
-          case WM_MOUSEMOVE: System.Diagnostics.Debug.WriteLine(string.Format("WM_MOUSEMOVE [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
-          case WM_MOUSEWHEEL: System.Diagnostics.Debug.WriteLine(string.Format("WM_MOUSEWHEEL [Keys={0}, Delta={1} x={2}, y={3}", LOWORD(message.WParam), HIWORD(message.WParam), LOWORD(message.LParam), HIWORD(message.LParam))); break;
-          case WM_MOVE: System.Diagnostics.Debug.WriteLine(string.Format("WM_MOVE x = {0}, y = {1}", LOWORD(message.LParam), HIWORD(message.LParam))); break;
-          case WM_RBUTTONDBLCLK: System.Diagnostics.Debug.WriteLine(string.Format("WM_RBUTTONDBLCLK [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
-          case WM_RBUTTONDOWN: System.Diagnostics.Debug.WriteLine(string.Format("WM_RBUTTONDOWN [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
-          case WM_RBUTTONUP: System.Diagnostics.Debug.WriteLine(string.Format("WM_RBUTTONUP [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
-          case WM_SETFOCUS: System.Diagnostics.Debug.WriteLine("WM_SETFOCUS"); break;
-          case WM_SETTEXT: System.Diagnostics.Debug.WriteLine(string.Format("WM_SETTEXT text = {0}", Marshal.PtrToStringAuto(message.LParam))); break;
-          case WM_SHOWWINDOW: System.Diagnostics.Debug.WriteLine(string.Format("WM_SHOWWINDOW shown = {0}", message.WParam)); break;
-          case WM_SIZE: System.Diagnostics.Debug.WriteLine(string.Format("WM_SIZE type = {0}, width = {1}, heignt = {2}", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
-          default: System.Diagnostics.Debug.WriteLine(string.Format("[Msg=0x{0:X4}, HWnd=0x{1:X}, WParam=0x{2:X}, LParam=0x{3:X}, Result=0x{4:X}]", message.Msg, (long)message.HWnd, (long)message.WParam, (long)message.LParam, (long)message.Result)); break;
-          */
+        case WM_KILLFOCUS: System.Diagnostics.Debug.WriteLine("WM_KILLFOCUS"); break;
+        case WM_LBUTTONDBLCLK: System.Diagnostics.Debug.WriteLine(string.Format("WM_LBUTTONDBLCLK [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
+        case WM_LBUTTONDOWN: System.Diagnostics.Debug.WriteLine(string.Format("WM_LBUTTONDOWN [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
+        case WM_LBUTTONUP: System.Diagnostics.Debug.WriteLine(string.Format("WM_LBUTTONUP [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
+        case WM_MBUTTONDBLCLK: System.Diagnostics.Debug.WriteLine(string.Format("WM_MBUTTONDBLCLK [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
+        case WM_MBUTTONDOWN: System.Diagnostics.Debug.WriteLine(string.Format("WM_MBUTTONDOWN [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
+        case WM_MBUTTONUP: System.Diagnostics.Debug.WriteLine(string.Format("WM_MBUTTONUP [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
+        case WM_MOUSEENTER: System.Diagnostics.Debug.WriteLine("WM_MOUSEENTER"); break;
+        case WM_MOUSEHWHEEL: System.Diagnostics.Debug.WriteLine(string.Format("WM_MOUSEHWHEEL [Keys={0}, Delta={1} x={2}, y={3}", LOWORD(message.WParam), HIWORD(message.WParam), LOWORD(message.LParam), HIWORD(message.LParam))); break;
+        case WM_MOUSELEAVE: System.Diagnostics.Debug.WriteLine("WM_MOUSELEAVE"); break;
+        case WM_MOUSEMOVE: System.Diagnostics.Debug.WriteLine(string.Format("WM_MOUSEMOVE [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
+        case WM_MOUSEWHEEL: System.Diagnostics.Debug.WriteLine(string.Format("WM_MOUSEWHEEL [Keys={0}, Delta={1} x={2}, y={3}", LOWORD(message.WParam), HIWORD(message.WParam), LOWORD(message.LParam), HIWORD(message.LParam))); break;
+        case WM_MOVE: System.Diagnostics.Debug.WriteLine(string.Format("WM_MOVE x = {0}, y = {1}", LOWORD(message.LParam), HIWORD(message.LParam))); break;
+        case WM_RBUTTONDBLCLK: System.Diagnostics.Debug.WriteLine(string.Format("WM_RBUTTONDBLCLK [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
+        case WM_RBUTTONDOWN: System.Diagnostics.Debug.WriteLine(string.Format("WM_RBUTTONDOWN [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
+        case WM_RBUTTONUP: System.Diagnostics.Debug.WriteLine(string.Format("WM_RBUTTONUP [Keys={0}, x={1}, y={2}]", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
+        case WM_SETFOCUS: System.Diagnostics.Debug.WriteLine("WM_SETFOCUS"); break;
+        case WM_SETTEXT: System.Diagnostics.Debug.WriteLine(string.Format("WM_SETTEXT text = {0}", Marshal.PtrToStringAuto(message.LParam))); break;
+        case WM_SHOWWINDOW: System.Diagnostics.Debug.WriteLine(string.Format("WM_SHOWWINDOW shown = {0}", message.WParam)); break;
+        case WM_SIZE: System.Diagnostics.Debug.WriteLine(string.Format("WM_SIZE type = {0}, width = {1}, heignt = {2}", message.WParam, LOWORD(message.LParam), HIWORD(message.LParam))); break;
+        default: System.Diagnostics.Debug.WriteLine(string.Format("[Msg=0x{0:X4}, HWnd=0x{1:X}, WParam=0x{2:X}, LParam=0x{3:X}, Result=0x{4:X}]", message.Msg, (long)message.HWnd, (long)message.WParam, (long)message.LParam, (long)message.Result)); break;
       }
     }
-
-    Button button1 = new Button();
   }
 }

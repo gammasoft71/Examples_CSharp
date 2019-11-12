@@ -17,16 +17,16 @@ namespace Examples {
       flowLayoutPanelCenter.AutoScroll = true;
 
       panel1.Parent = flowLayoutPanelCenter;
-      panel1.BackColor = System.Drawing.Color.Red;
+      panel1.BackColor = System.Drawing.Color.LightPink;
 
       panel2.Parent = flowLayoutPanelCenter;
-      panel2.BackColor = System.Drawing.Color.Green;
+      panel2.BackColor = System.Drawing.Color.LightGreen;
 
       panel3.Parent = flowLayoutPanelCenter;
-      panel3.BackColor = System.Drawing.Color.Blue;
+      panel3.BackColor = System.Drawing.Color.LightBlue;
 
       panel4.Parent = flowLayoutPanelCenter;
-      panel4.BackColor = System.Drawing.Color.Yellow;
+      panel4.BackColor = System.Drawing.Color.LightYellow;
 
       flowLayoutPanelTop.Parent = this;
       flowLayoutPanelTop.Dock = DockStyle.Top;

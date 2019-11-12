@@ -20,16 +20,16 @@ namespace Examples {
       this.groupBox1.Bounds = new System.Drawing.Rectangle(10, 10, 135, 140);
 
       this.radio1.Parent = this.groupBox1;
-      this.radio1.Location = new System.Drawing.Point(10, 30);
+      this.radio1.Location = new System.Drawing.Point(20, 20);
       this.radio1.Text = "radio button 1";
       this.radio1.Checked = true;
 
       this.radio2.Parent = this.groupBox1;
-      this.radio2.Location = new System.Drawing.Point(10, 60);
+      this.radio2.Location = new System.Drawing.Point(20, 50);
       this.radio2.Text = "radio button 2";
 
       this.radio3.Parent = this.groupBox1;
-      this.radio3.Location = new System.Drawing.Point(10, 90);
+      this.radio3.Location = new System.Drawing.Point(20, 80);
       this.radio3.Text = "radio button 3";
 
       this.groupBox2.Parent = this;
@@ -37,16 +37,16 @@ namespace Examples {
       this.groupBox2.Bounds = new System.Drawing.Rectangle(155, 10, 130, 140);
 
       this.radio4.Parent = this.groupBox2;
-      this.radio4.Location = new System.Drawing.Point(10, 30);
+      this.radio4.Location = new System.Drawing.Point(20, 20);
       this.radio4.Text = "radio button 4";
 
       this.radio5.Parent = this.groupBox2;
-      this.radio5.Location = new System.Drawing.Point(10, 60);
+      this.radio5.Location = new System.Drawing.Point(20, 50);
       this.radio5.Text = "radio button 5";
       this.radio5.Checked = true;
 
       this.radio6.Parent = this.groupBox2;
-      this.radio6.Location = new System.Drawing.Point(10, 90);
+      this.radio6.Location = new System.Drawing.Point(20, 80);
       this.radio6.Text = "radio button 6";
     }
 

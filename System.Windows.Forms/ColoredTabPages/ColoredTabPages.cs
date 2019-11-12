@@ -9,31 +9,33 @@ namespace Examples {
     }
 
     public Form1() {
-      this.tabPageRed.Text = "Red";
-      this.tabPageRed.BackColor = System.Drawing.Color.Red;
+      ClientSize = new System.Drawing.Size(390, 270);
+      Text = "Colored TabPages example";
+      Controls.Add(tabControl1);
 
-      this.tabPageGreen.Text = "Green";
-      this.tabPageGreen.BackColor = System.Drawing.Color.Green;
+      tabControl1.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom;
+      tabControl1.Location = new System.Drawing.Point(10, 10);
+      tabControl1.Size = new System.Drawing.Size(370, 250);
+      tabControl1.TabPages.AddRange(new TabPage[] { tabPageLightPink, tabPageLightGreen, tabPageLightBlue, tabPageLightYellow });
+      tabControl1.Alignment = TabAlignment.Bottom;
 
-      this.tabPageBlue.Text = "Blue";
-      this.tabPageBlue.BackColor = System.Drawing.Color.Blue;
+      tabPageLightPink.Text = "LightPink";
+      tabPageLightPink.BackColor = System.Drawing.Color.LightPink;
 
-      this.tabPageYellow.Text = "Yellow";
-      this.tabPageYellow.BackColor = System.Drawing.Color.Yellow;
+      tabPageLightGreen.Text = "LightGreen";
+      tabPageLightGreen.BackColor = System.Drawing.Color.LightGreen;
 
-      this.tabControl1.Location = new System.Drawing.Point(10, 10);
-      this.tabControl1.Size = new System.Drawing.Size(370, 250);
-      this.tabControl1.TabPages.AddRange(new TabPage[] { this.tabPageRed, this.tabPageGreen, this.tabPageBlue, this.tabPageYellow });
+      tabPageLightBlue.Text = "LightBlue";
+      tabPageLightBlue.BackColor = System.Drawing.Color.LightBlue;
 
-      this.ClientSize = new System.Drawing.Size(390, 270);
-      this.Text = "Colored TabPages example";
-      this.Controls.Add(this.tabControl1);
+      tabPageLightYellow.Text = "LightYellow";
+      tabPageLightYellow.BackColor = System.Drawing.Color.LightYellow;
     }
 
     private TabControl tabControl1 = new TabControl();
-    private TabPage tabPageRed = new TabPage();
-    private TabPage tabPageGreen = new TabPage();
-    private TabPage tabPageBlue = new TabPage();
-    private TabPage tabPageYellow = new TabPage();
+    private TabPage tabPageLightPink = new TabPage();
+    private TabPage tabPageLightGreen = new TabPage();
+    private TabPage tabPageLightBlue = new TabPage();
+    private TabPage tabPageLightYellow = new TabPage();
   }
 }

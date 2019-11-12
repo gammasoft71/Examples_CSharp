@@ -20,6 +20,10 @@ namespace Examples {
 
       for (int i = 1; i <= 50; ++i)
         checkedlistBox.Items.Add(string.Format("Item {0}", i), i % 2 != 0);
+
+      checkedlistBox.ItemCheck += delegate (object sender, ItemCheckEventArgs e) {
+        System.Diagnostics.Debug.WriteLine(string.Format("item check, Index ={0}, NewValue={1}, CurrentValue={2}", e.Index, e.NewValue, e.CurrentValue));
+      };
     }
 
     private CheckedListBox checkedlistBox = new CheckedListBox();

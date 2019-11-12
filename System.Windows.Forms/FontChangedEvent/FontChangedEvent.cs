@@ -10,38 +10,38 @@ namespace FolderBrowserDialogExample {
     }
 
     public Form1() {
-      this.InitializeComponent();
+      InitializeComponent();
     }
 
     private void InitializeComponent() {
-      this.SuspendLayout();
+      SuspendLayout();
       //
       // radioButton1
       //
-      this.radioButton1.Location = new System.Drawing.Point(0, 0);
-      this.radioButton1.Name = "radioButton1";
-      this.radioButton1.Size = new System.Drawing.Size(150, 17);
-      this.radioButton1.TabStop = true;
-      this.radioButton1.Text = "Button1";
-      this.radioButton1.FontChanged += new System.EventHandler(this.radioButton1_FontChanged);
+      radioButton1.Location = new System.Drawing.Point(0, 0);
+      radioButton1.Name = "radioButton1";
+      radioButton1.Size = new System.Drawing.Size(150, 17);
+      radioButton1.TabStop = true;
+      radioButton1.Text = "Button1";
+      radioButton1.FontChanged += new System.EventHandler(radioButton1_FontChanged);
       //
       // radioButton2
       //
-      this.radioButton2.Location = new System.Drawing.Point(0, 39);
-      this.radioButton2.Name = "radioButton2";
-      this.radioButton2.Size = new System.Drawing.Size(150, 17);
-      this.radioButton2.TabStop = true;
-      this.radioButton2.Text = "Change Button1 font.";
-      this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+      radioButton2.Location = new System.Drawing.Point(0, 39);
+      radioButton2.Name = "radioButton2";
+      radioButton2.Size = new System.Drawing.Size(150, 17);
+      radioButton2.TabStop = true;
+      radioButton2.Text = "Change Button1 font.";
+      radioButton2.CheckedChanged += new System.EventHandler(radioButton2_CheckedChanged);
       //
       // Form1
       //
-      this.ClientSize = new System.Drawing.Size(292, 273);
-      this.Controls.Add(this.radioButton2);
-      this.Controls.Add(this.radioButton1);
-      this.Name = "Form1";
-      this.ResumeLayout(false);
-      this.PerformLayout();
+      ClientSize = new System.Drawing.Size(292, 273);
+      Controls.Add(radioButton2);
+      Controls.Add(radioButton1);
+      Name = "Form1";
+      ResumeLayout(false);
+      PerformLayout();
     }
 
     private void radioButton2_CheckedChanged(object sender, EventArgs e) {

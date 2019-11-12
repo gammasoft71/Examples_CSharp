@@ -10,7 +10,7 @@ namespace FolderBrowserDialogExample {
     }
 
     public Form1() {
-      this.label.Text = "The quick brown fox jumps over the lazy dog.\n" +
+      label.Text = "The quick brown fox jumps over the lazy dog.\n" +
         "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.\n" +
         "0123456789+-*/%~^&|=<>≤≥±÷≠{{[()]}},;:.?¿!¡\n" +
         "àçéèêëïî@@°_#§$ù£€æœøπµ©®∞\\\"'\n" +
@@ -19,26 +19,26 @@ namespace FolderBrowserDialogExample {
       "\u4ea0\u4ea1\u4ea2\u4ea3\u4ea4\u4ea5\u4ea6\u4ea7\u4ea8\u4ea9\u4eaa\u4eab\u4eac\u4ead\u4eae\u4eaf\n" +
         "\u4eb0\u4eb1\u4eb2\u4eb3\u4eb4\u4eb5\u4eb6\u4eb7\u4eb8\u4eb9\u4eba\u4ebb\u4ebc\u4ebd\u4ebe\u4ebf\n";
       //"\U0001F428";
-      this.label.Location = new System.Drawing.Point(10, 50);
-      this.label.Size = new System.Drawing.Size(380, 340);
+      label.Location = new System.Drawing.Point(10, 50);
+      label.Size = new System.Drawing.Size(380, 340);
 
-      this.button.Text = "Font...";
-      this.button.Location = new System.Drawing.Point(10, 10);
+      button.Text = "Font...";
+      button.Location = new System.Drawing.Point(10, 10);
 
-      this.button.Click += delegate (object sender, EventArgs e) {
+      button.Click += delegate (object sender, EventArgs e) {
         FontDialog fontDialog = new FontDialog();
         fontDialog.ShowColor = true;
-        fontDialog.Font = this.label.Font;
-        fontDialog.Color = this.label.ForeColor;
+        fontDialog.Font = label.Font;
+        fontDialog.Color = label.ForeColor;
         if (fontDialog.ShowDialog() == DialogResult.OK) {
-          this.label.Font = fontDialog.Font;
-          this.label.ForeColor = fontDialog.Color;
+          label.Font = fontDialog.Font;
+          label.ForeColor = fontDialog.Color;
         }
       };
 
-      this.Text = "Font Example";
-      this.ClientSize = new System.Drawing.Size(400, 400);
-      this.Controls.AddRange(new Control[] { this.button, this.label });
+      Text = "Font Example";
+      ClientSize = new System.Drawing.Size(400, 400);
+      Controls.AddRange(new Control[] { button, label });
     }
 
     private Button button = new Button();

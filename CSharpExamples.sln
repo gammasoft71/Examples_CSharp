@@ -250,7 +250,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Printing", "Printing", "{6B283F7C-2D59-475F-BBE4-FCC7A46E2584}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dialogs", "Dialogs", "{3C12F1A9-6039-40B1-A047-782900739410}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common Dialogs", "Common Dialogs", "{3C12F1A9-6039-40B1-A047-782900739410}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Events", "Events", "{56592CD2-1780-41AF-9018-FE2B2076F4CD}"
 EndProject
@@ -273,6 +273,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumericTextBox", "System.Windows.Forms\CustomControls\NumricTextBox\NumericTextBox.csproj", "{47BCE46A-2F48-420C-9242-EDB1ACB327EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserControl", "System.Windows.Forms\UserControl\UserControl.csproj", "{755790D5-BA63-436E-A2EB-4DE092454EDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Painting", "System.Windows.Forms\Painting\Painting.csproj", "{53CCECEE-A367-4E43-9375-D78924B05DA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -982,6 +984,12 @@ Global
 		{755790D5-BA63-436E-A2EB-4DE092454EDF}.Release|Any CPU.ActiveCfg = Release|x86
 		{755790D5-BA63-436E-A2EB-4DE092454EDF}.Release|x86.ActiveCfg = Release|x86
 		{755790D5-BA63-436E-A2EB-4DE092454EDF}.Release|x86.Build.0 = Release|x86
+		{53CCECEE-A367-4E43-9375-D78924B05DA3}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{53CCECEE-A367-4E43-9375-D78924B05DA3}.Debug|x86.ActiveCfg = Debug|x86
+		{53CCECEE-A367-4E43-9375-D78924B05DA3}.Debug|x86.Build.0 = Debug|x86
+		{53CCECEE-A367-4E43-9375-D78924B05DA3}.Release|Any CPU.ActiveCfg = Release|x86
+		{53CCECEE-A367-4E43-9375-D78924B05DA3}.Release|x86.ActiveCfg = Release|x86
+		{53CCECEE-A367-4E43-9375-D78924B05DA3}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1115,6 +1123,7 @@ Global
 		{0667AB98-E2F8-4E49-95CD-57265D386820} = {5B6630E6-F1A2-4172-ACA6-ADF7DD1510F0}
 		{47BCE46A-2F48-420C-9242-EDB1ACB327EF} = {0667AB98-E2F8-4E49-95CD-57265D386820}
 		{755790D5-BA63-436E-A2EB-4DE092454EDF} = {61547CAC-CC9D-40B7-9695-9EC27F7DF834}
+		{53CCECEE-A367-4E43-9375-D78924B05DA3} = {43D72D84-2175-40DB-A993-D51BA9B1ABDA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0222CD68-0450-4733-8A72-82553BC0473F}

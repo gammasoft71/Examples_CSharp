@@ -10,21 +10,21 @@ namespace Examples {
     }
 
     public Form1() {
-      this.buttonShowMessage.Location = new System.Drawing.Point(10, 10);
-      this.buttonShowMessage.Width = 100;
-      this.buttonShowMessage.Text = "MessageBox";
-      this.buttonShowMessage.Click += delegate(object sender, EventArgs e) {
+      buttonShowMessage.Location = new System.Drawing.Point(10, 10);
+      buttonShowMessage.Width = 100;
+      buttonShowMessage.Text = "MessageBox";
+      buttonShowMessage.Click += delegate(object sender, EventArgs e) {
         DialogResult result = MessageBox.Show("Hello, World!", "Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
         labelDialogResult.Text = string.Format("DialogResult = {0}", result);
       };
 
-      this.labelDialogResult.Location = new System.Drawing.Point(10, 45);
-      this.labelDialogResult.Width = 200;
+      labelDialogResult.Location = new System.Drawing.Point(10, 45);
+      labelDialogResult.Width = 200;
 
-      this.StartPosition = FormStartPosition.Manual;
-      this.Location = new System.Drawing.Point(400, 200);
-      this.Text = "MessageBox example";
-      this.Controls.AddRange(new Control[] { this.buttonShowMessage, this.labelDialogResult});
+      StartPosition = FormStartPosition.Manual;
+      Location = new System.Drawing.Point(400, 200);
+      Text = "MessageBox example";
+      Controls.AddRange(new Control[] { buttonShowMessage, labelDialogResult});
     }
 
     private Button buttonShowMessage = new Button();

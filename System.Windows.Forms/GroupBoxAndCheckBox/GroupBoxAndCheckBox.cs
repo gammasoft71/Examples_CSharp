@@ -20,16 +20,16 @@ namespace Examples {
       this.group1.Bounds = new System.Drawing.Rectangle(10, 10, 135, 140);
 
       this.check1.Parent = this.group1;
-      this.check1.Location = new System.Drawing.Point(10, 30);
+      this.check1.Location = new System.Drawing.Point(20, 20);
       this.check1.Text = "check 1";
 
       this.check2.Parent = this.group1;
-      this.check2.Location = new System.Drawing.Point(10, 60);
+      this.check2.Location = new System.Drawing.Point(20, 50);
       this.check2.Text = "check 2";
       this.check2.Checked = true;
 
       this.check3.Parent = this.group1;
-      this.check3.Location = new System.Drawing.Point(10, 90);
+      this.check3.Location = new System.Drawing.Point(20, 80);
       this.check3.Text = "check 3";
 
       this.group2.Parent = this;
@@ -37,15 +37,15 @@ namespace Examples {
       this.group2.Bounds = new System.Drawing.Rectangle(155, 10, 135, 140);
 
       this.check4.Parent = this.group2;
-      this.check4.Location = new System.Drawing.Point(10, 30);
+      this.check4.Location = new System.Drawing.Point(20, 20);
       this.check4.Text = "check 4";
 
       this.check5.Parent = this.group2;
-      this.check5.Location = new System.Drawing.Point(10, 60);
+      this.check5.Location = new System.Drawing.Point(20, 50);
       this.check5.Text = "check 5";
 
       this.check6.Parent = this.group2;
-      this.check6.Location = new System.Drawing.Point(10, 90);
+      this.check6.Location = new System.Drawing.Point(20, 80);
       this.check6.Text = "check 6";
       this.check6.Checked = true;
     }
