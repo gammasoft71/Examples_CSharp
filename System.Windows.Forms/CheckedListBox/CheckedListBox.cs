@@ -18,7 +18,7 @@ namespace Examples {
       checkedlistBox.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom;
       checkedlistBox.Bounds = new System.Drawing.Rectangle(20, 20, 160, 200);
 
-      for (int i = 1; i <= 50; ++i)
+      for (int i = 1; i <= 10; ++i)
         checkedlistBox.Items.Add(string.Format("Item {0}", i), i % 2 != 0);
 
       checkedlistBox.ItemCheck += delegate (object sender, ItemCheckEventArgs e) {

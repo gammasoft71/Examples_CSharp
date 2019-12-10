@@ -15,6 +15,8 @@ namespace Examples {
       this.ClientSize = new System.Drawing.Size(640, 420);
 
       this.panelKnownColors.Parent = this;
+      this.panelKnownColors.BackColor = System.Drawing.SystemColors.Window;
+      this.panelKnownColors.ForeColor = System.Drawing.SystemColors.WindowText;
       this.panelKnownColors.Location = new System.Drawing.Point(10, 10);
       this.panelKnownColors.Size = new System.Drawing.Size(300, 400);
       this.panelKnownColors.BorderStyle = BorderStyle.Fixed3D;

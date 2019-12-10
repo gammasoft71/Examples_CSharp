@@ -4,6 +4,14 @@ using System.Drawing;
 namespace TestConsole {
   class MainClass {
     public static void Main(string[] args) {
+      Bitmap bmp = new Bitmap(32, 32);
+
+      for (int y = 0; y < bmp.Height; y++)
+        for (int x = 0; x < bmp.Width; x++)
+          if (bmp.GetPixel(x, y)!= Color.FromArgb(0, 0, 0, 0))
+            System.Diagnostics.Debug.WriteLine(string.Format("x = {0}, y = {1}, color = {2,-34}", x, y, bmp.GetPixel(x, y)));
+
+      /*
       //Console.WriteLine("Hello World!");
       Console.WriteLine("p1 = {0}", new Point());
       Console.WriteLine("p2 = {0}", new Point(10, 20));
@@ -14,6 +22,7 @@ namespace TestConsole {
       Console.WriteLine("c1 = {0}", Color.FromName("dark blue").Name);
       Console.WriteLine("c1 = {0:X8}", Color.FromName("Transparent").ToArgb());
       Console.WriteLine("c1 = {0}", Color.FromName("dark blue").IsEmpty);
+      */
     }
   }
 }
