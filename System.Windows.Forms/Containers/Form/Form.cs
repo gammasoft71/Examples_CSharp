@@ -10,22 +10,30 @@ namespace Examples {
     }
 
     public Form1() {
-      button.Text = "Close";
-      button.Location = new System.Drawing.Point(10, 10);
-      button.Click += delegate(object sender, EventArgs e) {
+      buttonClose.Text = "Close";
+      buttonClose.Location = new System.Drawing.Point(10, 10);
+      buttonClose.Click += delegate (object sender, EventArgs e) {
         Close();
+      };
+
+      buttonExit.Text = "Exit";
+      buttonExit.Location = new System.Drawing.Point(100, 10);
+      buttonExit.Click += delegate (object sender, EventArgs e) {
+        Application.ExitThread();
       };
 
       Text = "Form example";
       StartPosition = FormStartPosition.Manual;
       Location = new System.Drawing.Point(300, 200);
       Size = new System.Drawing.Size(640, 480);
-      Controls.Add(button);
+      Controls.Add(buttonClose);
+      Controls.Add(buttonExit);
       FormClosing += delegate(object sender, FormClosingEventArgs e) {
         e.Cancel = MessageBox.Show("Are you sure you want exit?", "Close Form", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No;
       };
     }
 
-    private Button button = new Button();
+    private Button buttonClose = new Button();
+    private Button buttonExit = new Button();
   }
 }

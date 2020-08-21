@@ -2,54 +2,70 @@
 using System.Windows.Forms;
 
 namespace Examples {
-  public class Form1 : Form {
-    // The main entry point for the application.
+  class MainForm : Form {
+    [STAThread]
     public static void Main() {
       Application.EnableVisualStyles();
-      Application.Run(new Form1());
+      Application.Run(new MainForm());
     }
 
-    public Form1() {
-      this.mainMenu.MenuItems.Add("File");
-      this.mainMenu.MenuItems.Add("Edit");
-      this.mainMenu.MenuItems.Add("View");
+    public MainForm() {
+      Text = "MainMenu example";
+      Menu = new MainMenu(new MenuItem[] {
+         new MenuItem("&File", new MenuItem[] {
+           new MenuItem("&New", OnMenuItemClick, Shortcut.CtrlN),
+           new MenuItem("-"),
+           new MenuItem("&Open", OnMenuItemClick, Shortcut.CtrlO),
+           new MenuItem("Open &Recent", new MenuItem[] {
+             new MenuItem("Path/File1", OnMenuItemClick),
+             new MenuItem("Path/File2", OnMenuItemClick),
+             new MenuItem("Path/File3", OnMenuItemClick),
+             new MenuItem("Path/File4", OnMenuItemClick),
+             new MenuItem("Path/File5", OnMenuItemClick)
+           }),
+           new MenuItem("&Close", OnMenuItemClick, Shortcut.CtrlW),
+           new MenuItem("-"),
+           new MenuItem("&Save", OnMenuItemClick, Shortcut.CtrlS),
+           new MenuItem("Save &As", OnMenuItemClick),
+           new MenuItem("-"),
+           new MenuItem("&Print", OnMenuItemClick, Shortcut.CtrlP),
+           new MenuItem("Print pre&view", OnMenuItemClick),
+           new MenuItem("-"),
+           new MenuItem("&Exit", OnMenuItemClick, Shortcut.AltF4),
+         }),
+         new MenuItem("&Edit", new MenuItem[] {
+           new MenuItem("&Undo", OnMenuItemClick, Shortcut.CtrlZ),
+           new MenuItem("&Redo", OnMenuItemClick, Shortcut.CtrlShiftZ),
+           new MenuItem("-"),
+           new MenuItem("Cu&t", OnMenuItemClick, Shortcut.CtrlX),
+           new MenuItem("&Copy", OnMenuItemClick, Shortcut.CtrlC),
+           new MenuItem("&Paste", OnMenuItemClick, Shortcut.CtrlV),
+           new MenuItem("-"),
+           new MenuItem("Select &All", OnMenuItemClick, Shortcut.CtrlA),
+         }),
+         new MenuItem("&Tools", new MenuItem[] {
+           new MenuItem("&Customize", OnMenuItemClick),
+           new MenuItem("&Options", OnMenuItemClick),
+         }),
+         new MenuItem("&Help", new MenuItem[] {
+           new MenuItem("&Content", OnMenuItemClick),
+           new MenuItem("&Index", OnMenuItemClick),
+           new MenuItem("&Search", OnMenuItemClick),
+           new MenuItem("-"),
+           new MenuItem("&About", OnMenuItemClick),
+         }),
+      });
 
-      this.mainMenu.MenuItems[0].MenuItems.Add(new MenuItem("New", this.OnMenuClick, Shortcut.CtrlN));
-      this.mainMenu.MenuItems[0].MenuItems.Add(new MenuItem("Open...", this.OnMenuClick, Shortcut.CtrlO));
-      this.mainMenu.MenuItems[0].MenuItems.Add(new MenuItem("Open recent", this.OnMenuClick));
-      this.mainMenu.MenuItems[0].MenuItems.Add(new MenuItem("Close", this.OnMenuClick, Shortcut.CtrlW));
-      this.mainMenu.MenuItems[0].MenuItems.Add(new MenuItem("-"));
-      this.mainMenu.MenuItems[0].MenuItems.Add(new MenuItem("Save", this.OnMenuClick, Shortcut.CtrlS));
-      this.mainMenu.MenuItems[0].MenuItems.Add(new MenuItem("Save as...", this.OnMenuClick));
-      this.mainMenu.MenuItems[0].MenuItems.Add(new MenuItem("-"));
-      this.mainMenu.MenuItems[0].MenuItems.Add(new MenuItem("Quit", this.OnMenuClick, Environment.OSVersion.Platform >= PlatformID.Unix ? Shortcut.CtrlQ : Shortcut.AltF4));
-
-      this.mainMenu.MenuItems[1].MenuItems.Add(new MenuItem("Undo", this.OnMenuClick, Shortcut.CtrlZ));
-      this.mainMenu.MenuItems[1].MenuItems.Add(new MenuItem("Redo", this.OnMenuClick, Shortcut.CtrlY));
-      this.mainMenu.MenuItems[1].MenuItems.Add("-");
-      this.mainMenu.MenuItems[1].MenuItems.Add(new MenuItem("Cut", this.OnMenuClick, Shortcut.CtrlX));
-      this.mainMenu.MenuItems[1].MenuItems.Add(new MenuItem("Copy", this.OnMenuClick, Shortcut.CtrlC));
-      this.mainMenu.MenuItems[1].MenuItems.Add(new MenuItem("Paste", this.OnMenuClick, Shortcut.CtrlV));
-      this.mainMenu.MenuItems[1].MenuItems.Add("-");
-      this.mainMenu.MenuItems[1].MenuItems.Add(new MenuItem("Select All", this.OnMenuClick, Shortcut.CtrlA));
-
-      this.mainMenu.MenuItems[2].MenuItems.Add(new MenuItem("Show", this.OnMenuClick));
-      this.mainMenu.MenuItems[2].MenuItems.Add(new MenuItem("Hide", this.OnMenuClick));
-
-      this.listBox1.Parent = this;
-      this.listBox1.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom;
-      this.listBox1.Bounds = new System.Drawing.Rectangle(10, 10, this.ClientSize.Width - 20, this.ClientSize.Height - 20);
-
-      this.Menu = this.mainMenu;
-      this.Text = "MainMenu example";
+      listBox1.Parent = this;
+      listBox1.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom;
+      listBox1.Bounds = new System.Drawing.Rectangle(10, 10, ClientSize.Width - 20, ClientSize.Height - 20);
     }
 
-    void OnMenuClick(object sender, EventArgs e) {
-      this.listBox1.Items.Add(string.Format("{0}/{1} clicked", ((sender as MenuItem).Parent as MenuItem).Text, (sender as MenuItem).Text));
-      this.listBox1.SelectedIndex = this.listBox1.Items.Count - 1;
+    private void OnMenuItemClick(object sender, EventArgs e) {
+      listBox1.Items.Add(string.Format("{0}/{1} clicked", ((sender as MenuItem).Parent as MenuItem).Text, (sender as MenuItem).Text));
+      listBox1.SelectedIndex = listBox1.Items.Count - 1;
     }
 
-    private MainMenu mainMenu = new MainMenu();
     private ListBox listBox1 = new ListBox();
   }
 }

@@ -60,6 +60,7 @@ namespace Examples {
       this.testZone.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right;
       this.testZone.BorderStyle = BorderStyle.Fixed3D;
       this.testZone.BackColor = System.Drawing.SystemColors.Window;
+      //this.testZone.BackColor = Color.Black;
       this.testZone.Bounds = new System.Drawing.Rectangle(190, 20, 150, 200);
     }
 

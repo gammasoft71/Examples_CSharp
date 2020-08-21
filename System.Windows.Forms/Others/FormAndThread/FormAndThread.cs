@@ -28,9 +28,8 @@ namespace Examples {
         threads[index] = new Thread(new ParameterizedThreadStart(delegate (object user_thread_id) {
           int counter = 0;
           while(!closed) {
-            Thread.Sleep(500);
-            if (closed) break;
-            listBox.Invoke(new Invoker(delegate {
+            Thread.Sleep(50);
+            listBox.BeginInvoke(new Invoker(delegate {
               listBox.Items.Add(string.Format("thread: {0}, counter: {1}", user_thread_id, ++counter));
               listBox.SelectedIndex = listBox.Items.Count - 1;
             }));

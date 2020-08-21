@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{F4058297-9B37-496B-8BD1-78A4112D15B6}</ProjectGuid>
+    <ProjectGuid>{7F0FF9A3-5EAC-4CC8-9E31-28E084FCE7D3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Examples</RootNamespace>
     <AssemblyName>TimerForm</AssemblyName>
@@ -35,7 +35,7 @@
     <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ImageList.cs">
+    <Compile Include="SystemIcons.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

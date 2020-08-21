@@ -15,6 +15,13 @@ namespace Examples {
       numericUpDown1.DecimalPlaces = 0;
       numericUpDown1.Location = new System.Drawing.Point(80, 50);
       numericUpDown1.Value = 50;
+      numericUpDown1.ValueChanged += delegate {
+        System.Diagnostics.Debug.WriteLine(string.Format("value = {0}", numericUpDown1.Value));
+      };
+
+      numericUpDown1.TextChanged += delegate {
+        System.Diagnostics.Debug.WriteLine(string.Format("text = {0}", numericUpDown1.Text));
+      };
 
       numericUpDown2.Parent = this;
       numericUpDown2.DecimalPlaces = 2;
