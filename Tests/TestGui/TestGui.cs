@@ -22,7 +22,7 @@ namespace Examples {
            new MenuItem("&Print", OnMenuItemClick, Shortcut.CtrlS),
            new MenuItem("Print pre&view", OnMenuItemClick),
            new MenuItem("-"),
-           new MenuItem("&Exit", OnMenuItemClick, Shortcut.AltF4),
+           new MenuItem("&Exit", (_, EventArgs) => Close(), Shortcut.AltF4),
          }),
          new MenuItem("&Edit", new MenuItem[] {
            new MenuItem("&Undo", OnMenuItemClick, Shortcut.CtrlZ),
