@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
 namespace Examples {
@@ -13,29 +13,28 @@ namespace Examples {
       Text = "Colored TabPages example";
       Controls.Add(tabControl1);
 
-      tabControl1.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Right | AnchorStyles.Bottom;
-      tabControl1.Location = new System.Drawing.Point(10, 10);
-      tabControl1.Size = new System.Drawing.Size(370, 250);
-      tabControl1.TabPages.AddRange(new TabPage[] { tabPageLightPink, tabPageLightGreen, tabPageLightBlue, tabPageLightYellow });
+      imageList.ImageSize = new Size(16, 16);
+      for (int index = 0; index < colors.Length; index++ ) {
+        var bitmap = new Bitmap(16, 16);
+        var g = Graphics.FromImage(bitmap);
+        g.FillEllipse(new SolidBrush(colors[index]), 0, 0, bitmap.Width, bitmap.Height);
+        g.DrawEllipse(new Pen(Color.Black), 0, 0, bitmap.Width - 1, bitmap.Height - 1);
+        imageList.Images.Add(bitmap);
+
+        var tabPage = new TabPage();
+        tabPage.BackColor = colors[index];
+        tabPage.ImageIndex = index;
+        tabPage.Text = colors[index].Name;
+        tabControl1.TabPages.Add(tabPage);
+      }
+
       tabControl1.Alignment = TabAlignment.Bottom;
-
-      tabPageLightPink.Text = "LightPink";
-      tabPageLightPink.BackColor = System.Drawing.Color.LightPink;
-
-      tabPageLightGreen.Text = "LightGreen";
-      tabPageLightGreen.BackColor = System.Drawing.Color.LightGreen;
-
-      tabPageLightBlue.Text = "LightBlue";
-      tabPageLightBlue.BackColor = System.Drawing.Color.LightBlue;
-
-      tabPageLightYellow.Text = "LightYellow";
-      tabPageLightYellow.BackColor = System.Drawing.Color.LightYellow;
+      tabControl1.Dock = DockStyle.Fill;
+      tabControl1.ImageList = imageList;
     }
 
+    private ImageList imageList = new ImageList();
+    private Color[] colors = new Color[] {Color.LightPink, Color.LightGreen, Color.LightBlue, Color.LightYellow };
     private TabControl tabControl1 = new TabControl();
-    private TabPage tabPageLightPink = new TabPage();
-    private TabPage tabPageLightGreen = new TabPage();
-    private TabPage tabPageLightBlue = new TabPage();
-    private TabPage tabPageLightYellow = new TabPage();
   }
 }
