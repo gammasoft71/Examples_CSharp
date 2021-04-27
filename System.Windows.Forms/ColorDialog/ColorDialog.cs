@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace FolderBrowserDialogExample {
@@ -12,11 +13,14 @@ namespace FolderBrowserDialogExample {
     public Form1() {
       button.Text = "Color...";
       button.Location = new System.Drawing.Point(10, 10);
+
       button.Click += delegate (object sender, EventArgs e) {
         ColorDialog colorDialog = new ColorDialog();
         colorDialog.Color = BackColor;
+        colorDialog.CustomColors = customColors;
         if (colorDialog.ShowDialog() == DialogResult.OK)
           BackColor = colorDialog.Color;
+        customColors = colorDialog.CustomColors;
       };
 
       Text = "ColorDialog example";
@@ -24,5 +28,6 @@ namespace FolderBrowserDialogExample {
     }
 
     private Button button = new Button();
-  }
+    private int[] customColors = new int[] { ColorTranslator.ToOle(Color.Red), ColorTranslator.ToOle(Color.Green), ColorTranslator.ToOle(Color.Blue), ColorTranslator.ToOle(Color.Yellow) };
+}
 }

@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{46C72E62-F3BB-4275-9B52-3D69F32FB547}</ProjectGuid>
+    <ProjectGuid>{D50DE0A8-E4A1-43B6-AEF5-168301D90869}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Examples</RootNamespace>
-    <AssemblyName>TestGui</AssemblyName>
+    <AssemblyName>FillRectangle</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -35,7 +35,7 @@
     <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestGui.cs">
+    <Compile Include="FillRectangle.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
