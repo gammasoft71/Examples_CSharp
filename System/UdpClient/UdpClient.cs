@@ -7,13 +7,14 @@ using System.Threading;
 namespace Examples {
   class Program {
     public static void Main() {
-      Console.WriteLine("Press Ctrl+C to quit...");
+      Console.WriteLine("Press press any key to quit...");
+      bool terminate = false;
       Thread server = new Thread(new ThreadStart(delegate {
         UdpClient udpClient = new UdpClient(new IPEndPoint(IPAddress.Any, 8082));
-        while (true) {
+        while (!terminate) {
           IPEndPoint incomingInformationEndpoint = new IPEndPoint(IPAddress.Any, 0);
           byte[] bytes = udpClient.Receive(ref incomingInformationEndpoint);
-          string s = Encoding.UTF8.GetString(bytes);
+          string s = Encoding.Default.GetString(bytes);
           Console.WriteLine(s);
         }
       }));
@@ -23,14 +24,17 @@ namespace Examples {
       Thread client = new Thread(new ThreadStart(delegate {
         UdpClient udpClient = new UdpClient();
         int counter = new Random().Next(1, 20000);
-        while (true) {
-          byte[] bytes = Encoding.UTF8.GetBytes(string.Format("Counter={0}", counter++));
+        while (!terminate) {
+          Thread.Sleep(25);
+          byte[] bytes = Encoding.Default.GetBytes(string.Format("Counter={0}", counter++));
           udpClient.Send(bytes, bytes.Length, "127.0.0.1", 8082);
-          Thread.Sleep(250);
         }
       }));
 
       client.Start();
+
+      Console.ReadKey(true);
+      terminate = true;
 
       server.Join();
       client.Join();
