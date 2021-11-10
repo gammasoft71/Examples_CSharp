@@ -7,7 +7,7 @@ using System.Threading;
 namespace Examples {
   class SocketExample {
     public static void Main(string[] args) {
-      Console.WriteLine("Press Ctrl+C to quit...");
+      Console.WriteLine("Press press any key to quit...");
       bool terminate = false;
       Thread server = new Thread(new ThreadStart(delegate {
         Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
@@ -16,8 +16,8 @@ namespace Examples {
         Socket socketWithClient = socket.Accept();
         while(!terminate) {
           byte[] buffer = new byte[256];
-          socketWithClient.Receive(buffer);
-          string s = Encoding.UTF8.GetString(buffer);
+          int count = socketWithClient.Receive(buffer);
+          string s = Encoding.Default.GetString(buffer, 0, count);
           Console.WriteLine(s);
         }
       }));
@@ -28,17 +28,18 @@ namespace Examples {
         socket.Connect("127.0.0.1", 9050);
         int counter = new Random().Next(1, 20000);
         while(!terminate) {
-          socket.Send(Encoding.UTF8.GetBytes(string.Format("Counter={0}", counter++)));
-          Thread.Sleep(250);
+          Thread.Sleep(25);
+          socket.Send(Encoding.Default.GetBytes(string.Format("Counter={0}", counter++)));
         }
       }));
       client.Start();
 
       Console.ReadKey(true);
       terminate = true;
+
       server.Join();
       client.Join();
-    }
+     }
   }
 }
 
