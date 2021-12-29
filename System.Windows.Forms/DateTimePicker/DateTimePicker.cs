@@ -12,11 +12,11 @@ namespace Examples {
       Text = "DateTimePicker example";
 
       dateTimePicker1.Parent = this;
-      //:::dateTimePicker1.Value = new DateTime(1975, 4, 4);
-      //dateTimePicker1.MinDate = new DateTime(1975, 4, 4);
-      //dateTimePicker1.MaxDate = DateTime.Now;
-      //dateTimePicker1.Format = DateTimePickerFormat.Short;
-      //dateTimePicker1.ShowUpDown = true;
+      dateTimePicker1.Value = new DateTime(1975, 4, 4);
+      dateTimePicker1.MinDate = new DateTime(1975, 4, 4);
+      dateTimePicker1.MaxDate = DateTime.Now;
+      dateTimePicker1.Format = DateTimePickerFormat.Short;
+      dateTimePicker1.ShowUpDown = true;
       dateTimePicker1.Location = new System.Drawing.Point(30, 30);
       System.Diagnostics.Debug.WriteLine(string.Format("default size = {0}", dateTimePicker1.Size));
 
