@@ -12,9 +12,9 @@ namespace Examples {
       Text = "DateTimePicker example";
 
       dateTimePicker1.Parent = this;
-      dateTimePicker1.Value = new DateTime(1975, 4, 4);
-      dateTimePicker1.MinDate = new DateTime(1975, 4, 4);
-      dateTimePicker1.MaxDate = DateTime.Now;
+      dateTimePicker1.Value = DateTime.Now;
+      dateTimePicker1.MinDate = dateTimePicker1.Value.AddMonths(-3);
+      dateTimePicker1.MaxDate = dateTimePicker1.Value.AddMonths(3);
       dateTimePicker1.Format = DateTimePickerFormat.Short;
       dateTimePicker1.ShowUpDown = true;
       dateTimePicker1.Location = new System.Drawing.Point(30, 30);
@@ -29,9 +29,9 @@ namespace Examples {
       };
 
       dateTimePicker2.Parent = this;
-      dateTimePicker2.Value = new DateTime(1975, 4, 4, 12, 34, 56);
-      dateTimePicker2.MinDate = new DateTime(1975, 4, 4, 10, 0, 0);
-      dateTimePicker2.MaxDate = new DateTime(1975, 4, 4, 22, 59, 0);
+      dateTimePicker2.Value = DateTime.Now;
+      dateTimePicker2.MinDate = dateTimePicker2.Value.AddHours(-3);
+      dateTimePicker2.MaxDate = dateTimePicker2.Value.AddHours(3);
       dateTimePicker2.Format = DateTimePickerFormat.Time;
       dateTimePicker2.ShowUpDown = true;
       dateTimePicker2.Location = new System.Drawing.Point(30, 90);
