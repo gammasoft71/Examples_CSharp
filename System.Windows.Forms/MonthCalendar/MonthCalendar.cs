@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace Examples {
@@ -17,8 +18,16 @@ namespace Examples {
       monthCalendar1.SelectionRange = new SelectionRange(DateTime.Now - TimeSpan.FromDays(1), DateTime.Now + TimeSpan.FromDays(1));
       monthCalendar1.Location = new System.Drawing.Point(10, 10);
 
+      monthCalendar1.DateChanged += delegate {
+        Debug.WriteLine(string.Format("DateChanged range = [{0}; {1}]", monthCalendar1.SelectionRange.Start.ToShortDateString(), monthCalendar1.SelectionRange.End.ToShortDateString()), "Date selected :");
+      };
+
       monthCalendar1.DateSelected += delegate {
-        MessageBox.Show(string.Format("range = [{0}; {1}]", monthCalendar1.SelectionRange.Start.ToShortDateString(), monthCalendar1.SelectionRange.End.ToShortDateString()), "Date selected :");
+        Debug.WriteLine(string.Format("DateSelected range = [{0}; {1}]", monthCalendar1.SelectionRange.Start.ToShortDateString(), monthCalendar1.SelectionRange.End.ToShortDateString()), "Date selected :");
+      };
+
+      monthCalendar1.TextChanged += delegate {
+        Debug.WriteLine(string.Format("TextChanged text = {0}", monthCalendar1.Text));
       };
     }
 
