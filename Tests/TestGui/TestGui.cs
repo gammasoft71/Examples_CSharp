@@ -9,99 +9,180 @@ namespace Examples {
       Application.EnableVisualStyles();
       Application.Run(new MainForm());
     }
-
     public MainForm() {
-      //Menu = CreateStandardMenu(OnMenuItemClick);
-      Text = "Fill rectangle example";
-      ClientSize = new Size(340, 300);
+      Controls.Add(formStylesTabControl);
+      Size = new System.Drawing.Size(600, 480);
+      Padding = new System.Windows.Forms.Padding(10);
+      Text = "Form tests";
+      System.Diagnostics.Debug.WriteLine("CreapeParams = {0}", CreateParams);
 
-      Paint += delegate (Object sender, PaintEventArgs e) {
-        ControlPaint.DrawButton(e.Graphics, new Rectangle(10, 10, 75, 25), ButtonState.Normal);
-        ControlPaint.DrawButton(e.Graphics, new Rectangle(10, 40, 75, 25), ButtonState.Inactive);
-        ControlPaint.DrawButton(e.Graphics, new Rectangle(10, 70, 75, 25), ButtonState.Pushed);
-        ControlPaint.DrawButton(e.Graphics, new Rectangle(10, 100, 75, 25), ButtonState.Checked);
-        ControlPaint.DrawButton(e.Graphics, new Rectangle(10, 130, 75, 25), ButtonState.Flat);
-        ControlPaint.DrawButton(e.Graphics, new Rectangle(10, 160, 75, 25), ButtonState.All);
+      formStylesTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
+      formStylesTabControl.TabPages.AddRange(new TabPage[] {decorationTabPage, windowStateTabPage, showTabPage });
 
-        ButtonRenderer.DrawButton(e.Graphics, new Rectangle(100, 10, 75, 25), System.Windows.Forms.VisualStyles.PushButtonState.Normal);
-        ButtonRenderer.DrawButton(e.Graphics, new Rectangle(100, 40, 75, 25), System.Windows.Forms.VisualStyles.PushButtonState.Disabled);
-        ButtonRenderer.DrawButton(e.Graphics, new Rectangle(100, 70, 75, 25), System.Windows.Forms.VisualStyles.PushButtonState.Pressed);
-        ButtonRenderer.DrawButton(e.Graphics, new Rectangle(100, 100, 75, 25), System.Windows.Forms.VisualStyles.PushButtonState.Hot);
-        ButtonRenderer.DrawButton(e.Graphics, new Rectangle(100, 130, 75, 25), System.Windows.Forms.VisualStyles.PushButtonState.Default);
+      decorationTabPage.Text = "Decorations";
+      windowStateTabPage.Text = "State";
+      showTabPage.Text = "Show";
+
+      decorationTabPage.Controls.AddRange(new Control[] { captionLabel, captionTextBox, borderStyleComboBox, minimizeBoxCheckBox, maximizeBoxCheckBox, closeBoxCheckBox, controlBoxCheckBox, helpButtonCheckBox, showIconCheckBox, showInTaskbarCheckBox });
+      windowStateTabPage.Controls.AddRange(new Control[] { maximizeButton, normalButton, minimizeButton });
+      showTabPage.Controls.AddRange(new Control[] { showNormalButton, showModelessButton, showTopMostButton, showModalButton });
+
+      borderStyleComboBox.Location = new Point(10, 10);
+      borderStyleComboBox.Width = 200;
+      borderStyleComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+      borderStyleComboBox.Items.AddRange(new object[] { FormBorderStyle.None, FormBorderStyle.FixedSingle, FormBorderStyle.Fixed3D, FormBorderStyle.FixedDialog, FormBorderStyle.Sizable, FormBorderStyle.FixedToolWindow, FormBorderStyle.SizableToolWindow});
+      borderStyleComboBox.SelectedIndex = (int)FormBorderStyle;
+      borderStyleComboBox.SelectedIndexChanged += delegate {
+        FormBorderStyle = (FormBorderStyle)borderStyleComboBox.SelectedIndex;
+        System.Diagnostics.Debug.WriteLine("CreapeParams = {0}", CreateParams);
       };
 
-      Button b1 = new Button { Parent = this, Location = new Point(10, 200) };
-      Button b2 = new Button { Parent = this, Location = new Point(10, 230), FlatStyle = FlatStyle.System };
-      Button b3 = new Button { Parent = this, Location = new Point(100, 200), FlatStyle = FlatStyle.Popup };
-      Button b4 = new Button { Parent = this, Location = new Point(100, 230), FlatStyle = FlatStyle.Flat };
-
-      /*
-      Paint += delegate (object sender, PaintEventArgs e) {
-        var solidTransparentBrush = new System.Drawing.SolidBrush(Color.Transparent);
-        e.Graphics.FillRectangle(solidTransparentBrush, new Rectangle(10, 10, 100, 100));
-
-        var solidRedBrush = new System.Drawing.SolidBrush(Color.Red);
-        e.Graphics.FillRectangle(solidRedBrush, new Rectangle(120, 10, 100, 100));
-
-        var linearGradientBrush = new System.Drawing.Drawing2D.LinearGradientBrush(new Rectangle(230, 10, 100, 100), Color.Green, Color.White,System.Drawing.Drawing2D.LinearGradientMode.Horizontal);
-        e.Graphics.FillRectangle(linearGradientBrush, new Rectangle(230, 10, 100, 100));
-
-        var hatchBrush = new System.Drawing.Drawing2D.HatchBrush(System.Drawing.Drawing2D.HatchStyle.SolidDiamond, Color.Blue, Color.White);
-        e.Graphics.FillRectangle(hatchBrush, new Rectangle(10, 120, 100, 100));
-
-        var textureBrush = new System.Drawing.TextureBrush(CreateImageFromColor(Color.Yellow));
-        e.Graphics.FillRectangle(textureBrush, new Rectangle(120, 120, 100, 100));
+      captionLabel.Location = new Point(10, 40);
+      captionLabel.Text = "Caption";
+      captionTextBox.Location = new Point(110, 40);
+      captionTextBox.Width = 100;
+      captionTextBox.Text = Text;
+      captionTextBox.TextChanged += delegate {
+        Text = captionTextBox.Text;
+        System.Diagnostics.Debug.WriteLine("CreapeParams = {0}", CreateParams);
       };
-      */
+
+      minimizeBoxCheckBox.Location = new Point(10, 70);
+      minimizeBoxCheckBox.Text = "MinimizeBox";
+      minimizeBoxCheckBox.Checked = MinimizeBox;
+      minimizeBoxCheckBox.CheckedChanged += delegate {
+        MinimizeBox = minimizeBoxCheckBox.Checked;
+        System.Diagnostics.Debug.WriteLine("CreapeParams = {0}", CreateParams);
+      };
+
+      maximizeBoxCheckBox.Location = new Point(10, 100);
+      maximizeBoxCheckBox.Text = "MaximizeBox";
+      maximizeBoxCheckBox.Checked = MaximizeBox;
+      maximizeBoxCheckBox.CheckedChanged += delegate {
+        MaximizeBox = maximizeBoxCheckBox.Checked;
+        System.Diagnostics.Debug.WriteLine("CreapeParams = {0}", CreateParams);
+      };
+
+      closeBoxCheckBox.Location = new Point(10, 130);
+      closeBoxCheckBox.Text = "CloseBox";
+      closeBoxCheckBox.Enabled = false;
+      //closeBoxCheckBox.Checked = CloseBox;
+      closeBoxCheckBox.CheckedChanged += delegate {
+        //CloseBox = closeBoxCheckBox.Checked;
+        System.Diagnostics.Debug.WriteLine("CreapeParams = {0}", CreateParams);
+      };
+
+      controlBoxCheckBox.Location = new Point(10, 160);
+      controlBoxCheckBox.Text = "ControlBox";
+      controlBoxCheckBox.Checked = ControlBox;
+      controlBoxCheckBox.CheckedChanged += delegate {
+        ControlBox = controlBoxCheckBox.Checked;
+        System.Diagnostics.Debug.WriteLine("CreapeParams = {0}", CreateParams);
+      };
+
+      helpButtonCheckBox.Location = new Point(10, 190);
+      helpButtonCheckBox.Text = "HelpButton";
+      helpButtonCheckBox.Checked = HelpButton;
+      helpButtonCheckBox.CheckedChanged += delegate {
+        HelpButton = helpButtonCheckBox.Checked;
+        System.Diagnostics.Debug.WriteLine("CreapeParams = {0}", CreateParams);
+      };
+
+      showIconCheckBox.Location = new Point(10, 220);
+      showIconCheckBox.Text = "ShowIcon";
+      showIconCheckBox.Checked = ShowIcon;
+      showIconCheckBox.CheckedChanged += delegate {
+        ShowIcon = showIconCheckBox.Checked;
+        System.Diagnostics.Debug.WriteLine("CreapeParams = {0}", CreateParams);
+      };
+
+      showInTaskbarCheckBox.Location = new Point(10, 250);
+      showInTaskbarCheckBox.Text = "ShowInTaskbar";
+      showInTaskbarCheckBox.Checked = ShowInTaskbar;
+      showInTaskbarCheckBox.CheckedChanged += delegate {
+        ShowInTaskbar = showInTaskbarCheckBox.Checked;
+        System.Diagnostics.Debug.WriteLine("CreapeParams = {0}", CreateParams);
+      };
+
+      maximizeButton.Location = new Point(10, 10);
+      maximizeButton.Text = "Maximize";
+      maximizeButton.Click += delegate {
+        WindowState = FormWindowState.Maximized;
+        System.Diagnostics.Debug.WriteLine("CreapeParams = {0}", CreateParams);
+      };
+
+      normalButton.Location = new Point(10, 40);
+      normalButton.Text = "Normal";
+      normalButton.Click += delegate {
+        WindowState = FormWindowState.Normal;
+        System.Diagnostics.Debug.WriteLine("CreapeParams = {0}", CreateParams);
+      };
+
+      minimizeButton.Location = new Point(10, 70);
+      minimizeButton.Text = "Minimize";
+      minimizeButton.Click += delegate {
+        WindowState = FormWindowState.Minimized;
+        System.Diagnostics.Debug.WriteLine("CreapeParams = {0}", CreateParams);
+      };
+
+      showNormalButton.Location = new Point(10, 10);
+      showNormalButton.Width = 140;
+      showNormalButton.Text = "Show Normal";
+      showNormalButton.Click += delegate {
+        Form form = new Form { Text = "Dialog Show Normal", Size = new Size(250, 100) };
+        form.Show();
+      };
+
+      showModelessButton.Location = new Point(10, 40);
+      showModelessButton.Width = 140;
+      showModelessButton.Text = "Show Modeless";
+      showModelessButton.Click += delegate {
+        Form form = new Form { Text = "Dialog Show Modeless", Size = new Size(250, 100), Owner = this };
+        form.Show();
+      };
+
+      showTopMostButton.Location = new Point(10, 70);
+      showTopMostButton.Width = 140;
+      showTopMostButton.Text = "Show TopMost";
+      showTopMostButton.Click += delegate {
+        Form form = new Form { Text = "Dialog Show TopMost", Size = new Size(250, 100), TopMost = true };
+        form.Show();
+      };
+
+      showModalButton.Location = new Point(10, 100);
+      showModalButton.Width = 140;
+      showModalButton.Text = "Show Modal";
+      showModalButton.Click += delegate {
+        Form form = new Form { Text = "Dialog Show Modal", Size = new Size(250, 100) };
+        form.ShowDialog(this);
+      };
+
     }
 
-    private Image CreateImageFromColor(Color color) {
-      var bitmap = new Bitmap(16, 16);
-      var g = Graphics.FromImage(bitmap);
-      g.FillEllipse(new SolidBrush(color), 0, 0, bitmap.Width, bitmap.Height);
-      g.DrawEllipse(new Pen(Color.Black), 0, 0, bitmap.Width - 1, bitmap.Height - 1);
-      return bitmap;
-    }
+    TabControl formStylesTabControl = new TabControl();
+    TabPage decorationTabPage = new TabPage();
+    TabPage windowStateTabPage = new TabPage();
+    TabPage showTabPage = new TabPage();
+    
+    ComboBox borderStyleComboBox = new ComboBox();
+    Label captionLabel = new Label();
+    TextBox captionTextBox = new TextBox();
+    CheckBox minimizeBoxCheckBox = new CheckBox();
+    CheckBox maximizeBoxCheckBox = new CheckBox();
+    CheckBox closeBoxCheckBox = new CheckBox();
+    CheckBox controlBoxCheckBox = new CheckBox();
+    CheckBox helpButtonCheckBox = new CheckBox();
+    CheckBox showIconCheckBox = new CheckBox();
+    CheckBox showInTaskbarCheckBox = new CheckBox();
 
-    private void OnMenuItemClick(object sender, EventArgs e) {
-    }
+    Button maximizeButton = new Button();
+    Button normalButton = new Button();
+    Button minimizeButton = new Button();
 
-    private MainMenu CreateStandardMenu(EventHandler menuItemClick) {
-      return new MainMenu(new MenuItem[] {
-         new MenuItem("&File", new MenuItem[] {
-           new MenuItem("&New", menuItemClick, Shortcut.CtrlN),
-           new MenuItem("&Open", menuItemClick, Shortcut.CtrlO),
-           new MenuItem("-"),
-           new MenuItem("&Save", menuItemClick, Shortcut.CtrlS),
-           new MenuItem("Save &As", OnMenuItemClick),
-           new MenuItem("-"),
-           new MenuItem("&Print", menuItemClick, Shortcut.CtrlS),
-           new MenuItem("Print pre&view", OnMenuItemClick),
-           new MenuItem("-"),
-           new MenuItem("&Exit", (_, EventArgs) => Close(), Shortcut.AltF4),
-         }),
-         new MenuItem("&Edit", new MenuItem[] {
-           new MenuItem("&Undo", menuItemClick, Shortcut.CtrlZ),
-           new MenuItem("&Redo", menuItemClick, Shortcut.CtrlShiftZ),
-           new MenuItem("-"),
-           new MenuItem("Cu&t", menuItemClick, Shortcut.CtrlX),
-           new MenuItem("&Copy", menuItemClick, Shortcut.CtrlC),
-           new MenuItem("&Paste", menuItemClick, Shortcut.CtrlV),
-           new MenuItem("-"),
-           new MenuItem("Select &All", menuItemClick, Shortcut.CtrlA),
-         }),
-         new MenuItem("&Tools", new MenuItem[] {
-           new MenuItem("&Customize", OnMenuItemClick),
-           new MenuItem("&Options", OnMenuItemClick),
-         }),
-         new MenuItem("&Help", new MenuItem[] {
-           new MenuItem("&Content", OnMenuItemClick),
-           new MenuItem("&Index", OnMenuItemClick),
-           new MenuItem("&Search", OnMenuItemClick),
-           new MenuItem("-"),
-           new MenuItem("&About", OnMenuItemClick),
-         }),
-      });
-    }
+    Button showNormalButton = new Button();
+    Button showModelessButton = new Button();
+    Button showTopMostButton = new Button();
+    Button showModalButton = new Button();
+
   }
 }
