@@ -15,10 +15,11 @@ namespace Examples {
       ClientSize = new Size(820, 500);
 
       statusBarPanel1.Text = "Status one";
-      statusBarPanel1.BorderStyle = StatusBarPanelBorderStyle.Raised;
+      statusBarPanel1.BorderStyle = StatusBarPanelBorderStyle.Sunken;
       statusBarPanel1.Width = 150;
       statusBarPanel1.AutoSize = StatusBarPanelAutoSize.Contents;
       statusBarPanel1.Icon = Icon.FromHandle(CreateImage(Color.LightGreen).GetHicon());
+      statusBarPanel1.ToolTipText = "Status one tool tip text";
 
       statusBarPanel2.Text = "Status two";
       statusBarPanel2.AutoSize = StatusBarPanelAutoSize.Contents;
@@ -28,23 +29,10 @@ namespace Examples {
       statusBarPanel3.AutoSize = StatusBarPanelAutoSize.Spring;
       statusBarPanel3.BorderStyle = StatusBarPanelBorderStyle.Sunken;
 
-      statusBar1.Width = 300;
       statusBar1.Parent = this;
       statusBar1.Padding = new Padding(2);
-      statusBar1.Panels.AddRange(new StatusBarPanel[] { statusBarPanel1, statusBarPanel2, statusBarPanel3});
+      statusBar1.Panels.AddRange(new StatusBarPanel[] {statusBarPanel1, statusBarPanel2, statusBarPanel3});
       statusBar1.ShowPanels = true;
-      statusBar1.SizingGrip = false;
-      statusBar1.Text = "Status bar text";
-
-      progressBar1.Dock = DockStyle.Right;
-
-      statusBar1.Controls.Add(progressBar1);
-
-      timer1.Interval = 50;
-      timer1.Enabled = true;
-      timer1.Tick += delegate (object sender, EventArgs e) {
-        progressBar1.Value = progressBar1.Value < progressBar1.Maximum ? progressBar1.Value + 1 : progressBar1.Minimum;
-      };
     }
 
     private Bitmap CreateImage(Color color) {
@@ -59,7 +47,5 @@ namespace Examples {
     private StatusBarPanel statusBarPanel1 = new StatusBarPanel();
     private StatusBarPanel statusBarPanel2 = new StatusBarPanel();
     private StatusBarPanel statusBarPanel3 = new StatusBarPanel();
-    private ProgressBar progressBar1 = new ProgressBar();
-    private Timer timer1 = new Timer();
   }
 }
