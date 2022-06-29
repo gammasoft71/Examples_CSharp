@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.Drawing;
+using System.Windows.Forms;
 
 namespace HelloWorldForm {
   class MainForm : Form {
@@ -8,16 +9,14 @@ namespace HelloWorldForm {
     }
 
     public MainForm() {
-      this.label.Text = "Hello, World!";
-      this.label.Font = new System.Drawing.Font("Arial", 32, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic);
-      this.label.ForeColor = System.Drawing.Color.Green;
-      this.label.Location = new System.Drawing.Point(5, 100);
-      this.label.Size = new System.Drawing.Size(290, 100);
+      Text = "Hello world (label)";
+      Controls.Add(label);
 
-      this.Text = "My first application";
-      this.StartPosition = FormStartPosition.CenterScreen;
-      this.ClientSize = new System.Drawing.Size(300, 300);
-      this.Controls.Add(this.label);
+      label.Dock = DockStyle.Fill;
+      label.Font = new Font(label.Font.FontFamily, 32, FontStyle.Bold | FontStyle.Italic);
+      label.ForeColor = Color.Green;
+      label.Text = "Hello, World!";
+      label.TextAlign = ContentAlignment.MiddleCenter;
     }
 
     private Label label = new Label();
