@@ -35,9 +35,7 @@
     <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestGui.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="TestGui.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
