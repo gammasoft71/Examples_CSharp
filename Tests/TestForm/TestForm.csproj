@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{46C72E62-F3BB-4275-9B52-3D69F32FB547}</ProjectGuid>
+    <ProjectGuid>{75453C86-D486-4A4F-94B3-E15972DFA4F1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Examples</RootNamespace>
     <AssemblyName>TestGui</AssemblyName>
@@ -35,7 +35,7 @@
     <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestGui.cs">
+    <Compile Include="TestForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
