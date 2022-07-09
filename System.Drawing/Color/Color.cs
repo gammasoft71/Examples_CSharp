@@ -10,6 +10,7 @@ namespace Examples {
       Console.WriteLine("Color.LightGreen = {0}", Color.LightGreen);
       Console.WriteLine("Color.FromArgb(255, 253, 2, 0) = {0}", Color.FromArgb(255, 253, 2, 0));
       Console.WriteLine("Color.FromName(\"DodgerBlue\") = {0}", Color.FromName("DodgerBlue"));
+      Console.WriteLine("Color.FromName(\"DodgerBlue\") = {0}", Color.FromName("dodgerblue"));
     }
   }
 }
@@ -21,4 +22,5 @@ namespace Examples {
 // Color.Blue = Color [Blue]
 // Color.LightGreen = Color [LightGreen]
 // Color.FromArgb(255, 253, 2, 0) = Color [A=255, R=253, G=2, B=0]
+// Color.FromName("DodgerBlue") = Color [DodgerBlue]
 // Color.FromName("DodgerBlue") = Color [DodgerBlue]
