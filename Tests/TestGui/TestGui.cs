@@ -11,6 +11,7 @@ namespace Examples {
       Application.Run(new Form1());
     }
     public Form1() {
+      BufferedGraphicsContext gc = new BufferedGraphicsContext();
       ClientSize = new Size(1000, 800);
       MinimumSize = Size;
       ResizeRedraw = true;
