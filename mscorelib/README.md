@@ -1,11 +1,17 @@
 # mscorelib Examples
 
-[This folder](.) contains some .Net Framework examples.
+[This folder](.) contains mscorelib library examples.
 
-## Hello World
+## [Hello Worlds](HelloWorlds/README.md)
 
-* [HelloWorld](./HelloWorld/README.md) The classic first application "Hello World" on the standard output stream.
-* [HelloWorld2](./HelloWorld2/README.md) The same classic first application "Hello World" on the standard output stream with another style.
+* [HelloWorld](HelloWorlds/HelloWorld/README.md) The classic first application "Hello World" on the standard output stream.
+* [HelloWorld2](HelloWorlds/HelloWorld2/README.md) The same classic first application "Hello World" on the standard output stream with another style.
+
+## ’Delegates](Delegates/README.md)
+
+* [Action](Delegates/Action/README.md) shows how to use  [System.Action](https://learn.microsoft.com/en-us/dotnet/api/system.action) and [System.Collection.Generic.List.ForEach](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.foreach#system-collections-generic-list-foreach(system-action(()))).
+* [Action1](Delegates/Action1/README.md) shows how to use  [System.Action](https://learn.microsoft.com/en-us/dotnet/api/system.action).
+* [Action2](Delegates/Action2/README.md) shows how to use  [System.Action](https://learn.microsoft.com/en-us/dotnet/api/system.action).
 
 ## Console
 
