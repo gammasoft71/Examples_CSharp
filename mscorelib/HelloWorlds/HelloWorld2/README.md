@@ -2,9 +2,22 @@
 
 The classic first application 'Hello World'.
 
-# Source
+# Sourc# Sources
 
-[HelloWorld2.cs](./HelloWorld2.cs)
+* [src/HelloWorld2.cs](src/HelloWorld2.cs)
+* [CMakeLists.txt](CMakeLists.txt)
+
+# Build and run
+
+To build this project, open "Terminal" and type following lines:
+
+```batch
+mkdir build && cd build
+cmake ..
+start HelloWorld2.sln
+```
+
+Select `HelloWorld2` project and type Ctrl+F5 to build and run it.
 
 # Output
 
