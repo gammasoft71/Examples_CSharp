@@ -16,4 +16,6 @@ namespace Examples {
 
 // This code produces the following output:
 //
-// Hello, World!
+// Hello World!
+// Enter your name: James
+// Good day, James!

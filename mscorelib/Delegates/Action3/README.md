@@ -1,10 +1,10 @@
-# Action2
+# Action3
 
 Shows how to use [System.Action](https://learn.microsoft.com/en-us/dotnet/api/system.action). 
 
 ## Sources
 
-* [src/Action2.cs](src/Action2.cs)
+* [src/Action3.cs](src/Action3.cs)
 * [CMakeLists.txt](CMakeLists.txt)
 
 ## Build and run
@@ -14,19 +14,19 @@ To build this project, open "Terminal" and type following lines:
 ```batch
 mkdir build && cd build
 cmake ..
-start Action2.sln
+start Action3.sln
 ```
 
-Select `Action2` project and type Ctrl+F5 to build and run it.
+Select `Action3` project and type Ctrl+F5 to build and run it.
 
 ## Output
 
-* If `Action2` is called without param
+* If `Action3` is called without param
 
 ```
 Hello, World!
 ```
 
-* If `Action2` is called with any param
+* If `Action3` is called with any param
 
-![Screenshot](../../../docs/Pictures/mscorelib/Action2.png)
+![Screenshot](../../../docs/Pictures/mscorelib/Action3.png)

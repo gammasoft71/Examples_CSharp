@@ -1,6 +1,6 @@
 # Action
 
-Shows how to use  [System.Action](https://learn.microsoft.com/en-us/dotnet/api/system.action) and [System.Collection.Generic.List.ForEach](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.foreach#system-collections-generic-list-foreach(system-action(()))). 
+Shows how to use [System.Action](https://learn.microsoft.com/en-us/dotnet/api/system.action) and [System.Collection.Generic.List.ForEach](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.foreach#system-collections-generic-list-foreach(system-action(()))). 
 
 # Sources
 

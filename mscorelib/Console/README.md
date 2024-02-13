@@ -1,15 +1,18 @@
 # Console
 
-[This example](.) demonstrates how to read data from, and write data to, the standard input and output streams. Note that these streams can be redirected by using the SetIn and SetOut methods.
+[This folder](.) contains [System.Console](https://learn.microsoft.com/en-us/dotnet/api/system.console) examples.
 
-# Source
+* [Consolz](Action/README.md) shows how to use [System.Console](https://learn.microsoft.com/en-us/dotnet/api/system.console) class.
 
-[Console.cs](./Console.cs)
+# Build and run
 
-# Console output
+To build this project, open "Terminal" and type following lines:
 
+```batch
+mkdir build && cd build
+cmake ..
+start Console.sln
 ```
-Hello World!
-Enter your name: James
-Good day, James!
-```
+
+Select any project and type Ctrl+F5 to build and run it.
+

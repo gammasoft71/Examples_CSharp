@@ -1,6 +1,6 @@
 # Action1
 
-Shows how to use  [System.Action](https://learn.microsoft.com/en-us/dotnet/api/system.action). 
+Shows how to use [System.Action](https://learn.microsoft.com/en-us/dotnet/api/system.action). 
 
 ## Sources
 
