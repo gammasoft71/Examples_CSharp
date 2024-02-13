@@ -3,6 +3,8 @@
 [This folder](.) contains [System.Console](https://learn.microsoft.com/en-us/dotnet/api/system.console) examples.
 
 * [Console](Console/README.md) shows how to use [System.Console](https://learn.microsoft.com/en-us/dotnet/api/system.console) class.
+* [ConsoleBackgroundColor](ConsoleBackgroundColor/README.md) shows how to use [System.Console.BackgroundColor](https://learn.microsoft.com/en-us/dotnet/api/system.console.backgroundcolor) property.
+* [ConsoleBackgroundColor2](ConsoleBackgroundColor2/README.md) shows how to use [System.Console.BackgroundColor](https://learn.microsoft.com/en-us/dotnet/api/system.console.backgroundcolor) property.
 
 # Build and run
 
