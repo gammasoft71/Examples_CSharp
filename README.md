@@ -4,9 +4,15 @@
 
 [![csharp](docs/Pictures/csharp_header.png)](https://gammasoft71.wixsite.com/gammasoft/csharp)
 
+## [mscorelib](mscorelib/README.md)
+
+* [Hello Worlds](HelloWorlds/README.md) ontains .Net Framework "Hello, World!" examples.
+* [Delegates](Delegates/README.md) contains delegates examples.
+* [Console](Console/README.md) contains console examples.
+* [Others](Others/README.md) contains others examples.
+
 ## System
 
-* [mscorelib](./mscorelib/README.md) contains mscorelib library examples.
 * [System](./System/README.md) contains System library examples.
 * [System.Core](./System.Core/README.md) contains System.Core library examples.
 
