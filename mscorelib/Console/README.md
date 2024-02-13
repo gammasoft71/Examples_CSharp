@@ -2,7 +2,7 @@
 
 [This folder](.) contains [System.Console](https://learn.microsoft.com/en-us/dotnet/api/system.console) examples.
 
-* [Consolz](Action/README.md) shows how to use [System.Console](https://learn.microsoft.com/en-us/dotnet/api/system.console) class.
+* [Console](Console/README.md) shows how to use [System.Console](https://learn.microsoft.com/en-us/dotnet/api/system.console) class.
 
 # Build and run
 
