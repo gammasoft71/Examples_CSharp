@@ -29,4 +29,4 @@ Hello, World!
 
 * If `Action1` is called with any param
 
-![Screenshot](../../docs/Pictures/mscorelib/Action1.png)
+![Screenshot](../../../docs/Pictures/mscorelib/Action1.png)
