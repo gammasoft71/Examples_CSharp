@@ -6,10 +6,10 @@
 
 ## [mscorelib](mscorelib/README.md)
 
-* [Hello Worlds](HelloWorlds/README.md) ontains .Net Framework "Hello, World!" examples.
-* [Delegates](Delegates/README.md) contains delegates examples.
-* [Console](Console/README.md) contains console examples.
-* [Others](Others/README.md) contains others examples.
+* [Hello Worlds](mscorelib/HelloWorlds/README.md) ontains .Net Framework "Hello, World!" examples.
+* [Delegates](mscorelib/Delegates/README.md) contains delegates examples.
+* [Console](mscorelib/Console/README.md) contains console examples.
+* [Others](mscorelib/Others/README.md) contains others examples.
 
 ## System
 
