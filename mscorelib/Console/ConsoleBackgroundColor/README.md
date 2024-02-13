@@ -1,6 +1,6 @@
 # ConsoleBackgroundColor
 
-Shows how to use [System.Console.BackgroundColor](https://learn.microsoft.com/en-us/dotnet/api/system.console.backgroundcolor) property. 
+Shows how to use [System.Console.BackgroundColor](https://learn.microsoft.com/en-us/dotnet/api/system.console.backgroundcolor) property.
 
 ## Sources
 
@@ -61,4 +61,4 @@ All the background colors except Gray, the foreground color:
    The background color is White.
 
 Original colors restored...
-`
+```
