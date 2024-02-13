@@ -16,10 +16,11 @@
 
 ## [Console](Console/README.md)
 
-* [Console](./Console/README.md) demonstrates how to read data from, and write data to, the standard input and output streams.
-* [ConsoleBackColor](./ConsoleBackColor/README.md) demonstrates how to change console background color.
-* [ConsoleBeep](./ConsoleBeep/README.md) demonstrates how to used console beep.
-* [ConsoleBeep2](./ConsoleBeep2/README.md) plays the first few notes of "Mary Had A Little Lamb" through the console speaker.
+* [Console](Console/Console/README.md) shows how to use [System.Console](https://learn.microsoft.com/en-us/dotnet/api/system.console) class.
+* [ConsoleBackgroundColor](Console/ConsoleBackgroundColor/README.md) shows how to use [System.Console.BackgroundColor](https://learn.microsoft.com/en-us/dotnet/api/system.console.backgroundcolor) property.
+* [ConsoleBackgroundColor2](Console/ConsoleBackgroundColor2/README.md) shows how to use [System.Console.BackgroundColor](https://learn.microsoft.com/en-us/dotnet/api/system.console.backgroundcolor) property.
+* [ConsoleBeep](Console/ConsoleBeep/README.md) shows how to use [System.Console.Beep](https://learn.microsoft.com/en-us/dotnet/api/system.console.beep) method.
+* [ConsoleBeep2](Console/ConsoleBeep2/README.md) shows how to use [System.Console.Beep](https://learn.microsoft.com/en-us/dotnet/api/system.console.beep) method.
 
 ## Other
 * [All](.) You can see all examples here. 
