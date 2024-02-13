@@ -1,6 +1,6 @@
 # ConsoleBeep2
 
-Shows how to use [System.Console.BackgroundColor](https://learn.microsoft.com/en-us/dotnet/api/system.console.beep) method. 
+Shows how to use [System.Console.Beep](https://learn.microsoft.com/en-us/dotnet/api/system.console.beep) method. 
 
 ## Sources
 
