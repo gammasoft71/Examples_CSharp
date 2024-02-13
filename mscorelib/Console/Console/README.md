@@ -2,12 +2,16 @@
 
 Shows how to use [System.Console](https://learn.microsoft.com/en-us/dotnet/api/system.console) class. 
 
-# Sources
+## Sources
 
 * [src/Console.cs](src/Console.cs)
 * [CMakeLists.txt](CMakeLists.txt)
 
-# Build and run
+## Build and run with pVisual Studio Poject
+
+Open [Console.csproj](Console.csproj)
+
+## Build and run with CMake
 
 To build this project, open "Terminal" and type following lines:
 
@@ -19,7 +23,7 @@ start Console.sln
 
 Select `Console` project and type Ctrl+F5 to build and run it.
 
-# Output
+## Output
 
 ```
 Hello World!

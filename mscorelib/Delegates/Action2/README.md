@@ -7,7 +7,11 @@ Shows how to use [System.Action](https://learn.microsoft.com/en-us/dotnet/api/sy
 * [src/Action2.cs](src/Action2.cs)
 * [CMakeLists.txt](CMakeLists.txt)
 
-## Build and run
+## Build and run with pVisual Studio Poject
+
+Open [Action2.csproj](Action2.csproj)
+
+## Build and run with CMake
 
 To build this project, open "Terminal" and type following lines:
 
