@@ -5,7 +5,7 @@ namespace Examples {
   class MainClass {
     public delegate void DisplayMessage(string message);
 
-    public static void Main(string[] args) {
+    public static void Main() {
       DisplayMessage messageTarget;
 
       if (Environment.GetCommandLineArgs().Length > 1)
