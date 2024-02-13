@@ -7,7 +7,7 @@ Shows how to use [System.Console](https://learn.microsoft.com/en-us/dotnet/api/s
 * [src/Console.cs](src/Console.cs)
 * [CMakeLists.txt](CMakeLists.txt)
 
-## Build and run with pVisual Studio Poject
+## Build and run with Visual Studio Poject
 
 Open [Console.csproj](Console.csproj)
 

@@ -7,7 +7,7 @@ Shows how to use [System.Action](https://learn.microsoft.com/en-us/dotnet/api/sy
 * [src/Action2.cs](src/Action2.cs)
 * [CMakeLists.txt](CMakeLists.txt)
 
-## Build and run with pVisual Studio Poject
+## Build and run with Visual Studio Poject
 
 Open [Action2.csproj](Action2.csproj)
 

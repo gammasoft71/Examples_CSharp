@@ -7,7 +7,7 @@ The classic first application 'Hello World'.
 * [src/HelloWorld2.cs](src/HelloWorld2.cs)
 * [CMakeLists.txt](CMakeLists.txt)
 
-## Build and run with pVisual Studio Poject
+## Build and run with Visual Studio Poject
 
 Open [HelloWorld2.csproj](HelloWorld2.csproj)
 
