@@ -7,6 +7,7 @@
 ## [mscorelib](mscorelib/README.md)
 
 * [Hello Worlds](mscorelib/HelloWorlds/README.md) ontains .Net Framework "Hello, World!" examples.
+* [Array](mscorelib/Delegates/README.md) contains Array examples.
 * [Delegates](mscorelib/Delegates/README.md) contains delegates examples.
 * [Console](mscorelib/Console/README.md) contains console examples.
 * [Others](mscorelib/Others/README.md) contains others examples.
