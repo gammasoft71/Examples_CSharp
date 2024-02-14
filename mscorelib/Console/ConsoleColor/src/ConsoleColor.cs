@@ -51,7 +51,7 @@ namespace Examples {
       Console.WriteLine("                                    Gammasoft                                   ");
       Console.ForegroundColor = ConsoleColor.DarkGray;
       Console.WriteLine(" More than thirty years of passion for high technology especially in development");
-      Console.WriteLine(" (c++, c#, objective-c, ...).");
+      Console.WriteLine("                           (c++, c#, objective-c, ...).");
       Console.ResetColor();
     }
   }
@@ -92,5 +92,5 @@ namespace Examples {
 //      █████████                                                    █████████
 //        ██████████████████████████████████████████████████████████████████
 //                                      Gammasoft
-//      More than thirty years of passion for high technology especially in development
-//      (c++, c#, objective-c, ...).
+//  More than thirty years of passion for high technology especially in development
+//                            (c++, c#, objective-c, ...).

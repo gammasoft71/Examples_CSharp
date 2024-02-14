@@ -17,10 +17,13 @@
 ## [Console](Console/README.md)
 
 * [Console](Console/Console/README.md) shows how to use [System.Console](https://learn.microsoft.com/en-us/dotnet/api/system.console) class.
-* [ConsoleBackgroundColor](Console/ConsoleBackgroundColor/README.md) shows how to use [System.Console.BackgroundColor](https://learn.microsoft.com/en-us/dotnet/api/system.console.backgroundcolor) property.
+* [ConsoleBackgroundColor](Console/ConsoleBackgroundColor/README.md) shows how to use [System.Console.backgroundColor](https://learn.microsoft.com/en-us/dotnet/api/system.console.backgroundColor) and [System.Console.foregroundColor](https://learn.microsoft.com/en-us/dotnet/api/system.console.foregroundColor) properties. 
 * [ConsoleBackgroundColor2](Console/ConsoleBackgroundColor2/README.md) shows how to use [System.Console.BackgroundColor](https://learn.microsoft.com/en-us/dotnet/api/system.console.backgroundcolor) property.
 * [ConsoleBeep](Console/ConsoleBeep/README.md) shows how to use [System.Console.Beep](https://learn.microsoft.com/en-us/dotnet/api/system.console.beep) method.
 * [ConsoleBeep2](Console/ConsoleBeep2/README.md) shows how to use [System.Console.Beep](https://learn.microsoft.com/en-us/dotnet/api/system.console.beep) method.
+* [ConsoleColor](Console/ConsoleColor/README.md) shows how to use [System.Console.backgroundColor](https://learn.microsoft.com/en-us/dotnet/api/system.console.backgroundColor) and [System.Console.foregroundColor](https://learn.microsoft.com/en-us/dotnet/api/system.console.foregroundColor) properties. 
+* [ConsoleForegroundColor](Console/ConsoleForegroundColor/README.md) shows how to use [System.Console.backgroundColor](https://learn.microsoft.com/en-us/dotnet/api/system.console.backgroundColor) and [System.Console.foregroundColor](https://learn.microsoft.com/en-us/dotnet/api/system.console.foregroundColor) properties. 
+* [ConsoleUnicode](Console/ConsoleUnicode/README.md) shows how to use [System.Console](https://learn.microsoft.com/en-us/dotnet/api/system.console) class with unicode text.
 
 ## Other
 * [All](.) You can see all examples here. 

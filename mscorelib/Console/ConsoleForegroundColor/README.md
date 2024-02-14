@@ -1,15 +1,15 @@
-# ConsoleBackgroundColor
+# ConsoleForegroundColor
 
 Shows how to use [System.Console.backgroundColor](https://learn.microsoft.com/en-us/dotnet/api/system.console.backgroundColor) and [System.Console.foregroundColor](https://learn.microsoft.com/en-us/dotnet/api/system.console.foregroundColor) properties. 
 
 ## Sources
 
-* [src/ConsoleBackgroundColor.cs](src/ConsoleBackgroundColor.cs)
+* [src/ConsoleForegroundColor.cs](src/ConsoleForegroundColor.cs)
 * [CMakeLists.txt](CMakeLists.txt)
 
 ## Build and run with Visual Studio Poject
 
-Open [ConsoleBackgroundColor.csproj](ConsoleBackgroundColor.csproj)
+Open [ConsoleForegroundColor.csproj](ConsoleForegroundColor.csproj)
 
 ## Build and run with CMake
 
@@ -18,10 +18,10 @@ To build this project, open "Terminal" and type following lines:
 ```batch
 mkdir build && cd build
 cmake ..
-start ConsoleBackgroundColor.sln
+start ConsoleForegroundColor.sln
 ```
 
-Select `ConsoleBackgroundColor` project and type Ctrl+F5 to build and run it.
+Select `ConsoleForegroundColor` project and type Ctrl+F5 to build and run it.
 
 ## Output
 
