@@ -7,6 +7,11 @@
 * [HelloWorld](HelloWorlds/HelloWorld/README.md) The classic first application "Hello World" on the standard output stream.
 * [HelloWorld2](HelloWorlds/HelloWorld2/README.md) The same classic first application "Hello World" on the standard output stream with another style.
 
+# [Array](Array/README.md)
+
+* [Array1](Array/Array1/README.md) shows how to use [System.Array](https://learn.microsoft.com/en-us/dotnet/api/system.array) constructors.
+* [Array2](Array/Array1/README.md) shows how to use [System.Array.GetLowerBound](https://learn.microsoft.com/en-us/dotnet/api/system.array.getlowerbound) and [System.Array.GetUpperBound](https://learn.microsoft.com/en-us/dotnet/api/system.array.getupperbound) methods.
+
 ## [Delegates](Delegates/README.md)
 
 * [Action](Delegates/Action/README.md) shows how to use  [System.Action](https://learn.microsoft.com/en-us/dotnet/api/system.action) and [System.Collection.Generic.List.ForEach](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.foreach#system-collections-generic-list-foreach(system-action(()))).
